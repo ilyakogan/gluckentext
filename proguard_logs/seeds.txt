@@ -1,0 +1,1422 @@
+com.gluckentext.ArticleActivity
+com.gluckentext.ArticleActivity: org.scaloid.common.LoggerTag tag
+com.gluckentext.ArticleActivity: scala.concurrent.ExecutionContextExecutor exec
+com.gluckentext.ArticleActivity: org.scaloid.common.SActivity ctx
+com.gluckentext.ArticleActivity: org.scaloid.common.Registerable onStartStop
+com.gluckentext.ArticleActivity: org.scaloid.common.Registerable onCreateDestroy
+com.gluckentext.ArticleActivity: scala.collection.mutable.ArrayBuffer onStartBodies
+com.gluckentext.ArticleActivity: scala.collection.mutable.ArrayBuffer onResumeBodies
+com.gluckentext.ArticleActivity: scala.collection.mutable.ArrayBuffer onPauseBodies
+com.gluckentext.ArticleActivity: scala.collection.mutable.ArrayBuffer onStopBodies
+com.gluckentext.ArticleActivity: scala.collection.mutable.ArrayBuffer onCreateBodies
+com.gluckentext.ArticleActivity: scala.collection.mutable.ArrayBuffer onDestroyBodies
+com.gluckentext.ArticleActivity: org.scaloid.common.LoggerTag loggerTag
+com.gluckentext.ArticleActivity: org.scaloid.common.SActivity ctx()
+com.gluckentext.ArticleActivity: org.scaloid.common.Registerable onStartStop()
+com.gluckentext.ArticleActivity: org.scaloid.common.Registerable onCreateDestroy()
+com.gluckentext.ArticleActivity: scala.collection.mutable.ArrayBuffer onStartBodies()
+com.gluckentext.ArticleActivity: scala.collection.mutable.ArrayBuffer onResumeBodies()
+com.gluckentext.ArticleActivity: scala.collection.mutable.ArrayBuffer onPauseBodies()
+com.gluckentext.ArticleActivity: scala.collection.mutable.ArrayBuffer onStopBodies()
+com.gluckentext.ArticleActivity: void org$scaloid$common$SActivity$$super$onCreate(android.os.Bundle)
+com.gluckentext.ArticleActivity: void org$scaloid$common$SActivity$$super$onStart()
+com.gluckentext.ArticleActivity: void org$scaloid$common$SActivity$$super$onResume()
+com.gluckentext.ArticleActivity: void org$scaloid$common$SActivity$$super$onPause()
+com.gluckentext.ArticleActivity: void org$scaloid$common$SActivity$$super$onStop()
+com.gluckentext.ArticleActivity: void org$scaloid$common$SActivity$$super$onDestroy()
+com.gluckentext.ArticleActivity: void org$scaloid$common$SActivity$_setter_$ctx_$eq(org.scaloid.common.SActivity)
+com.gluckentext.ArticleActivity: void org$scaloid$common$SActivity$_setter_$onStartStop_$eq(org.scaloid.common.Registerable)
+com.gluckentext.ArticleActivity: void org$scaloid$common$SActivity$_setter_$onCreateDestroy_$eq(org.scaloid.common.Registerable)
+com.gluckentext.ArticleActivity: void org$scaloid$common$SActivity$_setter_$onStartBodies_$eq(scala.collection.mutable.ArrayBuffer)
+com.gluckentext.ArticleActivity: void org$scaloid$common$SActivity$_setter_$onResumeBodies_$eq(scala.collection.mutable.ArrayBuffer)
+com.gluckentext.ArticleActivity: void org$scaloid$common$SActivity$_setter_$onPauseBodies_$eq(scala.collection.mutable.ArrayBuffer)
+com.gluckentext.ArticleActivity: void org$scaloid$common$SActivity$_setter_$onStopBodies_$eq(scala.collection.mutable.ArrayBuffer)
+com.gluckentext.ArticleActivity: org.scaloid.common.SActivity basis()
+com.gluckentext.ArticleActivity: scala.Function0 onRegister(scala.Function0)
+com.gluckentext.ArticleActivity: scala.Function0 onUnregister(scala.Function0)
+com.gluckentext.ArticleActivity: void onCreate(android.os.Bundle)
+com.gluckentext.ArticleActivity: void onStart()
+com.gluckentext.ArticleActivity: scala.Function0 onStart(scala.Function0)
+com.gluckentext.ArticleActivity: void onResume()
+com.gluckentext.ArticleActivity: scala.Function0 onResume(scala.Function0)
+com.gluckentext.ArticleActivity: void onPause()
+com.gluckentext.ArticleActivity: scala.Function0 onPause(scala.Function0)
+com.gluckentext.ArticleActivity: void onStop()
+com.gluckentext.ArticleActivity: scala.Function0 onStop(scala.Function0)
+com.gluckentext.ArticleActivity: void onDestroy()
+com.gluckentext.ArticleActivity: scala.collection.mutable.ArrayBuffer onCreateBodies()
+com.gluckentext.ArticleActivity: void org$scaloid$common$Creatable$_setter_$onCreateBodies_$eq(scala.collection.mutable.ArrayBuffer)
+com.gluckentext.ArticleActivity: scala.Function0 onCreate(scala.Function0)
+com.gluckentext.ArticleActivity: scala.collection.mutable.ArrayBuffer onDestroyBodies()
+com.gluckentext.ArticleActivity: void org$scaloid$common$Destroyable$_setter_$onDestroyBodies_$eq(scala.collection.mutable.ArrayBuffer)
+com.gluckentext.ArticleActivity: scala.Function0 onDestroy(scala.Function0)
+com.gluckentext.ArticleActivity: android.app.Activity contentView_$eq(android.view.View)
+com.gluckentext.ArticleActivity: android.app.Activity contentView(android.view.View)
+com.gluckentext.ArticleActivity: scala.runtime.Nothing$ contentView(org.scaloid.common.package$NoGetterForThisProperty)
+com.gluckentext.ArticleActivity: scala.Some intent()
+com.gluckentext.ArticleActivity: android.view.View find(int)
+com.gluckentext.ArticleActivity: void runOnUiThread(scala.Function0)
+com.gluckentext.ArticleActivity: org.scaloid.common.LoggerTag loggerTag()
+com.gluckentext.ArticleActivity: void org$scaloid$common$TagUtil$_setter_$loggerTag_$eq(org.scaloid.common.LoggerTag)
+com.gluckentext.ArticleActivity: void org$scaloid$common$TraitContext$_setter_$ctx_$eq(android.content.Context)
+com.gluckentext.ArticleActivity: android.content.Context applicationContext()
+com.gluckentext.ArticleActivity: android.content.pm.ApplicationInfo applicationInfo()
+com.gluckentext.ArticleActivity: android.content.res.AssetManager assets()
+com.gluckentext.ArticleActivity: java.io.File cacheDir()
+com.gluckentext.ArticleActivity: java.lang.ClassLoader classLoader()
+com.gluckentext.ArticleActivity: android.content.ContentResolver contentResolver()
+com.gluckentext.ArticleActivity: java.io.File externalCacheDir()
+com.gluckentext.ArticleActivity: java.io.File filesDir()
+com.gluckentext.ArticleActivity: android.os.Looper mainLooper()
+com.gluckentext.ArticleActivity: java.lang.String packageCodePath()
+com.gluckentext.ArticleActivity: android.content.pm.PackageManager packageManager()
+com.gluckentext.ArticleActivity: java.lang.String packageName()
+com.gluckentext.ArticleActivity: java.lang.String packageResourcePath()
+com.gluckentext.ArticleActivity: android.content.res.Resources resources()
+com.gluckentext.ArticleActivity: android.content.res.Resources$Theme theme()
+com.gluckentext.ArticleActivity: android.content.Context theme(int)
+com.gluckentext.ArticleActivity: android.content.Context theme_$eq(int)
+com.gluckentext.ArticleActivity: android.graphics.drawable.Drawable wallpaper()
+com.gluckentext.ArticleActivity: android.content.Context wallpaper(android.graphics.Bitmap)
+com.gluckentext.ArticleActivity: android.content.Context wallpaper_$eq(android.graphics.Bitmap)
+com.gluckentext.ArticleActivity: android.content.Context wallpaper(java.io.InputStream)
+com.gluckentext.ArticleActivity: android.content.Context wallpaper_$eq(java.io.InputStream)
+com.gluckentext.ArticleActivity: int wallpaperDesiredMinimumHeight()
+com.gluckentext.ArticleActivity: int wallpaperDesiredMinimumWidth()
+com.gluckentext.ArticleActivity: boolean bindService(android.content.ServiceConnection,int,scala.reflect.ClassTag,android.content.Context)
+com.gluckentext.ArticleActivity: void removeStickyBroadcast(scala.reflect.ClassTag,android.content.Context)
+com.gluckentext.ArticleActivity: void sendBroadcast(scala.reflect.ClassTag,android.content.Context)
+com.gluckentext.ArticleActivity: void sendBroadcast(java.lang.String,scala.reflect.ClassTag,android.content.Context)
+com.gluckentext.ArticleActivity: void sendOrderedBroadcast(java.lang.String,scala.reflect.ClassTag,android.content.Context)
+com.gluckentext.ArticleActivity: void sendOrderedBroadcast(java.lang.String,android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle,scala.reflect.ClassTag,android.content.Context)
+com.gluckentext.ArticleActivity: void sendStickyBroadcast(scala.reflect.ClassTag,android.content.Context)
+com.gluckentext.ArticleActivity: void sendStickyOrderedBroadcast(android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle,scala.reflect.ClassTag,android.content.Context)
+com.gluckentext.ArticleActivity: void startActivity(scala.reflect.ClassTag,android.content.Context)
+com.gluckentext.ArticleActivity: android.content.ComponentName startService(scala.reflect.ClassTag,android.content.Context)
+com.gluckentext.ArticleActivity: boolean stopService(scala.reflect.ClassTag,android.content.Context)
+com.gluckentext.ArticleActivity: org.scaloid.common.LoggerTag tag()
+com.gluckentext.ArticleActivity: scala.concurrent.ExecutionContextExecutor exec()
+com.gluckentext.ArticleActivity: android.content.Context ctx()
+com.gluckentext.ArticleActivity: android.content.Context basis()
+com.gluckentext.ArticleActivity: android.app.Activity basis()
+com.gluckentext.ArticleActivity: org.scaloid.common.SContext basis()
+com.gluckentext.ArticleActivity: ArticleActivity()
+com.gluckentext.ArticleActivity$$anonfun$4
+com.gluckentext.ArticleActivity$$anonfun$4: com.gluckentext.ArticleActivity $outer
+com.gluckentext.ArticleActivity$$anonfun$4: android.app.Activity apply()
+com.gluckentext.ArticleActivity$$anonfun$4: com.gluckentext.ArticleActivity com$gluckentext$ArticleActivity$$anonfun$$$outer()
+com.gluckentext.ArticleActivity$$anonfun$4: java.lang.Object apply()
+com.gluckentext.ArticleActivity$$anonfun$4: ArticleActivity$$anonfun$4(com.gluckentext.ArticleActivity)
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1: org.scaloid.common.SButton button
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1: org.scaloid.common.SWebView webView
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1: com.gluckentext.ArticleActivity$$anonfun$4 $outer
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1: org.scaloid.common.SButton button()
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1: org.scaloid.common.SWebView webView()
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1: com.gluckentext.ArticleActivity$$anonfun$4 com$gluckentext$ArticleActivity$$anonfun$$anon$$$outer()
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1: ArticleActivity$$anonfun$4$$anon$1(com.gluckentext.ArticleActivity$$anonfun$4)
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1: com.gluckentext.ArticleActivity$$anonfun$4$$anon$1 $outer
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1: void apply()
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1: void apply$mcV$sp()
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1: com.gluckentext.ArticleActivity$$anonfun$4$$anon$1 com$gluckentext$ArticleActivity$$anonfun$$anon$$anonfun$$$outer()
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1: java.lang.Object apply()
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1: ArticleActivity$$anonfun$4$$anon$1$$anonfun$1(com.gluckentext.ArticleActivity$$anonfun$4$$anon$1)
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$2
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$2: com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1 $outer
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$2: void apply()
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$2: void apply$mcV$sp()
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$2: com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1 com$gluckentext$ArticleActivity$$anonfun$$anon$$anonfun$$anonfun$$$outer()
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$2: java.lang.Object apply()
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$2: ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$2(com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1)
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$2$$anonfun$apply$mcV$sp$1
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$2$$anonfun$apply$mcV$sp$1: com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$2 $outer
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$2$$anonfun$apply$mcV$sp$1: java.lang.String result$1
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$2$$anonfun$apply$mcV$sp$1: void apply()
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$2$$anonfun$apply$mcV$sp$1: void apply$mcV$sp()
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$2$$anonfun$apply$mcV$sp$1: java.lang.Object apply()
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$2$$anonfun$apply$mcV$sp$1: ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$2$$anonfun$apply$mcV$sp$1(com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$2,java.lang.String)
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$apply$mcV$sp$2
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$apply$mcV$sp$2: java.lang.Object applyOrElse(java.lang.Throwable,scala.Function1)
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$apply$mcV$sp$2: boolean isDefinedAt(java.lang.Throwable)
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$apply$mcV$sp$2: boolean isDefinedAt(java.lang.Object)
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$apply$mcV$sp$2: java.lang.Object applyOrElse(java.lang.Object,scala.Function1)
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$apply$mcV$sp$2: ArticleActivity$$anonfun$4$$anon$1$$anonfun$1$$anonfun$apply$mcV$sp$2(com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$1)
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$3
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$3: com.gluckentext.ArticleActivity$$anonfun$4$$anon$1 $outer
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$3: java.lang.Object applyOrElse(android.view.View,scala.Function1)
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$3: boolean isDefinedAt(android.view.View)
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$3: boolean isDefinedAt(java.lang.Object)
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$3: java.lang.Object applyOrElse(java.lang.Object,scala.Function1)
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$3: ArticleActivity$$anonfun$4$$anon$1$$anonfun$3(com.gluckentext.ArticleActivity$$anonfun$4$$anon$1)
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$5
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$5: com.gluckentext.ArticleActivity$$anonfun$4$$anon$1 $outer
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$5: org.scaloid.common.SLinearLayout$LayoutParams apply(org.scaloid.common.SButton)
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$5: java.lang.Object apply(java.lang.Object)
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$5: ArticleActivity$$anonfun$4$$anon$1$$anonfun$5(com.gluckentext.ArticleActivity$$anonfun$4$$anon$1)
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$6
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$6: com.gluckentext.ArticleActivity$$anonfun$4$$anon$1 $outer
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$6: org.scaloid.common.SLinearLayout$LayoutParams apply(org.scaloid.common.SWebView)
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$6: java.lang.Object apply(java.lang.Object)
+com.gluckentext.ArticleActivity$$anonfun$4$$anon$1$$anonfun$6: ArticleActivity$$anonfun$4$$anon$1$$anonfun$6(com.gluckentext.ArticleActivity$$anonfun$4$$anon$1)
+com.gluckentext.BuildConfig
+com.gluckentext.BuildConfig: boolean DEBUG
+com.gluckentext.BuildConfig: BuildConfig()
+com.gluckentext.Chapter
+com.gluckentext.Chapter: java.lang.String heading
+com.gluckentext.Chapter: java.lang.String body
+com.gluckentext.Chapter: scala.Option unapply(com.gluckentext.Chapter)
+com.gluckentext.Chapter: com.gluckentext.Chapter apply(java.lang.String,java.lang.String)
+com.gluckentext.Chapter: scala.Function1 tupled()
+com.gluckentext.Chapter: scala.Function1 curried()
+com.gluckentext.Chapter: java.lang.String heading()
+com.gluckentext.Chapter: java.lang.String body()
+com.gluckentext.Chapter: boolean hasLists()
+com.gluckentext.Chapter: boolean hasTables()
+com.gluckentext.Chapter: boolean hasLeftovers()
+com.gluckentext.Chapter: boolean isLongEnough()
+com.gluckentext.Chapter: com.gluckentext.Chapter copy(java.lang.String,java.lang.String)
+com.gluckentext.Chapter: java.lang.String copy$default$1()
+com.gluckentext.Chapter: java.lang.String copy$default$2()
+com.gluckentext.Chapter: java.lang.String productPrefix()
+com.gluckentext.Chapter: int productArity()
+com.gluckentext.Chapter: java.lang.Object productElement(int)
+com.gluckentext.Chapter: scala.collection.Iterator productIterator()
+com.gluckentext.Chapter: boolean canEqual(java.lang.Object)
+com.gluckentext.Chapter: int hashCode()
+com.gluckentext.Chapter: java.lang.String toString()
+com.gluckentext.Chapter: boolean equals(java.lang.Object)
+com.gluckentext.Chapter: Chapter(java.lang.String,java.lang.String)
+com.gluckentext.Chapter$
+com.gluckentext.Chapter$: com.gluckentext.Chapter$ MODULE$
+com.gluckentext.Chapter$: void <clinit>()
+com.gluckentext.Chapter$: java.lang.String toString()
+com.gluckentext.Chapter$: com.gluckentext.Chapter apply(java.lang.String,java.lang.String)
+com.gluckentext.Chapter$: scala.Option unapply(com.gluckentext.Chapter)
+com.gluckentext.Chapter$: java.lang.Object readResolve()
+com.gluckentext.Chapter$: java.lang.Object apply(java.lang.Object,java.lang.Object)
+com.gluckentext.Chapter$: Chapter$()
+com.gluckentext.R
+com.gluckentext.R: R()
+com.gluckentext.R$attr
+com.gluckentext.R$attr: R$attr()
+com.gluckentext.R$layout
+com.gluckentext.R$layout: int test
+com.gluckentext.R$layout: R$layout()
+com.gluckentext.R$string
+com.gluckentext.R$string: int app_name
+com.gluckentext.R$string: int red
+com.gluckentext.R$string: R$string()
+com.gluckentext.WikiPageLoader
+com.gluckentext.WikiPageLoader: java.lang.String loadWikiPageXml(java.lang.String,java.lang.String)
+com.gluckentext.WikiPageLoader: scala.collection.immutable.List buildPairs(scala.collection.Seq)
+com.gluckentext.WikiPageLoader: scala.collection.immutable.List buildPairsAcc(scala.collection.Seq,scala.collection.immutable.List,scala.Option)
+com.gluckentext.WikiPageLoader$
+com.gluckentext.WikiPageLoader$: com.gluckentext.WikiPageLoader$ MODULE$
+com.gluckentext.WikiPageLoader$: void <clinit>()
+com.gluckentext.WikiPageLoader$: java.lang.String com$gluckentext$WikiPageLoader$$makePlainText(scala.xml.Node)
+com.gluckentext.WikiPageLoader$: scala.collection.immutable.List buildPairsAcc(scala.collection.Seq,scala.collection.immutable.List,scala.Option)
+com.gluckentext.WikiPageLoader$: scala.collection.immutable.List buildPairs(scala.collection.Seq)
+com.gluckentext.WikiPageLoader$: java.lang.String loadWikiPageXml(java.lang.String,java.lang.String)
+com.gluckentext.WikiPageLoader$: WikiPageLoader$()
+com.gluckentext.WikiPageLoader$$anonfun$loadWikiPageXml$1
+com.gluckentext.WikiPageLoader$$anonfun$loadWikiPageXml$1: java.lang.String apply(com.gluckentext.Chapter)
+com.gluckentext.WikiPageLoader$$anonfun$loadWikiPageXml$1: java.lang.Object apply(java.lang.Object)
+com.gluckentext.WikiPageLoader$$anonfun$loadWikiPageXml$1: WikiPageLoader$$anonfun$loadWikiPageXml$1()
+com.gluckentext.WikiPageLoader$Element
+com.gluckentext.WikiPageLoader$Element: java.lang.String text()
+com.gluckentext.WikiPageLoader$Element: WikiPageLoader$Element()
+com.gluckentext.WikiPageLoader$Heading
+com.gluckentext.WikiPageLoader$Heading: scala.xml.Node mainNode
+com.gluckentext.WikiPageLoader$Heading: scala.xml.Node textNode
+com.gluckentext.WikiPageLoader$Heading: scala.xml.Node mainNode()
+com.gluckentext.WikiPageLoader$Heading: scala.xml.Node textNode()
+com.gluckentext.WikiPageLoader$Heading: java.lang.String text()
+com.gluckentext.WikiPageLoader$Heading: int level()
+com.gluckentext.WikiPageLoader$Heading: com.gluckentext.WikiPageLoader$Heading copy(scala.xml.Node,scala.xml.Node)
+com.gluckentext.WikiPageLoader$Heading: scala.xml.Node copy$default$1()
+com.gluckentext.WikiPageLoader$Heading: scala.xml.Node copy$default$2()
+com.gluckentext.WikiPageLoader$Heading: java.lang.String productPrefix()
+com.gluckentext.WikiPageLoader$Heading: int productArity()
+com.gluckentext.WikiPageLoader$Heading: java.lang.Object productElement(int)
+com.gluckentext.WikiPageLoader$Heading: scala.collection.Iterator productIterator()
+com.gluckentext.WikiPageLoader$Heading: boolean canEqual(java.lang.Object)
+com.gluckentext.WikiPageLoader$Heading: int hashCode()
+com.gluckentext.WikiPageLoader$Heading: java.lang.String toString()
+com.gluckentext.WikiPageLoader$Heading: boolean equals(java.lang.Object)
+com.gluckentext.WikiPageLoader$Heading: WikiPageLoader$Heading(scala.xml.Node,scala.xml.Node)
+com.gluckentext.WikiPageLoader$Heading$
+com.gluckentext.WikiPageLoader$Heading$: com.gluckentext.WikiPageLoader$Heading$ MODULE$
+com.gluckentext.WikiPageLoader$Heading$: void <clinit>()
+com.gluckentext.WikiPageLoader$Heading$: java.lang.String toString()
+com.gluckentext.WikiPageLoader$Heading$: com.gluckentext.WikiPageLoader$Heading apply(scala.xml.Node,scala.xml.Node)
+com.gluckentext.WikiPageLoader$Heading$: scala.Option unapply(com.gluckentext.WikiPageLoader$Heading)
+com.gluckentext.WikiPageLoader$Heading$: java.lang.Object readResolve()
+com.gluckentext.WikiPageLoader$Heading$: java.lang.Object apply(java.lang.Object,java.lang.Object)
+com.gluckentext.WikiPageLoader$Heading$: WikiPageLoader$Heading$()
+com.gluckentext.WikiPageLoader$Paragraph
+com.gluckentext.WikiPageLoader$Paragraph: scala.xml.Node node
+com.gluckentext.WikiPageLoader$Paragraph: scala.xml.Node node()
+com.gluckentext.WikiPageLoader$Paragraph: java.lang.String text()
+com.gluckentext.WikiPageLoader$Paragraph: com.gluckentext.WikiPageLoader$Paragraph copy(scala.xml.Node)
+com.gluckentext.WikiPageLoader$Paragraph: scala.xml.Node copy$default$1()
+com.gluckentext.WikiPageLoader$Paragraph: java.lang.String productPrefix()
+com.gluckentext.WikiPageLoader$Paragraph: int productArity()
+com.gluckentext.WikiPageLoader$Paragraph: java.lang.Object productElement(int)
+com.gluckentext.WikiPageLoader$Paragraph: scala.collection.Iterator productIterator()
+com.gluckentext.WikiPageLoader$Paragraph: boolean canEqual(java.lang.Object)
+com.gluckentext.WikiPageLoader$Paragraph: int hashCode()
+com.gluckentext.WikiPageLoader$Paragraph: java.lang.String toString()
+com.gluckentext.WikiPageLoader$Paragraph: boolean equals(java.lang.Object)
+com.gluckentext.WikiPageLoader$Paragraph: WikiPageLoader$Paragraph(scala.xml.Node)
+com.gluckentext.WikiPageLoader$Paragraph$
+com.gluckentext.WikiPageLoader$Paragraph$: com.gluckentext.WikiPageLoader$Paragraph$ MODULE$
+com.gluckentext.WikiPageLoader$Paragraph$: void <clinit>()
+com.gluckentext.WikiPageLoader$Paragraph$: java.lang.String toString()
+com.gluckentext.WikiPageLoader$Paragraph$: com.gluckentext.WikiPageLoader$Paragraph apply(scala.xml.Node)
+com.gluckentext.WikiPageLoader$Paragraph$: scala.Option unapply(com.gluckentext.WikiPageLoader$Paragraph)
+com.gluckentext.WikiPageLoader$Paragraph$: java.lang.Object readResolve()
+com.gluckentext.WikiPageLoader$Paragraph$: java.lang.Object apply(java.lang.Object)
+com.gluckentext.WikiPageLoader$Paragraph$: WikiPageLoader$Paragraph$()
+com.gluckentext.WikiPageLoaderTests
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$KeyWord key
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ValueWord value
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$AWord a
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$AnWord an
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$TheSameInstanceAsPhrase theSameInstanceAs
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$RegexWord regex
+com.gluckentext.WikiPageLoaderTests: org.scalactic.Explicitly$DecidedWord decided
+com.gluckentext.WikiPageLoaderTests: org.scalactic.Explicitly$DeterminedWord determined
+com.gluckentext.WikiPageLoaderTests: org.scalactic.Explicitly$TheAfterWord after
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.FullyMatchWord fullyMatch
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.StartWithWord startWith
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.EndWithWord endWith
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.IncludeWord include
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.HaveWord have
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.BeWord be
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ContainWord contain
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.NotWord not
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.LengthWord length
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.SizeWord size
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.SortedWord sorted
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.DefinedWord defined
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.NoExceptionWord noException
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ExistWord exist
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ReadableWord readable
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.WritableWord writable
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.EmptyWord empty
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.CompileWord compile
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.TypeCheckWord typeCheck
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.MatchPatternWord matchPattern
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$AllCollected$ org$scalatest$Matchers$$AllCollected$module
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$EveryCollected$ org$scalatest$Matchers$$EveryCollected$module
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$BetweenCollected$ org$scalatest$Matchers$$BetweenCollected$module
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$AtLeastCollected$ org$scalatest$Matchers$$AtLeastCollected$module
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$AtMostCollected$ org$scalatest$Matchers$$AtMostCollected$module
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$NoCollected$ org$scalatest$Matchers$$NoCollected$module
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ExactlyCollected$ org$scalatest$Matchers$$ExactlyCollected$module
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ShouldMethodHelper$ org$scalatest$Matchers$$ShouldMethodHelper$module
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$KeyWord key()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ValueWord value()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$AWord a()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$AnWord an()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$TheSameInstanceAsPhrase theSameInstanceAs()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$RegexWord regex()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$AllCollected$ org$scalatest$Matchers$$AllCollected$lzycompute()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$AllCollected$ org$scalatest$Matchers$$AllCollected()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$EveryCollected$ org$scalatest$Matchers$$EveryCollected$lzycompute()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$EveryCollected$ org$scalatest$Matchers$$EveryCollected()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$BetweenCollected$ org$scalatest$Matchers$$BetweenCollected$lzycompute()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$BetweenCollected$ org$scalatest$Matchers$$BetweenCollected()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$AtLeastCollected$ org$scalatest$Matchers$$AtLeastCollected$lzycompute()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$AtLeastCollected$ org$scalatest$Matchers$$AtLeastCollected()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$AtMostCollected$ org$scalatest$Matchers$$AtMostCollected$lzycompute()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$AtMostCollected$ org$scalatest$Matchers$$AtMostCollected()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$NoCollected$ org$scalatest$Matchers$$NoCollected$lzycompute()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$NoCollected$ org$scalatest$Matchers$$NoCollected()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ExactlyCollected$ org$scalatest$Matchers$$ExactlyCollected$lzycompute()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ExactlyCollected$ org$scalatest$Matchers$$ExactlyCollected()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ShouldMethodHelper$ org$scalatest$Matchers$$ShouldMethodHelper$lzycompute()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ShouldMethodHelper$ org$scalatest$Matchers$$ShouldMethodHelper()
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$Matchers$_setter_$key_$eq(org.scalatest.Matchers$KeyWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$Matchers$_setter_$value_$eq(org.scalatest.Matchers$ValueWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$Matchers$_setter_$a_$eq(org.scalatest.Matchers$AWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$Matchers$_setter_$an_$eq(org.scalatest.Matchers$AnWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$Matchers$_setter_$theSameInstanceAs_$eq(org.scalatest.Matchers$TheSameInstanceAsPhrase)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$Matchers$_setter_$regex_$eq(org.scalatest.Matchers$RegexWord)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$HavePropertyMatcherGenerator convertSymbolToHavePropertyMatcherGenerator(scala.Symbol)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.matchers.Matcher equal(org.scalactic.TripleEqualsSupport$Spread)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.matchers.Matcher equal(scala.runtime.Null$)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ResultOfLessThanComparison $less(java.lang.Object,scala.math.Ordering)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ResultOfGreaterThanComparison $greater(java.lang.Object,scala.math.Ordering)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ResultOfLessThanOrEqualToComparison $less$eq(java.lang.Object,scala.math.Ordering)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ResultOfGreaterThanOrEqualToComparison $greater$eq(java.lang.Object,scala.math.Ordering)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ResultOfDefinedAt definedAt(java.lang.Object)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfEvaluatingApplication evaluating(scala.Function0)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfProduceInvocation produce(scala.reflect.Manifest)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ResultOfOneOfApplication oneOf(java.lang.Object,java.lang.Object,scala.collection.Seq)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ResultOfAtLeastOneOfApplication atLeastOneOf(java.lang.Object,java.lang.Object,scala.collection.Seq)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ResultOfNoneOfApplication noneOf(java.lang.Object,java.lang.Object,scala.collection.Seq)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ResultOfTheSameElementsAsApplication theSameElementsAs(scala.collection.GenTraversable)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ResultOfTheSameElementsInOrderAsApplication theSameElementsInOrderAs(scala.collection.GenTraversable)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ResultOfOnlyApplication only(scala.collection.Seq)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ResultOfInOrderOnlyApplication inOrderOnly(java.lang.Object,java.lang.Object,scala.collection.Seq)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ResultOfAllOfApplication allOf(java.lang.Object,java.lang.Object,scala.collection.Seq)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ResultOfInOrderApplication inOrder(java.lang.Object,java.lang.Object,scala.collection.Seq)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ResultOfAtMostOneOfApplication atMostOneOf(java.lang.Object,java.lang.Object,scala.collection.Seq)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ResultOfThrownByApplication thrownBy(scala.Function0)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ResultOfMessageWordApplication message(java.lang.String)
+com.gluckentext.WikiPageLoaderTests: void doCollected(org.scalatest.Matchers$Collected,scala.collection.GenTraversable,java.lang.Object,java.lang.String,int,scala.Function1)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfCollectedAny all(java.lang.Object,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfCollectedAny all(java.util.Map,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfCollectedAny all(java.lang.String,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfCollectedAny atLeast(int,java.lang.Object,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfCollectedAny atLeast(int,java.util.Map,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfCollectedAny atLeast(int,java.lang.String,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfCollectedAny every(java.lang.Object,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfCollectedAny every(java.util.Map,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfCollectedAny every(java.lang.String,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfCollectedAny exactly(int,java.lang.Object,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfCollectedAny exactly(int,java.util.Map,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfCollectedAny exactly(int,java.lang.String,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfCollectedAny no(java.lang.Object,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfCollectedAny no(java.util.Map,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfCollectedAny no(java.lang.String,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfCollectedAny between(int,int,java.lang.Object,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfCollectedAny between(int,int,java.util.Map,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfCollectedAny between(int,int,java.lang.String,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfCollectedAny atMost(int,java.lang.Object,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfCollectedAny atMost(int,java.util.Map,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$ResultOfCollectedAny atMost(int,java.lang.String,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ResultOfATypeInvocation a(scala.reflect.Manifest)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ResultOfAnTypeInvocation an(scala.reflect.Manifest)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ResultOfTheTypeInvocation the(scala.reflect.Manifest)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$AnyShouldWrapper convertToAnyShouldWrapper(java.lang.Object)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$StringShouldWrapper convertToStringShouldWrapper(java.lang.String)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.Matchers$RegexWrapper convertToRegexWrapper(scala.util.matching.Regex)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ResultOfOfTypeInvocation of(scala.reflect.Manifest)
+com.gluckentext.WikiPageLoaderTests: org.scalactic.Explicitly$DecidedWord decided()
+com.gluckentext.WikiPageLoaderTests: org.scalactic.Explicitly$DeterminedWord determined()
+com.gluckentext.WikiPageLoaderTests: org.scalactic.Explicitly$TheAfterWord after()
+com.gluckentext.WikiPageLoaderTests: void org$scalactic$Explicitly$_setter_$decided_$eq(org.scalactic.Explicitly$DecidedWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalactic$Explicitly$_setter_$determined_$eq(org.scalactic.Explicitly$DeterminedWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalactic$Explicitly$_setter_$after_$eq(org.scalactic.Explicitly$TheAfterWord)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.FullyMatchWord fullyMatch()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.StartWithWord startWith()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.EndWithWord endWith()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.IncludeWord include()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.HaveWord have()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.BeWord be()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ContainWord contain()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.NotWord not()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.LengthWord length()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.SizeWord size()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.SortedWord sorted()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.DefinedWord defined()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.NoExceptionWord noException()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ExistWord exist()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ReadableWord readable()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.WritableWord writable()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.EmptyWord empty()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.CompileWord compile()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.TypeCheckWord typeCheck()
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.MatchPatternWord matchPattern()
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$words$MatcherWords$_setter_$fullyMatch_$eq(org.scalatest.words.FullyMatchWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$words$MatcherWords$_setter_$startWith_$eq(org.scalatest.words.StartWithWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$words$MatcherWords$_setter_$endWith_$eq(org.scalatest.words.EndWithWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$words$MatcherWords$_setter_$include_$eq(org.scalatest.words.IncludeWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$words$MatcherWords$_setter_$have_$eq(org.scalatest.words.HaveWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$words$MatcherWords$_setter_$be_$eq(org.scalatest.words.BeWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$words$MatcherWords$_setter_$contain_$eq(org.scalatest.words.ContainWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$words$MatcherWords$_setter_$not_$eq(org.scalatest.words.NotWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$words$MatcherWords$_setter_$length_$eq(org.scalatest.words.LengthWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$words$MatcherWords$_setter_$size_$eq(org.scalatest.words.SizeWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$words$MatcherWords$_setter_$sorted_$eq(org.scalatest.words.SortedWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$words$MatcherWords$_setter_$defined_$eq(org.scalatest.words.DefinedWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$words$MatcherWords$_setter_$noException_$eq(org.scalatest.words.NoExceptionWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$words$MatcherWords$_setter_$exist_$eq(org.scalatest.words.ExistWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$words$MatcherWords$_setter_$readable_$eq(org.scalatest.words.ReadableWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$words$MatcherWords$_setter_$writable_$eq(org.scalatest.words.WritableWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$words$MatcherWords$_setter_$empty_$eq(org.scalatest.words.EmptyWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$words$MatcherWords$_setter_$compile_$eq(org.scalatest.words.CompileWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$words$MatcherWords$_setter_$typeCheck_$eq(org.scalatest.words.TypeCheckWord)
+com.gluckentext.WikiPageLoaderTests: void org$scalatest$words$MatcherWords$_setter_$matchPattern_$eq(org.scalatest.words.MatchPatternWord)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.matchers.MatcherFactory1 equal(java.lang.Object)
+com.gluckentext.WikiPageLoaderTests: org.scalactic.Tolerance$PlusOrMinusWrapper convertNumericToPlusOrMinusWrapper(java.lang.Object,scala.math.Numeric)
+com.gluckentext.WikiPageLoaderTests: org.scalatest.words.ShouldVerb$StringShouldWrapperForVerb convertToStringShouldWrapper(java.lang.String)
+com.gluckentext.WikiPageLoaderTests: WikiPageLoaderTests()
+com.gluckentext.WikiPageLoaderTests$$anonfun$1
+com.gluckentext.WikiPageLoaderTests$$anonfun$1: com.gluckentext.WikiPageLoaderTests $outer
+com.gluckentext.WikiPageLoaderTests$$anonfun$1: void apply(java.lang.String)
+com.gluckentext.WikiPageLoaderTests$$anonfun$1: com.gluckentext.WikiPageLoaderTests com$gluckentext$WikiPageLoaderTests$$anonfun$$$outer()
+com.gluckentext.WikiPageLoaderTests$$anonfun$1: java.lang.Object apply(java.lang.Object)
+com.gluckentext.WikiPageLoaderTests$$anonfun$1: WikiPageLoaderTests$$anonfun$1(com.gluckentext.WikiPageLoaderTests)
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$1
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$1: com.gluckentext.WikiPageLoaderTests$$anonfun$1 $outer
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$1: java.lang.String article$1
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$1: void apply()
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$1: void apply$mcV$sp()
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$1: java.lang.Object apply()
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$1: WikiPageLoaderTests$$anonfun$1$$anonfun$apply$1(com.gluckentext.WikiPageLoaderTests$$anonfun$1,java.lang.String)
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$3
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$3: com.gluckentext.WikiPageLoaderTests$$anonfun$1 $outer
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$3: java.lang.String article$1
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$3: void apply()
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$3: void apply$mcV$sp()
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$3: java.lang.Object apply()
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$3: WikiPageLoaderTests$$anonfun$1$$anonfun$apply$3(com.gluckentext.WikiPageLoaderTests$$anonfun$1,java.lang.String)
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$4
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$4: com.gluckentext.WikiPageLoaderTests$$anonfun$1 $outer
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$4: java.lang.String article$1
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$4: void apply(char)
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$4: com.gluckentext.WikiPageLoaderTests$$anonfun$1 com$gluckentext$WikiPageLoaderTests$$anonfun$$anonfun$$$outer()
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$4: java.lang.Object apply(java.lang.Object)
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$4: WikiPageLoaderTests$$anonfun$1$$anonfun$apply$4(com.gluckentext.WikiPageLoaderTests$$anonfun$1,java.lang.String)
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$4$$anonfun$apply$2
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$4$$anonfun$apply$2: com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$4 $outer
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$4$$anonfun$apply$2: char char$1
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$4$$anonfun$apply$2: void apply()
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$4$$anonfun$apply$2: void apply$mcV$sp()
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$4$$anonfun$apply$2: java.lang.Object apply()
+com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$4$$anonfun$apply$2: WikiPageLoaderTests$$anonfun$1$$anonfun$apply$4$$anonfun$apply$2(com.gluckentext.WikiPageLoaderTests$$anonfun$1$$anonfun$apply$4,char)
+com.gluckentext.WikiPageParser
+com.gluckentext.WikiPageParser: scala.collection.Iterator parseWikiPage(scala.xml.Elem)
+com.gluckentext.WikiPageParser: scala.collection.Iterator chapterize(java.lang.String)
+com.gluckentext.WikiPageParser: java.lang.String clean(java.lang.String)
+com.gluckentext.WikiPageParser$
+com.gluckentext.WikiPageParser$: com.gluckentext.WikiPageParser$ MODULE$
+com.gluckentext.WikiPageParser$: void <clinit>()
+com.gluckentext.WikiPageParser$: java.lang.String clean(java.lang.String)
+com.gluckentext.WikiPageParser$: scala.collection.Iterator chapterize(java.lang.String)
+com.gluckentext.WikiPageParser$: scala.collection.Iterator parseWikiPage(scala.xml.Elem)
+com.gluckentext.WikiPageParser$: com.gluckentext.WikiPageParser$WikiString$2 com$gluckentext$WikiPageParser$$WikiString$1(java.lang.String)
+com.gluckentext.WikiPageParser$: java.lang.String multiline$1()
+com.gluckentext.WikiPageParser$: java.lang.String brackets$1(java.lang.String)
+com.gluckentext.WikiPageParser$: java.lang.String anyNumOfBraces$1(java.lang.String)
+com.gluckentext.WikiPageParser$: WikiPageParser$()
+com.gluckentext.WikiPageParser$$anonfun$2
+com.gluckentext.WikiPageParser$$anonfun$2: java.lang.String apply(java.lang.String)
+com.gluckentext.WikiPageParser$$anonfun$2: java.lang.Object apply(java.lang.Object)
+com.gluckentext.WikiPageParser$$anonfun$2: WikiPageParser$$anonfun$2()
+com.gluckentext.WikiPageParser$$anonfun$chapterize$1
+com.gluckentext.WikiPageParser$$anonfun$chapterize$1: com.gluckentext.Chapter apply(java.lang.String[])
+com.gluckentext.WikiPageParser$$anonfun$chapterize$1: java.lang.Object apply(java.lang.Object)
+com.gluckentext.WikiPageParser$$anonfun$chapterize$1: WikiPageParser$$anonfun$chapterize$1()
+com.gluckentext.WikiPageParser$$anonfun$parseWikiPage$1
+com.gluckentext.WikiPageParser$$anonfun$parseWikiPage$1: boolean apply(com.gluckentext.Chapter)
+com.gluckentext.WikiPageParser$$anonfun$parseWikiPage$1: java.lang.Object apply(java.lang.Object)
+com.gluckentext.WikiPageParser$$anonfun$parseWikiPage$1: WikiPageParser$$anonfun$parseWikiPage$1()
+com.gluckentext.WikiPageParser$WikiString$2
+com.gluckentext.WikiPageParser$WikiString$2: java.lang.String text
+com.gluckentext.WikiPageParser$WikiString$2: java.lang.String remove(java.lang.String)
+com.gluckentext.WikiPageParser$WikiString$2: java.lang.String removeBlocks(java.lang.String,java.lang.String)
+com.gluckentext.WikiPageParser$WikiString$2: java.lang.String removeReferences()
+com.gluckentext.WikiPageParser$WikiString$2: java.lang.String strip(java.lang.String)
+com.gluckentext.WikiPageParser$WikiString$2: java.lang.String insertSpacesAfterPunctuation()
+com.gluckentext.WikiPageParser$WikiString$2: java.lang.String removeSpacesBeforePunctuation()
+com.gluckentext.WikiPageParser$WikiString$2: java.lang.String removeBlocksAcc$1(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,int,int,char,char)
+com.gluckentext.WikiPageParser$WikiString$2: WikiPageParser$WikiString$2(java.lang.String)
+com.gluckentext.WikiPageParser$WikiString$2$$anonfun$1
+com.gluckentext.WikiPageParser$WikiString$2$$anonfun$1: char startMarkerHead$1
+com.gluckentext.WikiPageParser$WikiString$2$$anonfun$1: char endMarkerHead$1
+com.gluckentext.WikiPageParser$WikiString$2$$anonfun$1: boolean apply(char)
+com.gluckentext.WikiPageParser$WikiString$2$$anonfun$1: java.lang.Object apply(java.lang.Object)
+com.gluckentext.WikiPageParser$WikiString$2$$anonfun$1: WikiPageParser$WikiString$2$$anonfun$1(com.gluckentext.WikiPageParser$WikiString$2,char,char)
+com.gluckentext.WikiPageParserTests
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$KeyWord key
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ValueWord value
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$AWord a
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$AnWord an
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$TheSameInstanceAsPhrase theSameInstanceAs
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$RegexWord regex
+com.gluckentext.WikiPageParserTests: org.scalactic.Explicitly$DecidedWord decided
+com.gluckentext.WikiPageParserTests: org.scalactic.Explicitly$DeterminedWord determined
+com.gluckentext.WikiPageParserTests: org.scalactic.Explicitly$TheAfterWord after
+com.gluckentext.WikiPageParserTests: org.scalatest.words.FullyMatchWord fullyMatch
+com.gluckentext.WikiPageParserTests: org.scalatest.words.StartWithWord startWith
+com.gluckentext.WikiPageParserTests: org.scalatest.words.EndWithWord endWith
+com.gluckentext.WikiPageParserTests: org.scalatest.words.IncludeWord include
+com.gluckentext.WikiPageParserTests: org.scalatest.words.HaveWord have
+com.gluckentext.WikiPageParserTests: org.scalatest.words.BeWord be
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ContainWord contain
+com.gluckentext.WikiPageParserTests: org.scalatest.words.NotWord not
+com.gluckentext.WikiPageParserTests: org.scalatest.words.LengthWord length
+com.gluckentext.WikiPageParserTests: org.scalatest.words.SizeWord size
+com.gluckentext.WikiPageParserTests: org.scalatest.words.SortedWord sorted
+com.gluckentext.WikiPageParserTests: org.scalatest.words.DefinedWord defined
+com.gluckentext.WikiPageParserTests: org.scalatest.words.NoExceptionWord noException
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ExistWord exist
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ReadableWord readable
+com.gluckentext.WikiPageParserTests: org.scalatest.words.WritableWord writable
+com.gluckentext.WikiPageParserTests: org.scalatest.words.EmptyWord empty
+com.gluckentext.WikiPageParserTests: org.scalatest.words.CompileWord compile
+com.gluckentext.WikiPageParserTests: org.scalatest.words.TypeCheckWord typeCheck
+com.gluckentext.WikiPageParserTests: org.scalatest.words.MatchPatternWord matchPattern
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$AllCollected$ org$scalatest$Matchers$$AllCollected$module
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$EveryCollected$ org$scalatest$Matchers$$EveryCollected$module
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$BetweenCollected$ org$scalatest$Matchers$$BetweenCollected$module
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$AtLeastCollected$ org$scalatest$Matchers$$AtLeastCollected$module
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$AtMostCollected$ org$scalatest$Matchers$$AtMostCollected$module
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$NoCollected$ org$scalatest$Matchers$$NoCollected$module
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ExactlyCollected$ org$scalatest$Matchers$$ExactlyCollected$module
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ShouldMethodHelper$ org$scalatest$Matchers$$ShouldMethodHelper$module
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$KeyWord key()
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ValueWord value()
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$AWord a()
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$AnWord an()
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$TheSameInstanceAsPhrase theSameInstanceAs()
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$RegexWord regex()
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$AllCollected$ org$scalatest$Matchers$$AllCollected$lzycompute()
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$AllCollected$ org$scalatest$Matchers$$AllCollected()
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$EveryCollected$ org$scalatest$Matchers$$EveryCollected$lzycompute()
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$EveryCollected$ org$scalatest$Matchers$$EveryCollected()
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$BetweenCollected$ org$scalatest$Matchers$$BetweenCollected$lzycompute()
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$BetweenCollected$ org$scalatest$Matchers$$BetweenCollected()
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$AtLeastCollected$ org$scalatest$Matchers$$AtLeastCollected$lzycompute()
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$AtLeastCollected$ org$scalatest$Matchers$$AtLeastCollected()
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$AtMostCollected$ org$scalatest$Matchers$$AtMostCollected$lzycompute()
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$AtMostCollected$ org$scalatest$Matchers$$AtMostCollected()
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$NoCollected$ org$scalatest$Matchers$$NoCollected$lzycompute()
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$NoCollected$ org$scalatest$Matchers$$NoCollected()
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ExactlyCollected$ org$scalatest$Matchers$$ExactlyCollected$lzycompute()
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ExactlyCollected$ org$scalatest$Matchers$$ExactlyCollected()
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ShouldMethodHelper$ org$scalatest$Matchers$$ShouldMethodHelper$lzycompute()
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ShouldMethodHelper$ org$scalatest$Matchers$$ShouldMethodHelper()
+com.gluckentext.WikiPageParserTests: void org$scalatest$Matchers$_setter_$key_$eq(org.scalatest.Matchers$KeyWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$Matchers$_setter_$value_$eq(org.scalatest.Matchers$ValueWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$Matchers$_setter_$a_$eq(org.scalatest.Matchers$AWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$Matchers$_setter_$an_$eq(org.scalatest.Matchers$AnWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$Matchers$_setter_$theSameInstanceAs_$eq(org.scalatest.Matchers$TheSameInstanceAsPhrase)
+com.gluckentext.WikiPageParserTests: void org$scalatest$Matchers$_setter_$regex_$eq(org.scalatest.Matchers$RegexWord)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$HavePropertyMatcherGenerator convertSymbolToHavePropertyMatcherGenerator(scala.Symbol)
+com.gluckentext.WikiPageParserTests: org.scalatest.matchers.Matcher equal(org.scalactic.TripleEqualsSupport$Spread)
+com.gluckentext.WikiPageParserTests: org.scalatest.matchers.Matcher equal(scala.runtime.Null$)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ResultOfLessThanComparison $less(java.lang.Object,scala.math.Ordering)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ResultOfGreaterThanComparison $greater(java.lang.Object,scala.math.Ordering)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ResultOfLessThanOrEqualToComparison $less$eq(java.lang.Object,scala.math.Ordering)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ResultOfGreaterThanOrEqualToComparison $greater$eq(java.lang.Object,scala.math.Ordering)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ResultOfDefinedAt definedAt(java.lang.Object)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfEvaluatingApplication evaluating(scala.Function0)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfProduceInvocation produce(scala.reflect.Manifest)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ResultOfOneOfApplication oneOf(java.lang.Object,java.lang.Object,scala.collection.Seq)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ResultOfAtLeastOneOfApplication atLeastOneOf(java.lang.Object,java.lang.Object,scala.collection.Seq)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ResultOfNoneOfApplication noneOf(java.lang.Object,java.lang.Object,scala.collection.Seq)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ResultOfTheSameElementsAsApplication theSameElementsAs(scala.collection.GenTraversable)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ResultOfTheSameElementsInOrderAsApplication theSameElementsInOrderAs(scala.collection.GenTraversable)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ResultOfOnlyApplication only(scala.collection.Seq)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ResultOfInOrderOnlyApplication inOrderOnly(java.lang.Object,java.lang.Object,scala.collection.Seq)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ResultOfAllOfApplication allOf(java.lang.Object,java.lang.Object,scala.collection.Seq)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ResultOfInOrderApplication inOrder(java.lang.Object,java.lang.Object,scala.collection.Seq)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ResultOfAtMostOneOfApplication atMostOneOf(java.lang.Object,java.lang.Object,scala.collection.Seq)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ResultOfThrownByApplication thrownBy(scala.Function0)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ResultOfMessageWordApplication message(java.lang.String)
+com.gluckentext.WikiPageParserTests: void doCollected(org.scalatest.Matchers$Collected,scala.collection.GenTraversable,java.lang.Object,java.lang.String,int,scala.Function1)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfCollectedAny all(java.lang.Object,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfCollectedAny all(java.util.Map,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfCollectedAny all(java.lang.String,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfCollectedAny atLeast(int,java.lang.Object,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfCollectedAny atLeast(int,java.util.Map,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfCollectedAny atLeast(int,java.lang.String,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfCollectedAny every(java.lang.Object,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfCollectedAny every(java.util.Map,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfCollectedAny every(java.lang.String,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfCollectedAny exactly(int,java.lang.Object,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfCollectedAny exactly(int,java.util.Map,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfCollectedAny exactly(int,java.lang.String,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfCollectedAny no(java.lang.Object,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfCollectedAny no(java.util.Map,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfCollectedAny no(java.lang.String,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfCollectedAny between(int,int,java.lang.Object,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfCollectedAny between(int,int,java.util.Map,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfCollectedAny between(int,int,java.lang.String,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfCollectedAny atMost(int,java.lang.Object,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfCollectedAny atMost(int,java.util.Map,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$ResultOfCollectedAny atMost(int,java.lang.String,org.scalatest.enablers.Collecting)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ResultOfATypeInvocation a(scala.reflect.Manifest)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ResultOfAnTypeInvocation an(scala.reflect.Manifest)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ResultOfTheTypeInvocation the(scala.reflect.Manifest)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$AnyShouldWrapper convertToAnyShouldWrapper(java.lang.Object)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$StringShouldWrapper convertToStringShouldWrapper(java.lang.String)
+com.gluckentext.WikiPageParserTests: org.scalatest.Matchers$RegexWrapper convertToRegexWrapper(scala.util.matching.Regex)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ResultOfOfTypeInvocation of(scala.reflect.Manifest)
+com.gluckentext.WikiPageParserTests: org.scalactic.Explicitly$DecidedWord decided()
+com.gluckentext.WikiPageParserTests: org.scalactic.Explicitly$DeterminedWord determined()
+com.gluckentext.WikiPageParserTests: org.scalactic.Explicitly$TheAfterWord after()
+com.gluckentext.WikiPageParserTests: void org$scalactic$Explicitly$_setter_$decided_$eq(org.scalactic.Explicitly$DecidedWord)
+com.gluckentext.WikiPageParserTests: void org$scalactic$Explicitly$_setter_$determined_$eq(org.scalactic.Explicitly$DeterminedWord)
+com.gluckentext.WikiPageParserTests: void org$scalactic$Explicitly$_setter_$after_$eq(org.scalactic.Explicitly$TheAfterWord)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.FullyMatchWord fullyMatch()
+com.gluckentext.WikiPageParserTests: org.scalatest.words.StartWithWord startWith()
+com.gluckentext.WikiPageParserTests: org.scalatest.words.EndWithWord endWith()
+com.gluckentext.WikiPageParserTests: org.scalatest.words.IncludeWord include()
+com.gluckentext.WikiPageParserTests: org.scalatest.words.HaveWord have()
+com.gluckentext.WikiPageParserTests: org.scalatest.words.BeWord be()
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ContainWord contain()
+com.gluckentext.WikiPageParserTests: org.scalatest.words.NotWord not()
+com.gluckentext.WikiPageParserTests: org.scalatest.words.LengthWord length()
+com.gluckentext.WikiPageParserTests: org.scalatest.words.SizeWord size()
+com.gluckentext.WikiPageParserTests: org.scalatest.words.SortedWord sorted()
+com.gluckentext.WikiPageParserTests: org.scalatest.words.DefinedWord defined()
+com.gluckentext.WikiPageParserTests: org.scalatest.words.NoExceptionWord noException()
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ExistWord exist()
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ReadableWord readable()
+com.gluckentext.WikiPageParserTests: org.scalatest.words.WritableWord writable()
+com.gluckentext.WikiPageParserTests: org.scalatest.words.EmptyWord empty()
+com.gluckentext.WikiPageParserTests: org.scalatest.words.CompileWord compile()
+com.gluckentext.WikiPageParserTests: org.scalatest.words.TypeCheckWord typeCheck()
+com.gluckentext.WikiPageParserTests: org.scalatest.words.MatchPatternWord matchPattern()
+com.gluckentext.WikiPageParserTests: void org$scalatest$words$MatcherWords$_setter_$fullyMatch_$eq(org.scalatest.words.FullyMatchWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$words$MatcherWords$_setter_$startWith_$eq(org.scalatest.words.StartWithWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$words$MatcherWords$_setter_$endWith_$eq(org.scalatest.words.EndWithWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$words$MatcherWords$_setter_$include_$eq(org.scalatest.words.IncludeWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$words$MatcherWords$_setter_$have_$eq(org.scalatest.words.HaveWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$words$MatcherWords$_setter_$be_$eq(org.scalatest.words.BeWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$words$MatcherWords$_setter_$contain_$eq(org.scalatest.words.ContainWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$words$MatcherWords$_setter_$not_$eq(org.scalatest.words.NotWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$words$MatcherWords$_setter_$length_$eq(org.scalatest.words.LengthWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$words$MatcherWords$_setter_$size_$eq(org.scalatest.words.SizeWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$words$MatcherWords$_setter_$sorted_$eq(org.scalatest.words.SortedWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$words$MatcherWords$_setter_$defined_$eq(org.scalatest.words.DefinedWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$words$MatcherWords$_setter_$noException_$eq(org.scalatest.words.NoExceptionWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$words$MatcherWords$_setter_$exist_$eq(org.scalatest.words.ExistWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$words$MatcherWords$_setter_$readable_$eq(org.scalatest.words.ReadableWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$words$MatcherWords$_setter_$writable_$eq(org.scalatest.words.WritableWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$words$MatcherWords$_setter_$empty_$eq(org.scalatest.words.EmptyWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$words$MatcherWords$_setter_$compile_$eq(org.scalatest.words.CompileWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$words$MatcherWords$_setter_$typeCheck_$eq(org.scalatest.words.TypeCheckWord)
+com.gluckentext.WikiPageParserTests: void org$scalatest$words$MatcherWords$_setter_$matchPattern_$eq(org.scalatest.words.MatchPatternWord)
+com.gluckentext.WikiPageParserTests: org.scalatest.matchers.MatcherFactory1 equal(java.lang.Object)
+com.gluckentext.WikiPageParserTests: org.scalactic.Tolerance$PlusOrMinusWrapper convertNumericToPlusOrMinusWrapper(java.lang.Object,scala.math.Numeric)
+com.gluckentext.WikiPageParserTests: org.scalatest.words.ShouldVerb$StringShouldWrapperForVerb convertToStringShouldWrapper(java.lang.String)
+com.gluckentext.WikiPageParserTests: WikiPageParserTests()
+com.gluckentext.WikiPageParserTests$$anonfun$1
+com.gluckentext.WikiPageParserTests$$anonfun$1: com.gluckentext.WikiPageParserTests $outer
+com.gluckentext.WikiPageParserTests$$anonfun$1: void apply()
+com.gluckentext.WikiPageParserTests$$anonfun$1: void apply$mcV$sp()
+com.gluckentext.WikiPageParserTests$$anonfun$1: java.lang.Object apply()
+com.gluckentext.WikiPageParserTests$$anonfun$1: WikiPageParserTests$$anonfun$1(com.gluckentext.WikiPageParserTests)
+com.gluckentext.WikiPageParserTests$$anonfun$10
+com.gluckentext.WikiPageParserTests$$anonfun$10: com.gluckentext.WikiPageParserTests $outer
+com.gluckentext.WikiPageParserTests$$anonfun$10: void apply()
+com.gluckentext.WikiPageParserTests$$anonfun$10: void apply$mcV$sp()
+com.gluckentext.WikiPageParserTests$$anonfun$10: java.lang.Object apply()
+com.gluckentext.WikiPageParserTests$$anonfun$10: WikiPageParserTests$$anonfun$10(com.gluckentext.WikiPageParserTests)
+com.gluckentext.WikiPageParserTests$$anonfun$11
+com.gluckentext.WikiPageParserTests$$anonfun$11: com.gluckentext.WikiPageParserTests $outer
+com.gluckentext.WikiPageParserTests$$anonfun$11: void apply()
+com.gluckentext.WikiPageParserTests$$anonfun$11: void apply$mcV$sp()
+com.gluckentext.WikiPageParserTests$$anonfun$11: java.lang.Object apply()
+com.gluckentext.WikiPageParserTests$$anonfun$11: WikiPageParserTests$$anonfun$11(com.gluckentext.WikiPageParserTests)
+com.gluckentext.WikiPageParserTests$$anonfun$12
+com.gluckentext.WikiPageParserTests$$anonfun$12: com.gluckentext.WikiPageParserTests $outer
+com.gluckentext.WikiPageParserTests$$anonfun$12: void apply()
+com.gluckentext.WikiPageParserTests$$anonfun$12: void apply$mcV$sp()
+com.gluckentext.WikiPageParserTests$$anonfun$12: java.lang.Object apply()
+com.gluckentext.WikiPageParserTests$$anonfun$12: WikiPageParserTests$$anonfun$12(com.gluckentext.WikiPageParserTests)
+com.gluckentext.WikiPageParserTests$$anonfun$13
+com.gluckentext.WikiPageParserTests$$anonfun$13: com.gluckentext.WikiPageParserTests $outer
+com.gluckentext.WikiPageParserTests$$anonfun$13: void apply()
+com.gluckentext.WikiPageParserTests$$anonfun$13: void apply$mcV$sp()
+com.gluckentext.WikiPageParserTests$$anonfun$13: java.lang.Object apply()
+com.gluckentext.WikiPageParserTests$$anonfun$13: WikiPageParserTests$$anonfun$13(com.gluckentext.WikiPageParserTests)
+com.gluckentext.WikiPageParserTests$$anonfun$14
+com.gluckentext.WikiPageParserTests$$anonfun$14: com.gluckentext.WikiPageParserTests $outer
+com.gluckentext.WikiPageParserTests$$anonfun$14: void apply()
+com.gluckentext.WikiPageParserTests$$anonfun$14: void apply$mcV$sp()
+com.gluckentext.WikiPageParserTests$$anonfun$14: java.lang.Object apply()
+com.gluckentext.WikiPageParserTests$$anonfun$14: WikiPageParserTests$$anonfun$14(com.gluckentext.WikiPageParserTests)
+com.gluckentext.WikiPageParserTests$$anonfun$15
+com.gluckentext.WikiPageParserTests$$anonfun$15: com.gluckentext.WikiPageParserTests $outer
+com.gluckentext.WikiPageParserTests$$anonfun$15: void apply()
+com.gluckentext.WikiPageParserTests$$anonfun$15: void apply$mcV$sp()
+com.gluckentext.WikiPageParserTests$$anonfun$15: java.lang.Object apply()
+com.gluckentext.WikiPageParserTests$$anonfun$15: WikiPageParserTests$$anonfun$15(com.gluckentext.WikiPageParserTests)
+com.gluckentext.WikiPageParserTests$$anonfun$16
+com.gluckentext.WikiPageParserTests$$anonfun$16: com.gluckentext.WikiPageParserTests $outer
+com.gluckentext.WikiPageParserTests$$anonfun$16: void apply()
+com.gluckentext.WikiPageParserTests$$anonfun$16: void apply$mcV$sp()
+com.gluckentext.WikiPageParserTests$$anonfun$16: java.lang.Object apply()
+com.gluckentext.WikiPageParserTests$$anonfun$16: WikiPageParserTests$$anonfun$16(com.gluckentext.WikiPageParserTests)
+com.gluckentext.WikiPageParserTests$$anonfun$17
+com.gluckentext.WikiPageParserTests$$anonfun$17: com.gluckentext.WikiPageParserTests $outer
+com.gluckentext.WikiPageParserTests$$anonfun$17: void apply()
+com.gluckentext.WikiPageParserTests$$anonfun$17: void apply$mcV$sp()
+com.gluckentext.WikiPageParserTests$$anonfun$17: java.lang.Object apply()
+com.gluckentext.WikiPageParserTests$$anonfun$17: WikiPageParserTests$$anonfun$17(com.gluckentext.WikiPageParserTests)
+com.gluckentext.WikiPageParserTests$$anonfun$18
+com.gluckentext.WikiPageParserTests$$anonfun$18: com.gluckentext.WikiPageParserTests $outer
+com.gluckentext.WikiPageParserTests$$anonfun$18: void apply()
+com.gluckentext.WikiPageParserTests$$anonfun$18: void apply$mcV$sp()
+com.gluckentext.WikiPageParserTests$$anonfun$18: java.lang.Object apply()
+com.gluckentext.WikiPageParserTests$$anonfun$18: WikiPageParserTests$$anonfun$18(com.gluckentext.WikiPageParserTests)
+com.gluckentext.WikiPageParserTests$$anonfun$2
+com.gluckentext.WikiPageParserTests$$anonfun$2: com.gluckentext.WikiPageParserTests $outer
+com.gluckentext.WikiPageParserTests$$anonfun$2: void apply()
+com.gluckentext.WikiPageParserTests$$anonfun$2: void apply$mcV$sp()
+com.gluckentext.WikiPageParserTests$$anonfun$2: java.lang.Object apply()
+com.gluckentext.WikiPageParserTests$$anonfun$2: WikiPageParserTests$$anonfun$2(com.gluckentext.WikiPageParserTests)
+com.gluckentext.WikiPageParserTests$$anonfun$3
+com.gluckentext.WikiPageParserTests$$anonfun$3: com.gluckentext.WikiPageParserTests $outer
+com.gluckentext.WikiPageParserTests$$anonfun$3: void apply()
+com.gluckentext.WikiPageParserTests$$anonfun$3: void apply$mcV$sp()
+com.gluckentext.WikiPageParserTests$$anonfun$3: java.lang.Object apply()
+com.gluckentext.WikiPageParserTests$$anonfun$3: WikiPageParserTests$$anonfun$3(com.gluckentext.WikiPageParserTests)
+com.gluckentext.WikiPageParserTests$$anonfun$4
+com.gluckentext.WikiPageParserTests$$anonfun$4: com.gluckentext.WikiPageParserTests $outer
+com.gluckentext.WikiPageParserTests$$anonfun$4: void apply()
+com.gluckentext.WikiPageParserTests$$anonfun$4: void apply$mcV$sp()
+com.gluckentext.WikiPageParserTests$$anonfun$4: java.lang.Object apply()
+com.gluckentext.WikiPageParserTests$$anonfun$4: WikiPageParserTests$$anonfun$4(com.gluckentext.WikiPageParserTests)
+com.gluckentext.WikiPageParserTests$$anonfun$5
+com.gluckentext.WikiPageParserTests$$anonfun$5: com.gluckentext.WikiPageParserTests $outer
+com.gluckentext.WikiPageParserTests$$anonfun$5: void apply()
+com.gluckentext.WikiPageParserTests$$anonfun$5: void apply$mcV$sp()
+com.gluckentext.WikiPageParserTests$$anonfun$5: java.lang.Object apply()
+com.gluckentext.WikiPageParserTests$$anonfun$5: WikiPageParserTests$$anonfun$5(com.gluckentext.WikiPageParserTests)
+com.gluckentext.WikiPageParserTests$$anonfun$6
+com.gluckentext.WikiPageParserTests$$anonfun$6: com.gluckentext.WikiPageParserTests $outer
+com.gluckentext.WikiPageParserTests$$anonfun$6: void apply()
+com.gluckentext.WikiPageParserTests$$anonfun$6: void apply$mcV$sp()
+com.gluckentext.WikiPageParserTests$$anonfun$6: java.lang.Object apply()
+com.gluckentext.WikiPageParserTests$$anonfun$6: WikiPageParserTests$$anonfun$6(com.gluckentext.WikiPageParserTests)
+com.gluckentext.WikiPageParserTests$$anonfun$7
+com.gluckentext.WikiPageParserTests$$anonfun$7: com.gluckentext.WikiPageParserTests $outer
+com.gluckentext.WikiPageParserTests$$anonfun$7: void apply()
+com.gluckentext.WikiPageParserTests$$anonfun$7: void apply$mcV$sp()
+com.gluckentext.WikiPageParserTests$$anonfun$7: java.lang.Object apply()
+com.gluckentext.WikiPageParserTests$$anonfun$7: WikiPageParserTests$$anonfun$7(com.gluckentext.WikiPageParserTests)
+com.gluckentext.WikiPageParserTests$$anonfun$8
+com.gluckentext.WikiPageParserTests$$anonfun$8: com.gluckentext.WikiPageParserTests $outer
+com.gluckentext.WikiPageParserTests$$anonfun$8: void apply()
+com.gluckentext.WikiPageParserTests$$anonfun$8: void apply$mcV$sp()
+com.gluckentext.WikiPageParserTests$$anonfun$8: java.lang.Object apply()
+com.gluckentext.WikiPageParserTests$$anonfun$8: WikiPageParserTests$$anonfun$8(com.gluckentext.WikiPageParserTests)
+com.gluckentext.WikiPageParserTests$$anonfun$9
+com.gluckentext.WikiPageParserTests$$anonfun$9: com.gluckentext.WikiPageParserTests $outer
+com.gluckentext.WikiPageParserTests$$anonfun$9: void apply()
+com.gluckentext.WikiPageParserTests$$anonfun$9: void apply$mcV$sp()
+com.gluckentext.WikiPageParserTests$$anonfun$9: java.lang.Object apply()
+com.gluckentext.WikiPageParserTests$$anonfun$9: WikiPageParserTests$$anonfun$9(com.gluckentext.WikiPageParserTests)
+org.scaloid.common.ContentHelpers$$anon$2
+org.scaloid.common.SAbsoluteLayout
+org.scaloid.common.SAnalogClock
+org.scaloid.common.SAppWidgetHostView
+org.scaloid.common.SAutoCompleteTextView
+org.scaloid.common.SButton
+org.scaloid.common.SCheckBox
+org.scaloid.common.SCheckedTextView
+org.scaloid.common.SChronometer
+org.scaloid.common.SDatePicker
+org.scaloid.common.SDialerFilter
+org.scaloid.common.SDigitalClock
+org.scaloid.common.SEditText
+org.scaloid.common.SEditTextPreference
+org.scaloid.common.SExpandableListView
+org.scaloid.common.SExtractEditText
+org.scaloid.common.SFrameLayout
+org.scaloid.common.SGLSurfaceView
+org.scaloid.common.SGallery
+org.scaloid.common.SGestureOverlayView
+org.scaloid.common.SGridView
+org.scaloid.common.SHorizontalScrollView
+org.scaloid.common.SImageButton
+org.scaloid.common.SImageSwitcher
+org.scaloid.common.SImageView
+org.scaloid.common.SLinearLayout
+org.scaloid.common.SLinearLayout: org.scaloid.common.TraitViewGroup parentViewGroup
+org.scaloid.common.SLinearLayout: int VERTICAL
+org.scaloid.common.SLinearLayout: int HORIZONTAL
+org.scaloid.common.SLinearLayout: org.scaloid.common.TraitViewGroup parentVG
+org.scaloid.common.SLinearLayout: scala.collection.mutable.ArrayBuffer styles
+org.scaloid.common.SLinearLayout: int FILL_PARENT
+org.scaloid.common.SLinearLayout: int MATCH_PARENT
+org.scaloid.common.SLinearLayout: int WRAP_CONTENT
+org.scaloid.common.SLinearLayout: int NONE
+org.scaloid.common.SLinearLayout: int TEXT
+org.scaloid.common.SLinearLayout: int TEXT_CAP_CHARACTERS
+org.scaloid.common.SLinearLayout: int TEXT_CAP_WORDS
+org.scaloid.common.SLinearLayout: int TEXT_CAP_SENTENCES
+org.scaloid.common.SLinearLayout: int TEXT_AUTO_CORRECT
+org.scaloid.common.SLinearLayout: int TEXT_AUTO_COMPLETE
+org.scaloid.common.SLinearLayout: int TEXT_MULTI_LINE
+org.scaloid.common.SLinearLayout: int TEXT_IME_MULTI_LINE
+org.scaloid.common.SLinearLayout: int TEXT_NO_SUGGESTIONS
+org.scaloid.common.SLinearLayout: int TEXT_URI
+org.scaloid.common.SLinearLayout: int TEXT_EMAIL_ADDRESS
+org.scaloid.common.SLinearLayout: int TEXT_EMAIL_SUBJECT
+org.scaloid.common.SLinearLayout: int TEXT_SHORT_MESSAGE
+org.scaloid.common.SLinearLayout: int TEXT_LONG_MESSAGE
+org.scaloid.common.SLinearLayout: int TEXT_PERSON_NAME
+org.scaloid.common.SLinearLayout: int TEXT_POSTAL_ADDRESS
+org.scaloid.common.SLinearLayout: int TEXT_PASSWORD
+org.scaloid.common.SLinearLayout: org.scaloid.common.TraitViewGroup $lessinit$greater$default$2()
+org.scaloid.common.SLinearLayout: org.scaloid.common.SLinearLayout apply(android.content.Context,scala.Function1)
+org.scaloid.common.SLinearLayout: boolean baselineAligned()
+org.scaloid.common.SLinearLayout: android.widget.LinearLayout baselineAligned(boolean)
+org.scaloid.common.SLinearLayout: android.widget.LinearLayout baselineAligned_$eq(boolean)
+org.scaloid.common.SLinearLayout: int baselineAlignedChildIndex()
+org.scaloid.common.SLinearLayout: android.widget.LinearLayout baselineAlignedChildIndex(int)
+org.scaloid.common.SLinearLayout: android.widget.LinearLayout baselineAlignedChildIndex_$eq(int)
+org.scaloid.common.SLinearLayout: scala.runtime.Nothing$ gravity(org.scaloid.common.package$NoGetterForThisProperty)
+org.scaloid.common.SLinearLayout: android.widget.LinearLayout gravity(int)
+org.scaloid.common.SLinearLayout: android.widget.LinearLayout gravity_$eq(int)
+org.scaloid.common.SLinearLayout: scala.runtime.Nothing$ horizontalGravity(org.scaloid.common.package$NoGetterForThisProperty)
+org.scaloid.common.SLinearLayout: android.widget.LinearLayout horizontalGravity(int)
+org.scaloid.common.SLinearLayout: android.widget.LinearLayout horizontalGravity_$eq(int)
+org.scaloid.common.SLinearLayout: int orientation()
+org.scaloid.common.SLinearLayout: android.widget.LinearLayout orientation(int)
+org.scaloid.common.SLinearLayout: android.widget.LinearLayout orientation_$eq(int)
+org.scaloid.common.SLinearLayout: scala.runtime.Nothing$ verticalGravity(org.scaloid.common.package$NoGetterForThisProperty)
+org.scaloid.common.SLinearLayout: android.widget.LinearLayout verticalGravity(int)
+org.scaloid.common.SLinearLayout: android.widget.LinearLayout verticalGravity_$eq(int)
+org.scaloid.common.SLinearLayout: float weightSum()
+org.scaloid.common.SLinearLayout: android.widget.LinearLayout weightSum(float)
+org.scaloid.common.SLinearLayout: android.widget.LinearLayout weightSum_$eq(float)
+org.scaloid.common.SLinearLayout: org.scaloid.common.TraitViewGroup parentVG()
+org.scaloid.common.SLinearLayout: scala.collection.mutable.ArrayBuffer styles()
+org.scaloid.common.SLinearLayout: void org$scaloid$common$TraitViewGroup$_setter_$parentVG_$eq(org.scaloid.common.TraitViewGroup)
+org.scaloid.common.SLinearLayout: void org$scaloid$common$TraitViewGroup$_setter_$styles_$eq(scala.collection.mutable.ArrayBuffer)
+org.scaloid.common.SLinearLayout: android.view.View applyStyle(android.view.View)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup $plus$eq(android.view.View)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup style(scala.PartialFunction)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup addStatesFromChildren(boolean)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup addStatesFromChildren_$eq(boolean)
+org.scaloid.common.SLinearLayout: boolean alwaysDrawnWithCacheEnabled()
+org.scaloid.common.SLinearLayout: android.view.ViewGroup alwaysDrawnWithCacheEnabled(boolean)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup alwaysDrawnWithCacheEnabled_$eq(boolean)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup enableAlwaysDrawnWithCache()
+org.scaloid.common.SLinearLayout: android.view.ViewGroup disableAlwaysDrawnWithCache()
+org.scaloid.common.SLinearLayout: boolean animationCacheEnabled()
+org.scaloid.common.SLinearLayout: android.view.ViewGroup animationCacheEnabled(boolean)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup animationCacheEnabled_$eq(boolean)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup enableAnimationCache()
+org.scaloid.common.SLinearLayout: android.view.ViewGroup disableAnimationCache()
+org.scaloid.common.SLinearLayout: int childCount()
+org.scaloid.common.SLinearLayout: scala.runtime.Nothing$ clipChildren(org.scaloid.common.package$NoGetterForThisProperty)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup clipChildren(boolean)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup clipChildren_$eq(boolean)
+org.scaloid.common.SLinearLayout: scala.runtime.Nothing$ clipToPadding(org.scaloid.common.package$NoGetterForThisProperty)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup clipToPadding(boolean)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup clipToPadding_$eq(boolean)
+org.scaloid.common.SLinearLayout: int descendantFocusability()
+org.scaloid.common.SLinearLayout: android.view.ViewGroup descendantFocusability(int)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup descendantFocusability_$eq(int)
+org.scaloid.common.SLinearLayout: android.view.View focusedChild()
+org.scaloid.common.SLinearLayout: android.view.animation.LayoutAnimationController layoutAnimation()
+org.scaloid.common.SLinearLayout: android.view.ViewGroup layoutAnimation(android.view.animation.LayoutAnimationController)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup layoutAnimation_$eq(android.view.animation.LayoutAnimationController)
+org.scaloid.common.SLinearLayout: android.view.animation.Animation$AnimationListener layoutAnimationListener()
+org.scaloid.common.SLinearLayout: android.view.ViewGroup layoutAnimationListener(android.view.animation.Animation$AnimationListener)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup layoutAnimationListener_$eq(android.view.animation.Animation$AnimationListener)
+org.scaloid.common.SLinearLayout: scala.runtime.Nothing$ onHierarchyChangeListener(org.scaloid.common.package$NoGetterForThisProperty)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup onHierarchyChangeListener(android.view.ViewGroup$OnHierarchyChangeListener)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup onHierarchyChangeListener_$eq(android.view.ViewGroup$OnHierarchyChangeListener)
+org.scaloid.common.SLinearLayout: int persistentDrawingCache()
+org.scaloid.common.SLinearLayout: android.view.ViewGroup persistentDrawingCache(int)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup persistentDrawingCache_$eq(int)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup onAnimationEnd(scala.Function1)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup onAnimationEnd(scala.Function0)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup onAnimationRepeat(scala.Function1)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup onAnimationRepeat(scala.Function0)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup onAnimationStart(scala.Function1)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup onAnimationStart(scala.Function0)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup onChildViewAdded(scala.Function2)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup onChildViewAdded(scala.Function0)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup onChildViewRemoved(scala.Function2)
+org.scaloid.common.SLinearLayout: android.view.ViewGroup onChildViewRemoved(scala.Function0)
+org.scaloid.common.SLinearLayout: int FILL_PARENT()
+org.scaloid.common.SLinearLayout: int MATCH_PARENT()
+org.scaloid.common.SLinearLayout: int WRAP_CONTENT()
+org.scaloid.common.SLinearLayout: void org$scaloid$common$TraitView$_setter_$FILL_PARENT_$eq(int)
+org.scaloid.common.SLinearLayout: void org$scaloid$common$TraitView$_setter_$MATCH_PARENT_$eq(int)
+org.scaloid.common.SLinearLayout: void org$scaloid$common$TraitView$_setter_$WRAP_CONTENT_$eq(int)
+org.scaloid.common.SLinearLayout: void org$scaloid$common$TraitView$_setter_$parentViewGroup_$eq(org.scaloid.common.TraitViewGroup)
+org.scaloid.common.SLinearLayout: android.view.View find(int)
+org.scaloid.common.SLinearLayout: int uniqueId(android.app.Activity)
+org.scaloid.common.SLinearLayout: org.scaloid.common.ViewGroupLayoutParams $less$less(scala.Function1)
+org.scaloid.common.SLinearLayout: org.scaloid.common.TraitViewGroup parentViewGroupIfExists(scala.Function1)
+org.scaloid.common.SLinearLayout: org.scaloid.common.ViewGroupLayoutParams $less$less(int,int,scala.Function1)
+org.scaloid.common.SLinearLayout: android.view.View padding_$eq(int)
+org.scaloid.common.SLinearLayout: android.view.View padding(int)
+org.scaloid.common.SLinearLayout: int padding()
+org.scaloid.common.SLinearLayout: android.view.View padding(int,int,int,int)
+org.scaloid.common.SLinearLayout: android.view.animation.Animation animation()
+org.scaloid.common.SLinearLayout: android.view.View animation(android.view.animation.Animation)
+org.scaloid.common.SLinearLayout: android.view.View animation_$eq(android.view.animation.Animation)
+org.scaloid.common.SLinearLayout: android.os.IBinder applicationWindowToken()
+org.scaloid.common.SLinearLayout: android.graphics.drawable.Drawable background()
+org.scaloid.common.SLinearLayout: scala.runtime.Nothing$ backgroundColor(org.scaloid.common.package$NoGetterForThisProperty)
+org.scaloid.common.SLinearLayout: android.view.View backgroundColor(int)
+org.scaloid.common.SLinearLayout: android.view.View backgroundColor_$eq(int)
+org.scaloid.common.SLinearLayout: scala.runtime.Nothing$ backgroundDrawable(org.scaloid.common.package$NoGetterForThisProperty)
+org.scaloid.common.SLinearLayout: android.view.View backgroundDrawable(android.graphics.drawable.Drawable)
+org.scaloid.common.SLinearLayout: android.view.View backgroundDrawable_$eq(android.graphics.drawable.Drawable)
+org.scaloid.common.SLinearLayout: scala.runtime.Nothing$ backgroundResource(org.scaloid.common.package$NoGetterForThisProperty)
+org.scaloid.common.SLinearLayout: android.view.View backgroundResource(int)
+org.scaloid.common.SLinearLayout: android.view.View backgroundResource_$eq(int)
+org.scaloid.common.SLinearLayout: int baseline()
+org.scaloid.common.SLinearLayout: int bottom()
+org.scaloid.common.SLinearLayout: boolean clickable()
+org.scaloid.common.SLinearLayout: android.view.View clickable(boolean)
+org.scaloid.common.SLinearLayout: android.view.View clickable_$eq(boolean)
+org.scaloid.common.SLinearLayout: java.lang.CharSequence contentDescription()
+org.scaloid.common.SLinearLayout: android.view.View contentDescription(java.lang.CharSequence)
+org.scaloid.common.SLinearLayout: android.view.View contentDescription_$eq(java.lang.CharSequence)
+org.scaloid.common.SLinearLayout: android.content.Context context()
+org.scaloid.common.SLinearLayout: int[] drawableState()
+org.scaloid.common.SLinearLayout: android.graphics.Bitmap drawingCache()
+org.scaloid.common.SLinearLayout: int drawingCacheBackgroundColor()
+org.scaloid.common.SLinearLayout: android.view.View drawingCacheBackgroundColor(int)
+org.scaloid.common.SLinearLayout: android.view.View drawingCacheBackgroundColor_$eq(int)
+org.scaloid.common.SLinearLayout: boolean drawingCacheEnabled()
+org.scaloid.common.SLinearLayout: android.view.View drawingCacheEnabled(boolean)
+org.scaloid.common.SLinearLayout: android.view.View drawingCacheEnabled_$eq(boolean)
+org.scaloid.common.SLinearLayout: android.view.View enableDrawingCache()
+org.scaloid.common.SLinearLayout: android.view.View disableDrawingCache()
+org.scaloid.common.SLinearLayout: int drawingCacheQuality()
+org.scaloid.common.SLinearLayout: android.view.View drawingCacheQuality(int)
+org.scaloid.common.SLinearLayout: android.view.View drawingCacheQuality_$eq(int)
+org.scaloid.common.SLinearLayout: long drawingTime()
+org.scaloid.common.SLinearLayout: boolean duplicateParentStateEnabled()
+org.scaloid.common.SLinearLayout: android.view.View duplicateParentStateEnabled(boolean)
+org.scaloid.common.SLinearLayout: android.view.View duplicateParentStateEnabled_$eq(boolean)
+org.scaloid.common.SLinearLayout: android.view.View enableDuplicateParentState()
+org.scaloid.common.SLinearLayout: android.view.View disableDuplicateParentState()
+org.scaloid.common.SLinearLayout: boolean enabled()
+org.scaloid.common.SLinearLayout: android.view.View enabled(boolean)
+org.scaloid.common.SLinearLayout: android.view.View enabled_$eq(boolean)
+org.scaloid.common.SLinearLayout: android.view.View enable()
+org.scaloid.common.SLinearLayout: android.view.View disable()
+org.scaloid.common.SLinearLayout: scala.runtime.Nothing$ fadingEdgeLength(org.scaloid.common.package$NoGetterForThisProperty)
+org.scaloid.common.SLinearLayout: android.view.View fadingEdgeLength(int)
+org.scaloid.common.SLinearLayout: android.view.View fadingEdgeLength_$eq(int)
+org.scaloid.common.SLinearLayout: boolean filterTouchesWhenObscured()
+org.scaloid.common.SLinearLayout: android.view.View filterTouchesWhenObscured(boolean)
+org.scaloid.common.SLinearLayout: android.view.View filterTouchesWhenObscured_$eq(boolean)
+org.scaloid.common.SLinearLayout: boolean focusable()
+org.scaloid.common.SLinearLayout: android.view.View focusable(boolean)
+org.scaloid.common.SLinearLayout: android.view.View focusable_$eq(boolean)
+org.scaloid.common.SLinearLayout: boolean focusableInTouchMode()
+org.scaloid.common.SLinearLayout: android.view.View focusableInTouchMode(boolean)
+org.scaloid.common.SLinearLayout: android.view.View focusableInTouchMode_$eq(boolean)
+org.scaloid.common.SLinearLayout: android.os.Handler handler()
+org.scaloid.common.SLinearLayout: boolean hapticFeedbackEnabled()
+org.scaloid.common.SLinearLayout: android.view.View hapticFeedbackEnabled(boolean)
+org.scaloid.common.SLinearLayout: android.view.View hapticFeedbackEnabled_$eq(boolean)
+org.scaloid.common.SLinearLayout: android.view.View enableHapticFeedback()
+org.scaloid.common.SLinearLayout: android.view.View disableHapticFeedback()
+org.scaloid.common.SLinearLayout: int height()
+org.scaloid.common.SLinearLayout: boolean horizontalFadingEdgeEnabled()
+org.scaloid.common.SLinearLayout: android.view.View horizontalFadingEdgeEnabled(boolean)
+org.scaloid.common.SLinearLayout: android.view.View horizontalFadingEdgeEnabled_$eq(boolean)
+org.scaloid.common.SLinearLayout: android.view.View enableHorizontalFadingEdge()
+org.scaloid.common.SLinearLayout: android.view.View disableHorizontalFadingEdge()
+org.scaloid.common.SLinearLayout: int horizontalFadingEdgeLength()
+org.scaloid.common.SLinearLayout: boolean horizontalScrollBarEnabled()
+org.scaloid.common.SLinearLayout: android.view.View horizontalScrollBarEnabled(boolean)
+org.scaloid.common.SLinearLayout: android.view.View horizontalScrollBarEnabled_$eq(boolean)
+org.scaloid.common.SLinearLayout: android.view.View enableHorizontalScrollBar()
+org.scaloid.common.SLinearLayout: android.view.View disableHorizontalScrollBar()
+org.scaloid.common.SLinearLayout: int id()
+org.scaloid.common.SLinearLayout: android.view.View id(int)
+org.scaloid.common.SLinearLayout: android.view.View id_$eq(int)
+org.scaloid.common.SLinearLayout: boolean keepScreenOn()
+org.scaloid.common.SLinearLayout: android.view.View keepScreenOn(boolean)
+org.scaloid.common.SLinearLayout: android.view.View keepScreenOn_$eq(boolean)
+org.scaloid.common.SLinearLayout: android.view.KeyEvent$DispatcherState keyDispatcherState()
+org.scaloid.common.SLinearLayout: android.view.ViewGroup$LayoutParams layoutParams()
+org.scaloid.common.SLinearLayout: android.view.View layoutParams(android.view.ViewGroup$LayoutParams)
+org.scaloid.common.SLinearLayout: android.view.View layoutParams_$eq(android.view.ViewGroup$LayoutParams)
+org.scaloid.common.SLinearLayout: int left()
+org.scaloid.common.SLinearLayout: boolean longClickable()
+org.scaloid.common.SLinearLayout: android.view.View longClickable(boolean)
+org.scaloid.common.SLinearLayout: android.view.View longClickable_$eq(boolean)
+org.scaloid.common.SLinearLayout: int measuredHeight()
+org.scaloid.common.SLinearLayout: int measuredWidth()
+org.scaloid.common.SLinearLayout: scala.runtime.Nothing$ minimumHeight(org.scaloid.common.package$NoGetterForThisProperty)
+org.scaloid.common.SLinearLayout: android.view.View minimumHeight(int)
+org.scaloid.common.SLinearLayout: android.view.View minimumHeight_$eq(int)
+org.scaloid.common.SLinearLayout: scala.runtime.Nothing$ minimumWidth(org.scaloid.common.package$NoGetterForThisProperty)
+org.scaloid.common.SLinearLayout: android.view.View minimumWidth(int)
+org.scaloid.common.SLinearLayout: android.view.View minimumWidth_$eq(int)
+org.scaloid.common.SLinearLayout: int nextFocusDownId()
+org.scaloid.common.SLinearLayout: android.view.View nextFocusDownId(int)
+org.scaloid.common.SLinearLayout: android.view.View nextFocusDownId_$eq(int)
+org.scaloid.common.SLinearLayout: int nextFocusLeftId()
+org.scaloid.common.SLinearLayout: android.view.View nextFocusLeftId(int)
+org.scaloid.common.SLinearLayout: android.view.View nextFocusLeftId_$eq(int)
+org.scaloid.common.SLinearLayout: int nextFocusRightId()
+org.scaloid.common.SLinearLayout: android.view.View nextFocusRightId(int)
+org.scaloid.common.SLinearLayout: android.view.View nextFocusRightId_$eq(int)
+org.scaloid.common.SLinearLayout: int nextFocusUpId()
+org.scaloid.common.SLinearLayout: android.view.View nextFocusUpId(int)
+org.scaloid.common.SLinearLayout: android.view.View nextFocusUpId_$eq(int)
+org.scaloid.common.SLinearLayout: scala.runtime.Nothing$ onClickListener(org.scaloid.common.package$NoGetterForThisProperty)
+org.scaloid.common.SLinearLayout: android.view.View onClickListener(android.view.View$OnClickListener)
+org.scaloid.common.SLinearLayout: android.view.View onClickListener_$eq(android.view.View$OnClickListener)
+org.scaloid.common.SLinearLayout: scala.runtime.Nothing$ onCreateContextMenuListener(org.scaloid.common.package$NoGetterForThisProperty)
+org.scaloid.common.SLinearLayout: android.view.View onCreateContextMenuListener(android.view.View$OnCreateContextMenuListener)
+org.scaloid.common.SLinearLayout: android.view.View onCreateContextMenuListener_$eq(android.view.View$OnCreateContextMenuListener)
+org.scaloid.common.SLinearLayout: android.view.View$OnFocusChangeListener onFocusChangeListener()
+org.scaloid.common.SLinearLayout: android.view.View onFocusChangeListener(android.view.View$OnFocusChangeListener)
+org.scaloid.common.SLinearLayout: android.view.View onFocusChangeListener_$eq(android.view.View$OnFocusChangeListener)
+org.scaloid.common.SLinearLayout: scala.runtime.Nothing$ onKeyListener(org.scaloid.common.package$NoGetterForThisProperty)
+org.scaloid.common.SLinearLayout: android.view.View onKeyListener(android.view.View$OnKeyListener)
+org.scaloid.common.SLinearLayout: android.view.View onKeyListener_$eq(android.view.View$OnKeyListener)
+org.scaloid.common.SLinearLayout: scala.runtime.Nothing$ onLongClickListener(org.scaloid.common.package$NoGetterForThisProperty)
+org.scaloid.common.SLinearLayout: android.view.View onLongClickListener(android.view.View$OnLongClickListener)
+org.scaloid.common.SLinearLayout: android.view.View onLongClickListener_$eq(android.view.View$OnLongClickListener)
+org.scaloid.common.SLinearLayout: scala.runtime.Nothing$ onTouchListener(org.scaloid.common.package$NoGetterForThisProperty)
+org.scaloid.common.SLinearLayout: android.view.View onTouchListener(android.view.View$OnTouchListener)
+org.scaloid.common.SLinearLayout: android.view.View onTouchListener_$eq(android.view.View$OnTouchListener)
+org.scaloid.common.SLinearLayout: int overScrollMode()
+org.scaloid.common.SLinearLayout: android.view.View overScrollMode(int)
+org.scaloid.common.SLinearLayout: android.view.View overScrollMode_$eq(int)
+org.scaloid.common.SLinearLayout: int paddingBottom()
+org.scaloid.common.SLinearLayout: int paddingLeft()
+org.scaloid.common.SLinearLayout: int paddingRight()
+org.scaloid.common.SLinearLayout: int paddingTop()
+org.scaloid.common.SLinearLayout: android.view.ViewParent parent()
+org.scaloid.common.SLinearLayout: boolean pressed()
+org.scaloid.common.SLinearLayout: android.view.View pressed(boolean)
+org.scaloid.common.SLinearLayout: android.view.View pressed_$eq(boolean)
+org.scaloid.common.SLinearLayout: android.content.res.Resources resources()
+org.scaloid.common.SLinearLayout: int right()
+org.scaloid.common.SLinearLayout: android.view.View rootView()
+org.scaloid.common.SLinearLayout: boolean saveEnabled()
+org.scaloid.common.SLinearLayout: android.view.View saveEnabled(boolean)
+org.scaloid.common.SLinearLayout: android.view.View saveEnabled_$eq(boolean)
+org.scaloid.common.SLinearLayout: android.view.View enableSave()
+org.scaloid.common.SLinearLayout: android.view.View disableSave()
+org.scaloid.common.SLinearLayout: int scrollBarStyle()
+org.scaloid.common.SLinearLayout: android.view.View scrollBarStyle(int)
+org.scaloid.common.SLinearLayout: android.view.View scrollBarStyle_$eq(int)
+org.scaloid.common.SLinearLayout: scala.runtime.Nothing$ scrollContainer(org.scaloid.common.package$NoGetterForThisProperty)
+org.scaloid.common.SLinearLayout: android.view.View scrollContainer(boolean)
+org.scaloid.common.SLinearLayout: android.view.View scrollContainer_$eq(boolean)
+org.scaloid.common.SLinearLayout: int scrollX()
+org.scaloid.common.SLinearLayout: int scrollY()
+org.scaloid.common.SLinearLayout: boolean scrollbarFadingEnabled()
+org.scaloid.common.SLinearLayout: android.view.View scrollbarFadingEnabled(boolean)
+org.scaloid.common.SLinearLayout: android.view.View scrollbarFadingEnabled_$eq(boolean)
+org.scaloid.common.SLinearLayout: android.view.View enableScrollbarFading()
+org.scaloid.common.SLinearLayout: android.view.View disableScrollbarFading()
+org.scaloid.common.SLinearLayout: boolean selected()
+org.scaloid.common.SLinearLayout: android.view.View selected(boolean)
+org.scaloid.common.SLinearLayout: android.view.View selected_$eq(boolean)
+org.scaloid.common.SLinearLayout: int solidColor()
+org.scaloid.common.SLinearLayout: boolean soundEffectsEnabled()
+org.scaloid.common.SLinearLayout: android.view.View soundEffectsEnabled(boolean)
+org.scaloid.common.SLinearLayout: android.view.View soundEffectsEnabled_$eq(boolean)
+org.scaloid.common.SLinearLayout: android.view.View enableSoundEffects()
+org.scaloid.common.SLinearLayout: android.view.View disableSoundEffects()
+org.scaloid.common.SLinearLayout: java.lang.Object tag()
+org.scaloid.common.SLinearLayout: android.view.View tag(java.lang.Object)
+org.scaloid.common.SLinearLayout: android.view.View tag_$eq(java.lang.Object)
+org.scaloid.common.SLinearLayout: int top()
+org.scaloid.common.SLinearLayout: android.view.TouchDelegate touchDelegate()
+org.scaloid.common.SLinearLayout: android.view.View touchDelegate(android.view.TouchDelegate)
+org.scaloid.common.SLinearLayout: android.view.View touchDelegate_$eq(android.view.TouchDelegate)
+org.scaloid.common.SLinearLayout: java.util.ArrayList touchables()
+org.scaloid.common.SLinearLayout: boolean verticalFadingEdgeEnabled()
+org.scaloid.common.SLinearLayout: android.view.View verticalFadingEdgeEnabled(boolean)
+org.scaloid.common.SLinearLayout: android.view.View verticalFadingEdgeEnabled_$eq(boolean)
+org.scaloid.common.SLinearLayout: android.view.View enableVerticalFadingEdge()
+org.scaloid.common.SLinearLayout: android.view.View disableVerticalFadingEdge()
+org.scaloid.common.SLinearLayout: int verticalFadingEdgeLength()
+org.scaloid.common.SLinearLayout: boolean verticalScrollBarEnabled()
+org.scaloid.common.SLinearLayout: android.view.View verticalScrollBarEnabled(boolean)
+org.scaloid.common.SLinearLayout: android.view.View verticalScrollBarEnabled_$eq(boolean)
+org.scaloid.common.SLinearLayout: android.view.View enableVerticalScrollBar()
+org.scaloid.common.SLinearLayout: android.view.View disableVerticalScrollBar()
+org.scaloid.common.SLinearLayout: int verticalScrollbarWidth()
+org.scaloid.common.SLinearLayout: android.view.ViewTreeObserver viewTreeObserver()
+org.scaloid.common.SLinearLayout: int visibility()
+org.scaloid.common.SLinearLayout: android.view.View visibility(int)
+org.scaloid.common.SLinearLayout: android.view.View visibility_$eq(int)
+org.scaloid.common.SLinearLayout: int width()
+org.scaloid.common.SLinearLayout: android.view.View willNotCacheDrawing(boolean)
+org.scaloid.common.SLinearLayout: android.view.View willNotCacheDrawing_$eq(boolean)
+org.scaloid.common.SLinearLayout: android.view.View willNotDraw(boolean)
+org.scaloid.common.SLinearLayout: android.view.View willNotDraw_$eq(boolean)
+org.scaloid.common.SLinearLayout: android.os.IBinder windowToken()
+org.scaloid.common.SLinearLayout: int windowVisibility()
+org.scaloid.common.SLinearLayout: android.view.View onClick(scala.Function1)
+org.scaloid.common.SLinearLayout: android.view.View onClick(scala.Function0)
+org.scaloid.common.SLinearLayout: android.view.View onCreateContextMenu(scala.Function3)
+org.scaloid.common.SLinearLayout: android.view.View onCreateContextMenu(scala.Function0)
+org.scaloid.common.SLinearLayout: android.view.View onFocusChange(scala.Function2)
+org.scaloid.common.SLinearLayout: android.view.View onFocusChange(scala.Function0)
+org.scaloid.common.SLinearLayout: android.view.View onKey(scala.Function3)
+org.scaloid.common.SLinearLayout: android.view.View onKey(scala.Function0)
+org.scaloid.common.SLinearLayout: android.view.View onLongClick(scala.Function1)
+org.scaloid.common.SLinearLayout: android.view.View onLongClick(scala.Function0)
+org.scaloid.common.SLinearLayout: android.view.View onTouch(scala.Function2)
+org.scaloid.common.SLinearLayout: android.view.View onTouch(scala.Function0)
+org.scaloid.common.SLinearLayout: scala.Function1 parentViewGroupIfExists$default$1()
+org.scaloid.common.SLinearLayout: android.view.View onPressAndHold(int,scala.Function0)
+org.scaloid.common.SLinearLayout: int NONE()
+org.scaloid.common.SLinearLayout: int TEXT()
+org.scaloid.common.SLinearLayout: int TEXT_CAP_CHARACTERS()
+org.scaloid.common.SLinearLayout: int TEXT_CAP_WORDS()
+org.scaloid.common.SLinearLayout: int TEXT_CAP_SENTENCES()
+org.scaloid.common.SLinearLayout: int TEXT_AUTO_CORRECT()
+org.scaloid.common.SLinearLayout: int TEXT_AUTO_COMPLETE()
+org.scaloid.common.SLinearLayout: int TEXT_MULTI_LINE()
+org.scaloid.common.SLinearLayout: int TEXT_IME_MULTI_LINE()
+org.scaloid.common.SLinearLayout: int TEXT_NO_SUGGESTIONS()
+org.scaloid.common.SLinearLayout: int TEXT_URI()
+org.scaloid.common.SLinearLayout: int TEXT_EMAIL_ADDRESS()
+org.scaloid.common.SLinearLayout: int TEXT_EMAIL_SUBJECT()
+org.scaloid.common.SLinearLayout: int TEXT_SHORT_MESSAGE()
+org.scaloid.common.SLinearLayout: int TEXT_LONG_MESSAGE()
+org.scaloid.common.SLinearLayout: int TEXT_PERSON_NAME()
+org.scaloid.common.SLinearLayout: int TEXT_POSTAL_ADDRESS()
+org.scaloid.common.SLinearLayout: int TEXT_PASSWORD()
+org.scaloid.common.SLinearLayout: void org$scaloid$common$ConstantsSupport$_setter_$NONE_$eq(int)
+org.scaloid.common.SLinearLayout: void org$scaloid$common$ConstantsSupport$_setter_$TEXT_$eq(int)
+org.scaloid.common.SLinearLayout: void org$scaloid$common$ConstantsSupport$_setter_$TEXT_CAP_CHARACTERS_$eq(int)
+org.scaloid.common.SLinearLayout: void org$scaloid$common$ConstantsSupport$_setter_$TEXT_CAP_WORDS_$eq(int)
+org.scaloid.common.SLinearLayout: void org$scaloid$common$ConstantsSupport$_setter_$TEXT_CAP_SENTENCES_$eq(int)
+org.scaloid.common.SLinearLayout: void org$scaloid$common$ConstantsSupport$_setter_$TEXT_AUTO_CORRECT_$eq(int)
+org.scaloid.common.SLinearLayout: void org$scaloid$common$ConstantsSupport$_setter_$TEXT_AUTO_COMPLETE_$eq(int)
+org.scaloid.common.SLinearLayout: void org$scaloid$common$ConstantsSupport$_setter_$TEXT_MULTI_LINE_$eq(int)
+org.scaloid.common.SLinearLayout: void org$scaloid$common$ConstantsSupport$_setter_$TEXT_IME_MULTI_LINE_$eq(int)
+org.scaloid.common.SLinearLayout: void org$scaloid$common$ConstantsSupport$_setter_$TEXT_NO_SUGGESTIONS_$eq(int)
+org.scaloid.common.SLinearLayout: void org$scaloid$common$ConstantsSupport$_setter_$TEXT_URI_$eq(int)
+org.scaloid.common.SLinearLayout: void org$scaloid$common$ConstantsSupport$_setter_$TEXT_EMAIL_ADDRESS_$eq(int)
+org.scaloid.common.SLinearLayout: void org$scaloid$common$ConstantsSupport$_setter_$TEXT_EMAIL_SUBJECT_$eq(int)
+org.scaloid.common.SLinearLayout: void org$scaloid$common$ConstantsSupport$_setter_$TEXT_SHORT_MESSAGE_$eq(int)
+org.scaloid.common.SLinearLayout: void org$scaloid$common$ConstantsSupport$_setter_$TEXT_LONG_MESSAGE_$eq(int)
+org.scaloid.common.SLinearLayout: void org$scaloid$common$ConstantsSupport$_setter_$TEXT_PERSON_NAME_$eq(int)
+org.scaloid.common.SLinearLayout: void org$scaloid$common$ConstantsSupport$_setter_$TEXT_POSTAL_ADDRESS_$eq(int)
+org.scaloid.common.SLinearLayout: void org$scaloid$common$ConstantsSupport$_setter_$TEXT_PASSWORD_$eq(int)
+org.scaloid.common.SLinearLayout: org.scaloid.common.SLinearLayout basis()
+org.scaloid.common.SLinearLayout: org.scaloid.common.TraitViewGroup parentViewGroup()
+org.scaloid.common.SLinearLayout: int VERTICAL()
+org.scaloid.common.SLinearLayout: int HORIZONTAL()
+org.scaloid.common.SLinearLayout: org.scaloid.common.SLinearLayout$LayoutParams defaultLayoutParams(android.view.View)
+org.scaloid.common.SLinearLayout: android.view.View basis()
+org.scaloid.common.SLinearLayout: SLinearLayout(android.content.Context,org.scaloid.common.TraitViewGroup)
+org.scaloid.common.SListView
+org.scaloid.common.SMediaController
+org.scaloid.common.SMultiAutoCompleteTextView
+org.scaloid.common.SPreference
+org.scaloid.common.SProgressBar
+org.scaloid.common.SQuickContactBadge
+org.scaloid.common.SRadioButton
+org.scaloid.common.SRadioGroup
+org.scaloid.common.SRatingBar
+org.scaloid.common.SRelativeLayout
+org.scaloid.common.SScrollView
+org.scaloid.common.SSeekBar
+org.scaloid.common.SSpinner
+org.scaloid.common.SSurfaceView
+org.scaloid.common.STabHost
+org.scaloid.common.STabWidget
+org.scaloid.common.STableLayout
+org.scaloid.common.STableRow
+org.scaloid.common.STextSwitcher
+org.scaloid.common.STextView
+org.scaloid.common.STimePicker
+org.scaloid.common.SToggleButton
+org.scaloid.common.STwoLineListItem
+org.scaloid.common.SVerticalLayout
+org.scaloid.common.SVerticalLayout: org.scaloid.common.TraitViewGroup $lessinit$greater$default$2()
+org.scaloid.common.SVerticalLayout: org.scaloid.common.SVerticalLayout apply(android.content.Context,scala.Function1)
+org.scaloid.common.SVerticalLayout: SVerticalLayout(android.content.Context,org.scaloid.common.TraitViewGroup)
+org.scaloid.common.SVideoView
+org.scaloid.common.SView
+org.scaloid.common.SViewAnimator
+org.scaloid.common.SViewFlipper
+org.scaloid.common.SViewSwitcher
+org.scaloid.common.SWebView
+org.scaloid.common.SZoomButton
+org.scaloid.common.SZoomControls
+scala.Function0
+scala.Function1
+scala.Function2
+scala.Option
+scala.Product
+scala.Tuple2
+scala.collection.Seq
+scala.collection.SeqLike
+scala.collection.SeqLike: scala.collection.Seq thisCollection()
+scala.collection.SeqLike: scala.collection.Seq toCollection(java.lang.Object)
+scala.collection.SeqLike: int length()
+scala.collection.SeqLike: java.lang.Object apply(int)
+scala.collection.SeqLike: scala.collection.parallel.Combiner parCombiner()
+scala.collection.SeqLike: int lengthCompare(int)
+scala.collection.SeqLike: boolean isEmpty()
+scala.collection.SeqLike: int size()
+scala.collection.SeqLike: int segmentLength(scala.Function1,int)
+scala.collection.SeqLike: int indexWhere(scala.Function1,int)
+scala.collection.SeqLike: int lastIndexWhere(scala.Function1,int)
+scala.collection.SeqLike: scala.collection.Iterator permutations()
+scala.collection.SeqLike: scala.collection.Iterator combinations(int)
+scala.collection.SeqLike: java.lang.Object reverse()
+scala.collection.SeqLike: java.lang.Object reverseMap(scala.Function1,scala.collection.generic.CanBuildFrom)
+scala.collection.SeqLike: scala.collection.Iterator reverseIterator()
+scala.collection.SeqLike: boolean startsWith(scala.collection.GenSeq,int)
+scala.collection.SeqLike: boolean endsWith(scala.collection.GenSeq)
+scala.collection.SeqLike: int indexOfSlice(scala.collection.GenSeq)
+scala.collection.SeqLike: int indexOfSlice(scala.collection.GenSeq,int)
+scala.collection.SeqLike: int lastIndexOfSlice(scala.collection.GenSeq)
+scala.collection.SeqLike: int lastIndexOfSlice(scala.collection.GenSeq,int)
+scala.collection.SeqLike: boolean containsSlice(scala.collection.GenSeq)
+scala.collection.SeqLike: boolean contains(java.lang.Object)
+scala.collection.SeqLike: java.lang.Object union(scala.collection.GenSeq,scala.collection.generic.CanBuildFrom)
+scala.collection.SeqLike: java.lang.Object diff(scala.collection.GenSeq)
+scala.collection.SeqLike: java.lang.Object intersect(scala.collection.GenSeq)
+scala.collection.SeqLike: java.lang.Object distinct()
+scala.collection.SeqLike: java.lang.Object patch(int,scala.collection.GenSeq,int,scala.collection.generic.CanBuildFrom)
+scala.collection.SeqLike: java.lang.Object updated(int,java.lang.Object,scala.collection.generic.CanBuildFrom)
+scala.collection.SeqLike: java.lang.Object $plus$colon(java.lang.Object,scala.collection.generic.CanBuildFrom)
+scala.collection.SeqLike: java.lang.Object $colon$plus(java.lang.Object,scala.collection.generic.CanBuildFrom)
+scala.collection.SeqLike: java.lang.Object padTo(int,java.lang.Object,scala.collection.generic.CanBuildFrom)
+scala.collection.SeqLike: boolean corresponds(scala.collection.GenSeq,scala.Function2)
+scala.collection.SeqLike: java.lang.Object sortWith(scala.Function2)
+scala.collection.SeqLike: java.lang.Object sortBy(scala.Function1,scala.math.Ordering)
+scala.collection.SeqLike: java.lang.Object sorted(scala.math.Ordering)
+scala.collection.SeqLike: scala.collection.Seq toSeq()
+scala.collection.SeqLike: scala.collection.immutable.Range indices()
+scala.collection.SeqLike: scala.collection.SeqView view()
+scala.collection.SeqLike: scala.collection.SeqView view(int,int)
+scala.collection.SeqLike: java.lang.String toString()
+scala.collection.immutable.List
+scala.collection.immutable.Map
+scala.collection.immutable.Seq
+scala.collection.immutable.Set
+scala.collection.immutable.Vector
+scala.runtime.AbstractFunction0: boolean apply$mcZ$sp()
+scala.runtime.AbstractFunction0: byte apply$mcB$sp()
+scala.runtime.AbstractFunction0: char apply$mcC$sp()
+scala.runtime.AbstractFunction0: double apply$mcD$sp()
+scala.runtime.AbstractFunction0: float apply$mcF$sp()
+scala.runtime.AbstractFunction0: int apply$mcI$sp()
+scala.runtime.AbstractFunction0: long apply$mcJ$sp()
+scala.runtime.AbstractFunction0: short apply$mcS$sp()
+scala.runtime.AbstractFunction0: void apply$mcV$sp()
+scala.runtime.AbstractFunction0: java.lang.String toString()
+scala.runtime.AbstractFunction0: AbstractFunction0()
+scala.runtime.AbstractFunction0$mcV$sp: AbstractFunction0$mcV$sp()
+scala.runtime.AbstractFunction1: boolean apply$mcZD$sp(double)
+scala.runtime.AbstractFunction1: double apply$mcDD$sp(double)
+scala.runtime.AbstractFunction1: float apply$mcFD$sp(double)
+scala.runtime.AbstractFunction1: int apply$mcID$sp(double)
+scala.runtime.AbstractFunction1: long apply$mcJD$sp(double)
+scala.runtime.AbstractFunction1: void apply$mcVD$sp(double)
+scala.runtime.AbstractFunction1: boolean apply$mcZF$sp(float)
+scala.runtime.AbstractFunction1: double apply$mcDF$sp(float)
+scala.runtime.AbstractFunction1: float apply$mcFF$sp(float)
+scala.runtime.AbstractFunction1: int apply$mcIF$sp(float)
+scala.runtime.AbstractFunction1: long apply$mcJF$sp(float)
+scala.runtime.AbstractFunction1: void apply$mcVF$sp(float)
+scala.runtime.AbstractFunction1: boolean apply$mcZI$sp(int)
+scala.runtime.AbstractFunction1: double apply$mcDI$sp(int)
+scala.runtime.AbstractFunction1: float apply$mcFI$sp(int)
+scala.runtime.AbstractFunction1: int apply$mcII$sp(int)
+scala.runtime.AbstractFunction1: long apply$mcJI$sp(int)
+scala.runtime.AbstractFunction1: void apply$mcVI$sp(int)
+scala.runtime.AbstractFunction1: boolean apply$mcZJ$sp(long)
+scala.runtime.AbstractFunction1: double apply$mcDJ$sp(long)
+scala.runtime.AbstractFunction1: float apply$mcFJ$sp(long)
+scala.runtime.AbstractFunction1: int apply$mcIJ$sp(long)
+scala.runtime.AbstractFunction1: long apply$mcJJ$sp(long)
+scala.runtime.AbstractFunction1: void apply$mcVJ$sp(long)
+scala.runtime.AbstractFunction1: scala.Function1 compose(scala.Function1)
+scala.runtime.AbstractFunction1: scala.Function1 andThen(scala.Function1)
+scala.runtime.AbstractFunction1: java.lang.String toString()
+scala.runtime.AbstractFunction1: AbstractFunction1()
+scala.runtime.AbstractFunction2: boolean apply$mcZDD$sp(double,double)
+scala.runtime.AbstractFunction2: double apply$mcDDD$sp(double,double)
+scala.runtime.AbstractFunction2: float apply$mcFDD$sp(double,double)
+scala.runtime.AbstractFunction2: int apply$mcIDD$sp(double,double)
+scala.runtime.AbstractFunction2: long apply$mcJDD$sp(double,double)
+scala.runtime.AbstractFunction2: void apply$mcVDD$sp(double,double)
+scala.runtime.AbstractFunction2: boolean apply$mcZDI$sp(double,int)
+scala.runtime.AbstractFunction2: double apply$mcDDI$sp(double,int)
+scala.runtime.AbstractFunction2: float apply$mcFDI$sp(double,int)
+scala.runtime.AbstractFunction2: int apply$mcIDI$sp(double,int)
+scala.runtime.AbstractFunction2: long apply$mcJDI$sp(double,int)
+scala.runtime.AbstractFunction2: void apply$mcVDI$sp(double,int)
+scala.runtime.AbstractFunction2: boolean apply$mcZDJ$sp(double,long)
+scala.runtime.AbstractFunction2: double apply$mcDDJ$sp(double,long)
+scala.runtime.AbstractFunction2: float apply$mcFDJ$sp(double,long)
+scala.runtime.AbstractFunction2: int apply$mcIDJ$sp(double,long)
+scala.runtime.AbstractFunction2: long apply$mcJDJ$sp(double,long)
+scala.runtime.AbstractFunction2: void apply$mcVDJ$sp(double,long)
+scala.runtime.AbstractFunction2: boolean apply$mcZID$sp(int,double)
+scala.runtime.AbstractFunction2: double apply$mcDID$sp(int,double)
+scala.runtime.AbstractFunction2: float apply$mcFID$sp(int,double)
+scala.runtime.AbstractFunction2: int apply$mcIID$sp(int,double)
+scala.runtime.AbstractFunction2: long apply$mcJID$sp(int,double)
+scala.runtime.AbstractFunction2: void apply$mcVID$sp(int,double)
+scala.runtime.AbstractFunction2: boolean apply$mcZII$sp(int,int)
+scala.runtime.AbstractFunction2: double apply$mcDII$sp(int,int)
+scala.runtime.AbstractFunction2: float apply$mcFII$sp(int,int)
+scala.runtime.AbstractFunction2: int apply$mcIII$sp(int,int)
+scala.runtime.AbstractFunction2: long apply$mcJII$sp(int,int)
+scala.runtime.AbstractFunction2: void apply$mcVII$sp(int,int)
+scala.runtime.AbstractFunction2: boolean apply$mcZIJ$sp(int,long)
+scala.runtime.AbstractFunction2: double apply$mcDIJ$sp(int,long)
+scala.runtime.AbstractFunction2: float apply$mcFIJ$sp(int,long)
+scala.runtime.AbstractFunction2: int apply$mcIIJ$sp(int,long)
+scala.runtime.AbstractFunction2: long apply$mcJIJ$sp(int,long)
+scala.runtime.AbstractFunction2: void apply$mcVIJ$sp(int,long)
+scala.runtime.AbstractFunction2: boolean apply$mcZJD$sp(long,double)
+scala.runtime.AbstractFunction2: double apply$mcDJD$sp(long,double)
+scala.runtime.AbstractFunction2: float apply$mcFJD$sp(long,double)
+scala.runtime.AbstractFunction2: int apply$mcIJD$sp(long,double)
+scala.runtime.AbstractFunction2: long apply$mcJJD$sp(long,double)
+scala.runtime.AbstractFunction2: void apply$mcVJD$sp(long,double)
+scala.runtime.AbstractFunction2: boolean apply$mcZJI$sp(long,int)
+scala.runtime.AbstractFunction2: double apply$mcDJI$sp(long,int)
+scala.runtime.AbstractFunction2: float apply$mcFJI$sp(long,int)
+scala.runtime.AbstractFunction2: int apply$mcIJI$sp(long,int)
+scala.runtime.AbstractFunction2: long apply$mcJJI$sp(long,int)
+scala.runtime.AbstractFunction2: void apply$mcVJI$sp(long,int)
+scala.runtime.AbstractFunction2: boolean apply$mcZJJ$sp(long,long)
+scala.runtime.AbstractFunction2: double apply$mcDJJ$sp(long,long)
+scala.runtime.AbstractFunction2: float apply$mcFJJ$sp(long,long)
+scala.runtime.AbstractFunction2: int apply$mcIJJ$sp(long,long)
+scala.runtime.AbstractFunction2: long apply$mcJJJ$sp(long,long)
+scala.runtime.AbstractFunction2: void apply$mcVJJ$sp(long,long)
+scala.runtime.AbstractFunction2: scala.Function1 curried()
+scala.runtime.AbstractFunction2: scala.Function1 tupled()
+scala.runtime.AbstractFunction2: java.lang.String toString()
+scala.runtime.AbstractFunction2: AbstractFunction2()
+scala.runtime.AbstractPartialFunction: scala.PartialFunction orElse(scala.PartialFunction)
+scala.runtime.AbstractPartialFunction: scala.PartialFunction andThen(scala.Function1)
+scala.runtime.AbstractPartialFunction: scala.Function1 lift()
+scala.runtime.AbstractPartialFunction: java.lang.Object applyOrElse(java.lang.Object,scala.Function1)
+scala.runtime.AbstractPartialFunction: scala.Function1 runWith(scala.Function1)
+scala.runtime.AbstractPartialFunction: scala.Function1 compose(scala.Function1)
+scala.runtime.AbstractPartialFunction: java.lang.String toString()
+scala.runtime.AbstractPartialFunction: java.lang.Object apply(java.lang.Object)
+scala.runtime.AbstractPartialFunction: boolean apply$mcZD$sp(double)
+scala.runtime.AbstractPartialFunction: double apply$mcDD$sp(double)
+scala.runtime.AbstractPartialFunction: float apply$mcFD$sp(double)
+scala.runtime.AbstractPartialFunction: int apply$mcID$sp(double)
+scala.runtime.AbstractPartialFunction: long apply$mcJD$sp(double)
+scala.runtime.AbstractPartialFunction: void apply$mcVD$sp(double)
+scala.runtime.AbstractPartialFunction: boolean apply$mcZF$sp(float)
+scala.runtime.AbstractPartialFunction: double apply$mcDF$sp(float)
+scala.runtime.AbstractPartialFunction: float apply$mcFF$sp(float)
+scala.runtime.AbstractPartialFunction: int apply$mcIF$sp(float)
+scala.runtime.AbstractPartialFunction: long apply$mcJF$sp(float)
+scala.runtime.AbstractPartialFunction: void apply$mcVF$sp(float)
+scala.runtime.AbstractPartialFunction: boolean apply$mcZI$sp(int)
+scala.runtime.AbstractPartialFunction: double apply$mcDI$sp(int)
+scala.runtime.AbstractPartialFunction: float apply$mcFI$sp(int)
+scala.runtime.AbstractPartialFunction: int apply$mcII$sp(int)
+scala.runtime.AbstractPartialFunction: long apply$mcJI$sp(int)
+scala.runtime.AbstractPartialFunction: void apply$mcVI$sp(int)
+scala.runtime.AbstractPartialFunction: boolean apply$mcZJ$sp(long)
+scala.runtime.AbstractPartialFunction: double apply$mcDJ$sp(long)
+scala.runtime.AbstractPartialFunction: float apply$mcFJ$sp(long)
+scala.runtime.AbstractPartialFunction: int apply$mcIJ$sp(long)
+scala.runtime.AbstractPartialFunction: long apply$mcJJ$sp(long)
+scala.runtime.AbstractPartialFunction: void apply$mcVJ$sp(long)
+scala.runtime.AbstractPartialFunction: scala.Function1 andThen(scala.Function1)
+scala.runtime.AbstractPartialFunction: AbstractPartialFunction()
