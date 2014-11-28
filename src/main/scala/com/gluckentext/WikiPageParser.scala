@@ -12,30 +12,25 @@ object WikiPageParser {
       }
 
       def removeBlocks(startMarker: String, endMarker: String) = {
-        //        object headAndTail {
-        //          def unapply(s: String) = s.fir.headOption.map { (_, s.tail) }
-        //        }
         val startMarkerSize = startMarker.size
         val endMarkerSize = endMarker.size
         val startMarkerHead = startMarker.head
         val endMarkerHead = endMarker.head
 
         def removeBlocksAcc(s: String, acc: String, nestingLevel: Int): String =
-        //          s match {
-        //            case headAndTail(head, tail) =>
-        //              if (head.)
-        //
-        //          }
-          if (s.isEmpty) acc
+        if (s.isEmpty) acc
           else {
             val (startMarkerCandidate, tail1) = s.splitAt(startMarkerSize)
-            if (startMarkerCandidate == startMarker) removeBlocksAcc(tail1, acc, nestingLevel + 1)
+            if (startMarkerCandidate == startMarker)
+              removeBlocksAcc(tail1, acc, nestingLevel + 1)
             else {
               val (endMarkerCandidate, tail2) = s.splitAt(endMarkerSize)
-              if (endMarkerCandidate == endMarker) removeBlocksAcc(tail2, acc, math.max(nestingLevel - 1, 0))
+              if (endMarkerCandidate == endMarker)
+                removeBlocksAcc(tail2, acc, math.max(nestingLevel - 1, 0))
               else {
                 val (safePart, candidate) = s.tail.span(c => c != startMarkerHead && c != endMarkerHead)
-                if (nestingLevel == 0) removeBlocksAcc(candidate, acc + s.head + safePart, nestingLevel)
+                if (nestingLevel == 0)
+                  removeBlocksAcc(candidate, acc + s.head + safePart, nestingLevel)
                 else removeBlocksAcc(candidate, acc, nestingLevel)
               }
             }
@@ -43,13 +38,13 @@ object WikiPageParser {
         removeBlocksAcc(text, "", 0)
       }
 
-      def removeReferences = text.replaceAll("<ref[^>]*>(.+?)</ref>", "")
+      def withoutReferences = text.replaceAll("<ref[^>]*>(.+?)</ref>", "")
 
       def strip(regex: String) = text.replaceAll(regex, "$1")
 
-      def insertSpacesAfterPunctuation = text.replaceAll("([.,])([A-Z])", "$1 $2")
+      def withoutSpacesAfterPunctuation = text.replaceAll("([.,])([A-Z])", "$1 $2")
 
-      def removeSpacesBeforePunctuation = text.replaceAll("(\\w) +([,.])", "$1$2")
+      def withoutSpacesBeforePunctuation = text.replaceAll("(\\w) +([,.])", "$1$2")
     }
 
     def multiline = "(?s)"
@@ -71,12 +66,12 @@ object WikiPageParser {
       replaceAll(boldMarkup, boldTags).
       replaceAll(italicMarkup, italicTags).
       removeBlocks("{", "}").
-      removeReferences.
+      withoutReferences.
       strip(internalLinks).
       removeBlocks("[", "]").
       removeBlocks("(", ")").
-      insertSpacesAfterPunctuation.
-      removeSpacesBeforePunctuation
+      withoutSpacesAfterPunctuation.
+      withoutSpacesBeforePunctuation
   }
 
   def chapterize(text: String) = {
@@ -95,7 +90,7 @@ object WikiPageParser {
   }
 }
 
-case class Chapter(val heading: String, val body: String) {
+case class Chapter(heading: String, body: String) {
   def hasLists = body.contains('#') || body.contains('*')
 
   def hasTables = body.contains("|")
