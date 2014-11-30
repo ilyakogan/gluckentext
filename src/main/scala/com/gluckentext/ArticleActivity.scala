@@ -13,34 +13,56 @@ class ArticleActivity extends SActivity {
   implicit val tag = LoggerTag("Gluckentext")
   implicit val exec = ExecutionContext.fromExecutor(AsyncTask.THREAD_POOL_EXECUTOR)
 
+  val words = List("of", "underneath", "in", "at", "on")
+  var webView: Option[SWebView] = None
+
   onCreate {
-    contentView = new SVerticalLayout {
-      style {
-        case b: SButton => b.textColor(Color.RED)
-        case t: STextView => t.textSize(15 dip)
-      }
-
-
-      val button = SButton(R.string.red)
-
-      val webView = SWebView()
-      webView.getSettings.setDefaultTextEncodingName("utf-8")
-
-      button.onClick(
-      {
-        val f = Future {
-          val result = WikiPageLoader.loadWikiPageXml("en", "Tatarstan")
-          runOnUiThread {
-            val start = "<html><head><meta http-equiv='Content-Type' content='text/html' charset='UTF-8' /></head><body>"
-            val end = "</body></html>"
-
-            webView.loadData(start + result + end, "text/html; charset=UTF-8", null)
-            //webView.loadData(result, "text/html", null)}
-          }
-        }
-        f.onFailure { case x => x.printStackTrace}
-      })
-    }.padding(20 dip)
+    contentView = new SRelativeLayout {
+      val loadButton = SButton(R.string.load).<<.wrap.alignParentRight.alignParentLeft.alignParentTop.>>.onClick(loadArticle())
+      val wordsTable = new STableLayout {
+        words.grouped(3).foreach(group =>
+          this += new STableRow {
+            group.map(word => SButton(word).<<.wrap.>>.onClick(wordButtonClicked(word)))
+          }.<<.fill.>>
+        )
+      }.<<.alignParentRight.alignParentLeft.alignParentBottom.wrap.>>
+      this += wordsTable
+      webView = Some(SWebView().<<.wrap.alignParentRight.alignParentLeft.above(wordsTable).below(loadButton).>>)
+    }.padding(20.dip)
   }
 
+  //
+  //    contentView = new SVerticalLayout {
+  //      style {
+  //        case b: SButton => b.textColor(Color.RED)
+  //        case t: STextView => t.textSize(15 dip)
+  //      }
+  //
+  //
+  //      val button = SButton(R.string.red)
+  //
+  //      val webView = SWebView()
+  //      webView.getSettings.setDefaultTextEncodingName("utf-8")
+  //
+  //
+  //    }.padding(20 dip)
+  //  }
+
+  def loadArticle() = {
+    val f = Future {
+      val result = WikiPageLoader.loadWikiPageXml("en", "Tatarstan")
+      runOnUiThread {
+        val start = "<html><head><meta http-equiv='Content-Type' content='text/html' charset='UTF-8' /></head><body>"
+        val end = "</body></html>"
+
+        webView.get.loadData(start + result + end, "text/html; charset=UTF-8", null)
+        //webView.loadData(result, "text/html", null)}
+      }
+    }
+    f.onFailure { case x => x.printStackTrace()}
+  }
+
+  def wordButtonClicked(word: String) = toast(word)
+
 }
+

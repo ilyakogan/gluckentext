@@ -19,21 +19,21 @@
             <version>4.1.1.4</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>org.scala-lang</groupId>
-            <artifactId>scala-library</artifactId>
-            <version>${scala.version}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.scala-lang</groupId>-->
+            <!--<artifactId>scala-library</artifactId>-->
+            <!--<version>${scala.version}</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.scaloid</groupId>
             <artifactId>scaloid_2.11</artifactId>
             <version>3.4-10</version>
         </dependency>
-        <dependency>
-            <groupId>org.scala-lang.modules</groupId>
-            <artifactId>scala-xml_2.11</artifactId>
-            <version>1.0.2</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.scala-lang.modules</groupId>-->
+            <!--<artifactId>scala-xml_2.11</artifactId>-->
+            <!--<version>1.0.2</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.apmem.tools</groupId>
             <artifactId>layouts</artifactId>
@@ -53,31 +53,6 @@
             <id>release</id>
             <build>
                 <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-jarsigner-plugin</artifactId>
-                        <version>1.2</version>
-                        <executions>
-                            <execution>
-                                <id>signing</id>
-                                <goals>
-                                    <goal>sign</goal>
-                                </goals>
-                                <phase>package</phase>
-                                <inherited>true</inherited>
-                                <configuration>
-                                    <archiveDirectory></archiveDirectory>
-                                    <includes>
-                                        <include>target/*.apk</include>
-                                    </includes>
-                                    <keystore>scala-test.keystore</keystore>
-                                    <storepass>scalatest</storepass>
-                                    <keypass>scalatest</keypass>
-                                    <alias>androidscalatest</alias>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
                     <plugin>
                         <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                         <artifactId>android-maven-plugin</artifactId>
@@ -114,7 +89,7 @@
                     <resourceDirectory>${project.basedir}/res</resourceDirectory>
                     <nativeLibrariesDirectory>${project.basedir}/src/main/native</nativeLibrariesDirectory>
                     <sdk>
-                        <platform>10</platform>
+                        <platform>21</platform>
                     </sdk>
                     <dex>
                         <jvmArguments>
