@@ -33,13 +33,15 @@ class ArticleActivity extends SActivity {
 
   def loadArticle() = {
     val f = Future {
-      val result = WikiPageLoader.loadWikiPageXml("en", "Tatarstan")
+      val article = WikiPageLoader.loadWikiPageXml("en", "Tatarstan")
+      val quiz: List[QuizPart] = createQuiz about words from article
+      val quizText = GenerateQuizHtml(quiz)
       runOnUiThread {
-        val start = "<html><head><meta http-equiv='Content-Type' content='text/html' charset='UTF-8' /></head><body>"
+        val start = "<html><head><meta http-equiv='Content-Type' content='text/html' charset='UTF-8' /></head>" +
+          "<body style='line-height: 200%'>"
         val end = "</body></html>"
 
-        webView.get.loadData(start + result + end, "text/html; charset=UTF-8", null)
-        //webView.loadData(result, "text/html", null)}
+        webView.get.loadData(start + quizText + end, "text/html; charset=UTF-8", null)
       }
     }
     f.onFailure { case x => x.printStackTrace()}
