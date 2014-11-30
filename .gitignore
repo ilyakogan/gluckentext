@@ -1,7 +1,6 @@
 *.iml
 *.ipr
 *.iws
-*.iml
 target
 gen
 .DS_Store
@@ -9,3 +8,4 @@ gen
 .classpath
 .project
 .idea
+proguard_logs
