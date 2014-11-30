@@ -18389,8 +18389,6 @@ scala.Array$$anonfun$apply$10
 scala.Array$$anonfun$apply$2
 scala.Array$$anonfun$apply$3
 scala.Array$$anonfun$apply$4
-scala.Array$$anonfun$apply$5:
-    public static final long serialVersionUID
 scala.Array$$anonfun$apply$6
 scala.Array$$anonfun$apply$7
 scala.Array$$anonfun$apply$8
@@ -18510,6 +18508,7 @@ scala.Double
 scala.Double$
 scala.Dynamic
 scala.Enumeration:
+    public static final long serialVersionUID
     61:61:public java.lang.Object readResolve()
     74:74:private scala.Enumeration$ValueSet vset()
     74:74:private void vset_$eq(scala.Enumeration$ValueSet)
@@ -18519,21 +18518,15 @@ scala.Enumeration:
     110:110:public final int maxId()
     124:124:public final scala.Enumeration$Value withName(java.lang.String)
     143:143:public final scala.Enumeration$Value Value(java.lang.String)
-scala.Enumeration$$anonfun$1:
-    public static final long serialVersionUID
-scala.Enumeration$$anonfun$scala$Enumeration$$isValDef$1$1:
-    public static final long serialVersionUID
-scala.Enumeration$$anonfun$scala$Enumeration$$nameOf$1:
-    public static final long serialVersionUID
-scala.Enumeration$$anonfun$scala$Enumeration$$populateNameMap$1:
-    public static final long serialVersionUID
 scala.Enumeration$$anonfun$withName$1
 scala.Enumeration$Val:
+    public static final long serialVersionUID
     226:225:public java.lang.Object readResolve()
     209:209:public Enumeration$Val(scala.Enumeration,int)
     210:210:public Enumeration$Val(scala.Enumeration,java.lang.String)
     211:211:public Enumeration$Val(scala.Enumeration)
 scala.Enumeration$Value:
+    public static final long serialVersionUID
     183:183:public boolean $less(java.lang.Object)
     183:183:public boolean $greater(java.lang.Object)
     183:183:public boolean $less$eq(java.lang.Object)
@@ -18595,10 +18588,6 @@ scala.Enumeration$ValueSet$:
     266:266:public synthetic scala.Enumeration scala$Enumeration$ValueSet$$$outer()
 scala.Enumeration$ValueSet$$anon$1
 scala.Enumeration$ValueSet$$anon$2
-scala.Enumeration$ValueSet$$anonfun$iterator$1:
-    public static final long serialVersionUID
-scala.Enumeration$ValueSet$$anonfun$keysIteratorFrom$1:
-    public static final long serialVersionUID
 scala.Equals:
     public abstract boolean equals(java.lang.Object)
 scala.FallbackArrayBuilding:
@@ -18676,10 +18665,6 @@ scala.Function1:
     public abstract int apply$mcIJ$sp(long)
     public abstract long apply$mcJJ$sp(long)
     public abstract void apply$mcVJ$sp(long)
-scala.Function1$$anonfun$andThen$1:
-    public static final long serialVersionUID
-scala.Function1$$anonfun$compose$1:
-    public static final long serialVersionUID
 scala.Function1$mcDD$sp
 scala.Function1$mcDD$sp$class
 scala.Function1$mcDF$sp
@@ -18837,12 +18822,7 @@ scala.Function2:
     public abstract long apply$mcJJJ$sp(long,long)
     public abstract void apply$mcVJJ$sp(long,long)
 scala.Function2$$anonfun$curried$1:
-    public static final long serialVersionUID
     45:45:public synthetic scala.Function2 scala$Function2$$anonfun$$$outer()
-scala.Function2$$anonfun$curried$1$$anonfun$apply$1:
-    public static final long serialVersionUID
-scala.Function2$$anonfun$tupled$1:
-    public static final long serialVersionUID
 scala.Function2$mcDDD$sp
 scala.Function2$mcDDD$sp$class
 scala.Function2$mcDDI$sp
@@ -19105,15 +19085,7 @@ scala.PartialFunction$$anon$1:
     252:252:public scala.Function1 runWith(scala.Function1)
     246:246:public bridge synthetic scala.Function1 andThen(scala.Function1)
     246:246:public bridge synthetic scala.PartialFunction andThen(scala.Function1)
-scala.PartialFunction$$anon$1$$anonfun$3:
-    public static final long serialVersionUID
-scala.PartialFunction$$anonfun$1:
-    public static final long serialVersionUID
-scala.PartialFunction$$anonfun$2:
-    public static final long serialVersionUID
 scala.PartialFunction$$anonfun$apply$1
-scala.PartialFunction$$anonfun$runWith$1:
-    public static final long serialVersionUID
 scala.PartialFunction$AndThen:
     178:178:public scala.PartialFunction orElse(scala.PartialFunction)
     178:178:public scala.PartialFunction andThen(scala.Function1)
@@ -19578,8 +19550,6 @@ scala.StringContext$:
     51:51:public scala.Option unapplySeq(scala.StringContext)
     168:168:private java.lang.Object readResolve()
 scala.StringContext$$anonfun$raw$1
-scala.StringContext$$anonfun$s$1:
-    public static final long serialVersionUID
 scala.StringContext$InvalidEscapeException:
     175:175:public int index()
 scala.Symbol
@@ -20446,8 +20416,6 @@ scala.collection.BitSetLike$:
     228:228:public final int LogWL()
     229:229:private final int WordLength()
     230:230:public final int MaxSize()
-scala.collection.BitSetLike$$anonfun$isEmpty$1:
-    public static final long serialVersionUID
 scala.collection.BitSetLike$$anonfun$subsetOf$1
 scala.collection.BitSetLike$class:
     54:60:public static long[] toBitMask(scala.collection.BitSetLike)
@@ -20469,8 +20437,6 @@ scala.collection.DebugUtils$$anonfun$buildString$1
 scala.collection.DefaultMap:
     public abstract scala.collection.Map $plus(scala.Tuple2)
     public abstract scala.collection.Map $minus(java.lang.Object)
-scala.collection.DefaultMap$$anonfun$$minus$1:
-    public static final long serialVersionUID
 scala.collection.GenIterable:
     public abstract scala.collection.generic.GenericCompanion companion()
 scala.collection.GenIterable$
@@ -20495,8 +20461,6 @@ scala.collection.GenMapLike:
     public abstract scala.collection.GenMap filterKeys(scala.Function1)
     public abstract scala.collection.GenMap mapValues(scala.Function1)
     public abstract boolean equals(java.lang.Object)
-scala.collection.GenMapLike$$anonfun$liftedTree1$1$1:
-    public static final long serialVersionUID
 scala.collection.GenSeq:
     public abstract scala.collection.generic.GenericCompanion companion()
 scala.collection.GenSeq$
@@ -20516,11 +20480,7 @@ scala.collection.GenSeqLike:
     public abstract scala.collection.GenSeq toSeq()
     public abstract int hashCode()
     public abstract boolean equals(java.lang.Object)
-scala.collection.GenSeqLike$$anonfun$indexOf$1:
-    public static final long serialVersionUID
 scala.collection.GenSeqLike$$anonfun$lastIndexOf$1
-scala.collection.GenSeqLike$$anonfun$lastIndexOf$2:
-    public static final long serialVersionUID
 scala.collection.GenSeqLike$class:
     114:114:public static int indexWhere(scala.collection.GenSeqLike,scala.Function1)
     129:129:public static int indexOf(scala.collection.GenSeqLike,java.lang.Object)
@@ -20625,6 +20585,8 @@ scala.collection.IndexedSeqLike:
     public abstract scala.collection.IndexedSeq thisCollection()
     public abstract scala.collection.IndexedSeq toCollection(java.lang.Object)
     public abstract scala.collection.mutable.Buffer toBuffer()
+scala.collection.IndexedSeqLike$Elements:
+    public static final long serialVersionUID
 scala.collection.IndexedSeqOptimized:
     public abstract synthetic java.lang.Object scala$collection$IndexedSeqOptimized$$super$reduceRight(scala.Function2)
     public abstract void foreach(scala.Function1)
@@ -20656,8 +20618,6 @@ scala.collection.IndexedSeqOptimized:
     public abstract boolean startsWith(scala.collection.GenSeq,int)
     public abstract boolean endsWith(scala.collection.GenSeq)
 scala.collection.IndexedSeqOptimized$$anonfun$1
-scala.collection.IndexedSeqOptimized$$anonfun$indexWhere$1:
-    public static final long serialVersionUID
 scala.collection.IndexedSeqOptimized$class:
     50:49:public static scala.Option find(scala.collection.IndexedSeqOptimized,scala.Function1)
     61:62:private static java.lang.Object foldr(scala.collection.IndexedSeqOptimized,int,int,java.lang.Object,scala.Function2)
@@ -20695,11 +20655,7 @@ scala.collection.IterableLike:
     public abstract scala.collection.IterableView view()
     public abstract scala.collection.IterableView view(int,int)
 scala.collection.IterableLike$$anon$1
-scala.collection.IterableLike$$anonfun$grouped$1:
-    public static final long serialVersionUID
 scala.collection.IterableLike$$anonfun$sliding$1
-scala.collection.IterableLike$$anonfun$takeRight$1:
-    public static final long serialVersionUID
 scala.collection.IterableLike$$anonfun$zipWithIndex$1
 scala.collection.IterableLike$class:
     55:55:public static scala.collection.Iterable toCollection(scala.collection.IterableLike,java.lang.Object)
@@ -20749,17 +20705,11 @@ scala.collection.IterableViewLike$$anon$6
 scala.collection.IterableViewLike$$anon$7
 scala.collection.IterableViewLike$$anon$8
 scala.collection.IterableViewLike$$anon$9
-scala.collection.IterableViewLike$$anonfun$grouped$1:
-    public static final long serialVersionUID
-scala.collection.IterableViewLike$$anonfun$grouped$1$$anonfun$apply$1:
-    public static final long serialVersionUID
 scala.collection.IterableViewLike$$anonfun$sliding$1
 scala.collection.IterableViewLike$$anonfun$sliding$1$$anonfun$apply$2
 scala.collection.IterableViewLike$AbstractTransformed
 scala.collection.IterableViewLike$Appended:
     public abstract scala.collection.Iterator iterator()
-scala.collection.IterableViewLike$Appended$$anonfun$iterator$1:
-    public static final long serialVersionUID
 scala.collection.IterableViewLike$DroppedWhile
 scala.collection.IterableViewLike$DroppedWhile$class
 scala.collection.IterableViewLike$EmptyView
@@ -20861,11 +20811,7 @@ scala.collection.Iterator$$anon$7
 scala.collection.Iterator$$anon$8
 scala.collection.Iterator$$anonfun$1
 scala.collection.Iterator$$anonfun$contains$1
-scala.collection.Iterator$$anonfun$copyToArray$1:
-    public static final long serialVersionUID
 scala.collection.Iterator$$anonfun$filterNot$1
-scala.collection.Iterator$$anonfun$toStream$1:
-    public static final long serialVersionUID
 scala.collection.Iterator$ConcatIterator:
     168:168:public scala.collection.Iterator flatMap(scala.Function1)
     168:168:public boolean corresponds(scala.collection.GenTraversableOnce,scala.Function2)
@@ -20911,14 +20857,10 @@ scala.collection.Iterator$ConcatIterator:
     168:168:public bridge synthetic scala.collection.GenIterable toIterable()
     168:168:public bridge synthetic scala.collection.GenTraversable toTraversable()
     169:169:public Iterator$ConcatIterator(scala.collection.immutable.Vector)
-scala.collection.Iterator$ConcatIterator$$anonfun$$plus$plus$1:
-    public static final long serialVersionUID
 scala.collection.Iterator$GroupedIterator:
     900:901:public scala.collection.Iterator$GroupedIterator withPadding(scala.Function0)
     915:919:public scala.collection.Iterator$GroupedIterator withPartial(boolean)
     878:878:public synthetic scala.collection.Iterator scala$collection$Iterator$GroupedIterator$$$outer()
-scala.collection.Iterator$GroupedIterator$$anonfun$padding$1:
-    public static final long serialVersionUID
 scala.collection.Iterator$JoinIterator:
     191:191:public scala.collection.Iterator flatMap(scala.Function1)
     191:191:public boolean corresponds(scala.collection.GenTraversableOnce,scala.Function2)
@@ -20963,8 +20905,6 @@ scala.collection.Iterator$JoinIterator:
     191:191:public bridge synthetic scala.collection.GenSet toSet()
     191:191:public bridge synthetic scala.collection.GenIterable toIterable()
     191:191:public bridge synthetic scala.collection.GenTraversable toTraversable()
-scala.collection.Iterator$JoinIterator$$anonfun$$plus$plus$2:
-    public static final long serialVersionUID
 scala.collection.Iterator$Leading$1
 scala.collection.Iterator$PartitionIterator$1
 scala.collection.Iterator$Partner$1
@@ -21092,10 +21032,6 @@ scala.collection.MapLike:
 scala.collection.MapLike$$anon$1
 scala.collection.MapLike$$anon$2
 scala.collection.MapLike$$anonfun$$plus$plus$1
-scala.collection.MapLike$$anonfun$addString$1:
-    public static final long serialVersionUID
-scala.collection.MapLike$$anonfun$filterNot$1:
-    public static final long serialVersionUID
 scala.collection.MapLike$DefaultKeySet
 scala.collection.MapLike$DefaultValuesIterable
 scala.collection.MapLike$FilteredKeys
@@ -21104,14 +21040,6 @@ scala.collection.MapLike$FilteredKeys$$anonfun$iterator$1
 scala.collection.MapLike$MappedValues:
     244:244:public bridge synthetic java.lang.Object $minus(java.lang.Object)
     244:244:public bridge synthetic scala.collection.generic.Subtractable $minus(java.lang.Object)
-scala.collection.MapLike$MappedValues$$anonfun$foreach$2:
-    public static final long serialVersionUID
-scala.collection.MapLike$MappedValues$$anonfun$foreach$3:
-    public static final long serialVersionUID
-scala.collection.MapLike$MappedValues$$anonfun$iterator$2:
-    public static final long serialVersionUID
-scala.collection.MapLike$MappedValues$$anonfun$iterator$3:
-    public static final long serialVersionUID
 scala.collection.MapLike$class:
     164:164:public static scala.collection.Set keySet(scala.collection.MapLike)
     181:181:public static scala.collection.Iterator keysIterator(scala.collection.MapLike)
@@ -21126,8 +21054,6 @@ scala.collection.MapLike$class:
 scala.collection.MapProxy
 scala.collection.MapProxyLike
 scala.collection.MapProxyLike$class
-scala.collection.Parallelizable$$anonfun$par$1:
-    public static final long serialVersionUID
 scala.collection.Searching
 scala.collection.Searching$
 scala.collection.Searching$Found
@@ -21291,53 +21217,8 @@ scala.collection.SeqLike$$anon$5:
     681:681:public bridge synthetic scala.collection.IterableView view()
     681:681:public bridge synthetic scala.collection.Traversable toCollection(java.lang.Object)
     681:681:public bridge synthetic scala.collection.Iterable toCollection(java.lang.Object)
-scala.collection.SeqLike$$anonfun$contains$1:
-    public static final long serialVersionUID
-scala.collection.SeqLike$$anonfun$diff$1:
-    public static final long serialVersionUID
-scala.collection.SeqLike$$anonfun$distinct$1:
-    public static final long serialVersionUID
-scala.collection.SeqLike$$anonfun$intersect$1:
-    public static final long serialVersionUID
-scala.collection.SeqLike$$anonfun$occCounts$1:
-    public static final long serialVersionUID
-scala.collection.SeqLike$$anonfun$reverse$1:
-    public static final long serialVersionUID
-scala.collection.SeqLike$$anonfun$reverse$2:
-    public static final long serialVersionUID
-scala.collection.SeqLike$$anonfun$reverseMap$1:
-    public static final long serialVersionUID
-scala.collection.SeqLike$$anonfun$reverseMap$2:
-    public static final long serialVersionUID
-scala.collection.SeqLike$$anonfun$sorted$1:
-    public static final long serialVersionUID
-scala.collection.SeqLike$$anonfun$sorted$2:
-    public static final long serialVersionUID
-scala.collection.SeqLike$CombinationsItr$$anonfun$1:
-    public static final long serialVersionUID
-scala.collection.SeqLike$CombinationsItr$$anonfun$4:
-    public static final long serialVersionUID
-scala.collection.SeqLike$CombinationsItr$$anonfun$4$$anonfun$apply$2:
-    public static final long serialVersionUID
-scala.collection.SeqLike$CombinationsItr$$anonfun$5:
-    public static final long serialVersionUID
-scala.collection.SeqLike$CombinationsItr$$anonfun$init$1:
-    public static final long serialVersionUID
-scala.collection.SeqLike$CombinationsItr$$anonfun$init$2:
-    public static final long serialVersionUID
 scala.collection.SeqLike$CombinationsItr$$anonfun$next$1:
-    public static final long serialVersionUID
     215:215:public synthetic scala.collection.SeqLike$CombinationsItr scala$collection$SeqLike$CombinationsItr$$anonfun$$$outer()
-scala.collection.SeqLike$CombinationsItr$$anonfun$next$1$$anonfun$apply$mcVI$sp$1:
-    public static final long serialVersionUID
-scala.collection.SeqLike$CombinationsItr$$anonfun$next$2:
-    public static final long serialVersionUID
-scala.collection.SeqLike$PermutationsItr$$anonfun$2:
-    public static final long serialVersionUID
-scala.collection.SeqLike$PermutationsItr$$anonfun$2$$anonfun$apply$1:
-    public static final long serialVersionUID
-scala.collection.SeqLike$PermutationsItr$$anonfun$3:
-    public static final long serialVersionUID
 scala.collection.SeqProxy
 scala.collection.SeqProxyLike
 scala.collection.SeqProxyLike$$anonfun$lastIndexOf$1
@@ -21381,30 +21262,6 @@ scala.collection.SeqViewLike$$anon$6:
     145:145:public synthetic scala.collection.TraversableViewLike scala$collection$TraversableViewLike$Sliced$$$outer()
 scala.collection.SeqViewLike$$anon$7
 scala.collection.SeqViewLike$$anon$8
-scala.collection.SeqViewLike$$anonfun$combinations$1:
-    public static final long serialVersionUID
-scala.collection.SeqViewLike$$anonfun$combinations$1$$anonfun$apply$1:
-    public static final long serialVersionUID
-scala.collection.SeqViewLike$$anonfun$diff$1:
-    public static final long serialVersionUID
-scala.collection.SeqViewLike$$anonfun$distinct$1:
-    public static final long serialVersionUID
-scala.collection.SeqViewLike$$anonfun$intersect$1:
-    public static final long serialVersionUID
-scala.collection.SeqViewLike$$anonfun$padTo$1:
-    public static final long serialVersionUID
-scala.collection.SeqViewLike$$anonfun$permutations$1:
-    public static final long serialVersionUID
-scala.collection.SeqViewLike$$anonfun$permutations$1$$anonfun$apply$2:
-    public static final long serialVersionUID
-scala.collection.SeqViewLike$$anonfun$sortBy$1:
-    public static final long serialVersionUID
-scala.collection.SeqViewLike$$anonfun$sortWith$1:
-    public static final long serialVersionUID
-scala.collection.SeqViewLike$$anonfun$sorted$1:
-    public static final long serialVersionUID
-scala.collection.SeqViewLike$$anonfun$union$1:
-    public static final long serialVersionUID
 scala.collection.SeqViewLike$AbstractTransformed:
     private final java.lang.Object underlying
     private volatile boolean bitmap$0
@@ -21554,14 +21411,10 @@ scala.collection.SeqViewLike$Prepended:
     public abstract int length()
     public abstract java.lang.Object apply(int)
     public abstract java.lang.String viewIdentifier()
-scala.collection.SeqViewLike$Prepended$$anonfun$iterator$1:
-    public static final long serialVersionUID
 scala.collection.SeqViewLike$Reversed:
     public abstract scala.collection.Iterator iterator()
     public abstract java.lang.Object apply(int)
     public abstract java.lang.String viewIdentifier()
-scala.collection.SeqViewLike$Reversed$$anonfun$createReversedIterator$1:
-    public static final long serialVersionUID
 scala.collection.SeqViewLike$Sliced:
     public abstract int length()
     public abstract java.lang.Object apply(int)
@@ -21603,8 +21456,6 @@ scala.collection.SetLike:
     public abstract java.lang.String stringPrefix()
     public abstract java.lang.String toString()
 scala.collection.SetLike$$anon$1
-scala.collection.SetLike$$anonfun$$plus$plus$1:
-    public static final long serialVersionUID
 scala.collection.SetLike$SubsetsItr
 scala.collection.SetLike$SubsetsItr$$anonfun$next$2
 scala.collection.SetLike$class:
@@ -21685,76 +21536,28 @@ scala.collection.TraversableLike:
     public abstract scala.collection.TraversableView view()
     public abstract scala.collection.TraversableView view(int,int)
 scala.collection.TraversableLike$$anon$1
-scala.collection.TraversableLike$$anonfun$2:
-    public static final long serialVersionUID
 scala.collection.TraversableLike$$anonfun$3
 scala.collection.TraversableLike$$anonfun$collect$1
-scala.collection.TraversableLike$$anonfun$copyToArray$1:
-    public static final long serialVersionUID
-scala.collection.TraversableLike$$anonfun$copyToArray$1$$anonfun$apply$mcV$sp$8:
-    public static final long serialVersionUID
 scala.collection.TraversableLike$$anonfun$dropWhile$1
-scala.collection.TraversableLike$$anonfun$exists$1:
-    public static final long serialVersionUID
-scala.collection.TraversableLike$$anonfun$exists$1$$anonfun$apply$mcV$sp$3:
-    public static final long serialVersionUID
-scala.collection.TraversableLike$$anonfun$filterImpl$1:
-    public static final long serialVersionUID
 scala.collection.TraversableLike$$anonfun$find$1
 scala.collection.TraversableLike$$anonfun$find$1$$anonfun$apply$mcV$sp$4
-scala.collection.TraversableLike$$anonfun$flatMap$1:
-    public static final long serialVersionUID
-scala.collection.TraversableLike$$anonfun$forall$1:
-    public static final long serialVersionUID
-scala.collection.TraversableLike$$anonfun$forall$1$$anonfun$apply$mcV$sp$2:
-    public static final long serialVersionUID
 scala.collection.TraversableLike$$anonfun$groupBy$1
 scala.collection.TraversableLike$$anonfun$groupBy$1$$anonfun$1
 scala.collection.TraversableLike$$anonfun$groupBy$2
 scala.collection.TraversableLike$$anonfun$groupBy$3
-scala.collection.TraversableLike$$anonfun$head$1:
-    public static final long serialVersionUID
-scala.collection.TraversableLike$$anonfun$head$1$$anonfun$apply$mcV$sp$5:
-    public static final long serialVersionUID
-scala.collection.TraversableLike$$anonfun$head$1$$anonfun$apply$mcV$sp$5$$anonfun$apply$1:
-    public static final long serialVersionUID
-scala.collection.TraversableLike$$anonfun$init$1:
-    public static final long serialVersionUID
 scala.collection.TraversableLike$$anonfun$inits$1
-scala.collection.TraversableLike$$anonfun$isEmpty$1:
-    public static final long serialVersionUID
-scala.collection.TraversableLike$$anonfun$isEmpty$1$$anonfun$apply$mcV$sp$1:
-    public static final long serialVersionUID
 scala.collection.TraversableLike$$anonfun$iterateUntilEmpty$1
 scala.collection.TraversableLike$$anonfun$iterateUntilEmpty$2
-scala.collection.TraversableLike$$anonfun$last$1:
-    public static final long serialVersionUID
-scala.collection.TraversableLike$$anonfun$map$1:
-    public static final long serialVersionUID
 scala.collection.TraversableLike$$anonfun$partition$1
-scala.collection.TraversableLike$$anonfun$scala$collection$TraversableLike$$sliceInternal$1:
-    public static final long serialVersionUID
-scala.collection.TraversableLike$$anonfun$scala$collection$TraversableLike$$sliceInternal$1$$anonfun$apply$mcV$sp$6:
-    public static final long serialVersionUID
-scala.collection.TraversableLike$$anonfun$scanLeft$1:
-    public static final long serialVersionUID
 scala.collection.TraversableLike$$anonfun$scanRight$1
 scala.collection.TraversableLike$$anonfun$scanRight$2
 scala.collection.TraversableLike$$anonfun$span$1
-scala.collection.TraversableLike$$anonfun$splitAt$1:
-    public static final long serialVersionUID
 scala.collection.TraversableLike$$anonfun$tails$1
 scala.collection.TraversableLike$$anonfun$takeWhile$1
 scala.collection.TraversableLike$$anonfun$takeWhile$1$$anonfun$apply$mcV$sp$7
 scala.collection.TraversableLike$WithFilter:
     757:760:public java.lang.Object flatMap(scala.Function1,scala.collection.generic.CanBuildFrom)
 scala.collection.TraversableLike$WithFilter$$anonfun$flatMap$2
-scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1:
-    public static final long serialVersionUID
-scala.collection.TraversableLike$WithFilter$$anonfun$map$2:
-    public static final long serialVersionUID
-scala.collection.TraversableLike$WithFilter$$anonfun$withFilter$1:
-    public static final long serialVersionUID
 scala.collection.TraversableLike$class:
     100:100:public static scala.collection.Traversable toCollection(scala.collection.TraversableLike,java.lang.Object)
     195:199:public static java.lang.Object $plus$plus$colon(scala.collection.TraversableLike,scala.collection.TraversableOnce,scala.collection.generic.CanBuildFrom)
@@ -21803,28 +21606,16 @@ scala.collection.TraversableOnce:
     public abstract scala.collection.mutable.StringBuilder addString(scala.collection.mutable.StringBuilder,java.lang.String)
     public abstract scala.collection.mutable.StringBuilder addString(scala.collection.mutable.StringBuilder)
 scala.collection.TraversableOnce$
-scala.collection.TraversableOnce$$anonfun$addString$1:
-    public static final long serialVersionUID
 scala.collection.TraversableOnce$$anonfun$collectFirst$1
 scala.collection.TraversableOnce$$anonfun$count$1
-scala.collection.TraversableOnce$$anonfun$foldLeft$1:
-    public static final long serialVersionUID
 scala.collection.TraversableOnce$$anonfun$foldRight$1
 scala.collection.TraversableOnce$$anonfun$max$1
 scala.collection.TraversableOnce$$anonfun$maxBy$1
 scala.collection.TraversableOnce$$anonfun$min$1
 scala.collection.TraversableOnce$$anonfun$minBy$1
 scala.collection.TraversableOnce$$anonfun$product$1
-scala.collection.TraversableOnce$$anonfun$reduceLeft$1:
-    public static final long serialVersionUID
 scala.collection.TraversableOnce$$anonfun$reduceRight$1
 scala.collection.TraversableOnce$$anonfun$reversed$1
-scala.collection.TraversableOnce$$anonfun$size$1:
-    public static final long serialVersionUID
-scala.collection.TraversableOnce$$anonfun$sum$1:
-    public static final long serialVersionUID
-scala.collection.TraversableOnce$$anonfun$toMap$1:
-    public static final long serialVersionUID
 scala.collection.TraversableOnce$BufferedCanBuildFrom
 scala.collection.TraversableOnce$BufferedCanBuildFrom$$anonfun$apply$1
 scala.collection.TraversableOnce$BufferedCanBuildFrom$$anonfun$newIterator$1
@@ -21901,22 +21692,14 @@ scala.collection.TraversableViewLike$$anon$6
 scala.collection.TraversableViewLike$$anon$7
 scala.collection.TraversableViewLike$$anon$8
 scala.collection.TraversableViewLike$$anonfun$collect$1
-scala.collection.TraversableViewLike$$anonfun$filterNot$1:
-    public static final long serialVersionUID
 scala.collection.TraversableViewLike$$anonfun$groupBy$1
 scala.collection.TraversableViewLike$$anonfun$groupBy$1$$anonfun$apply$2
 scala.collection.TraversableViewLike$$anonfun$inits$1
 scala.collection.TraversableViewLike$$anonfun$inits$1$$anonfun$apply$3
 scala.collection.TraversableViewLike$$anonfun$partition$1
-scala.collection.TraversableViewLike$$anonfun$scanLeft$1:
-    public static final long serialVersionUID
 scala.collection.TraversableViewLike$$anonfun$scanRight$1
 scala.collection.TraversableViewLike$$anonfun$tails$1
 scala.collection.TraversableViewLike$$anonfun$tails$1$$anonfun$apply$4
-scala.collection.TraversableViewLike$$anonfun$unzip$1:
-    public static final long serialVersionUID
-scala.collection.TraversableViewLike$$anonfun$unzip$2:
-    public static final long serialVersionUID
 scala.collection.TraversableViewLike$$anonfun$unzip3$1
 scala.collection.TraversableViewLike$$anonfun$unzip3$2
 scala.collection.TraversableViewLike$$anonfun$unzip3$3
@@ -21932,8 +21715,6 @@ scala.collection.TraversableViewLike$EmptyView$class
 scala.collection.TraversableViewLike$Filtered:
     public abstract void foreach(scala.Function1)
     public abstract java.lang.String viewIdentifier()
-scala.collection.TraversableViewLike$Filtered$$anonfun$foreach$4:
-    public static final long serialVersionUID
 scala.collection.TraversableViewLike$FlatMapped
 scala.collection.TraversableViewLike$FlatMapped$$anonfun$foreach$3
 scala.collection.TraversableViewLike$FlatMapped$$anonfun$foreach$3$$anonfun$apply$1
@@ -21945,8 +21726,6 @@ scala.collection.TraversableViewLike$Forced:
 scala.collection.TraversableViewLike$Mapped:
     public abstract void foreach(scala.Function1)
     public abstract java.lang.String viewIdentifier()
-scala.collection.TraversableViewLike$Mapped$$anonfun$foreach$2:
-    public static final long serialVersionUID
 scala.collection.TraversableViewLike$Sliced:
     public abstract void foreach(scala.Function1)
     public abstract java.lang.String viewIdentifier()
@@ -22005,8 +21784,6 @@ scala.collection.ViewMkString:
     public abstract java.lang.String mkString(java.lang.String)
     public abstract java.lang.String mkString(java.lang.String,java.lang.String,java.lang.String)
     public abstract scala.collection.mutable.StringBuilder addString(scala.collection.mutable.StringBuilder,java.lang.String,java.lang.String,java.lang.String)
-scala.collection.ViewMkString$$anonfun$addString$1:
-    public static final long serialVersionUID
 scala.collection.concurrent.BasicNode
 scala.collection.concurrent.CNode
 scala.collection.concurrent.CNode$
@@ -22097,8 +21874,6 @@ scala.collection.convert.DecorateAsScala$$anonfun$enumerationAsScalaIteratorConv
 scala.collection.convert.DecorateAsScala$$anonfun$iterableAsScalaIterableConverter$1
 scala.collection.convert.DecorateAsScala$$anonfun$mapAsScalaConcurrentMapConverter$1
 scala.collection.convert.DecorateAsScala$$anonfun$mapAsScalaMapConverter$1
-scala.collection.convert.DecorateAsScala$$anonfun$propertiesAsScalaMapConverter$1:
-    public static final long serialVersionUID
 scala.collection.convert.DecorateAsScala$class:
     36:36:public static scala.collection.convert.Decorators$AsScala asScalaIteratorConverter(scala.collection.convert.DecorateAsScala,java.util.Iterator)
     55:55:public static scala.collection.convert.Decorators$AsScala enumerationAsScalaIteratorConverter(scala.collection.convert.DecorateAsScala,java.util.Enumeration)
@@ -22169,6 +21944,7 @@ scala.collection.convert.Wrappers:
     public abstract scala.collection.convert.Wrappers$JDictionaryWrapper$ JDictionaryWrapper()
     public abstract scala.collection.convert.Wrappers$JPropertiesWrapper$ JPropertiesWrapper()
 scala.collection.convert.Wrappers$:
+    public static final long serialVersionUID
     private volatile scala.collection.convert.Wrappers$IteratorWrapper$ IteratorWrapper$module
     private volatile scala.collection.convert.Wrappers$JIteratorWrapper$ JIteratorWrapper$module
     private volatile scala.collection.convert.Wrappers$JEnumerationWrapper$ JEnumerationWrapper$module
@@ -22448,8 +22224,6 @@ scala.collection.generic.GenericTraversableTemplate$$anonfun$flatten$1
 scala.collection.generic.GenericTraversableTemplate$$anonfun$transpose$1
 scala.collection.generic.GenericTraversableTemplate$$anonfun$transpose$1$$anonfun$apply$1
 scala.collection.generic.GenericTraversableTemplate$$anonfun$transpose$2
-scala.collection.generic.GenericTraversableTemplate$$anonfun$unzip$1:
-    public static final long serialVersionUID
 scala.collection.generic.GenericTraversableTemplate$$anonfun$unzip3$1
 scala.collection.generic.GenericTraversableTemplate$class:
     126:136:public static scala.Tuple3 unzip3(scala.collection.generic.GenericTraversableTemplate,scala.Function1)
@@ -22459,8 +22233,6 @@ scala.collection.generic.GenericTraversableTemplate$class:
 scala.collection.generic.Growable:
     public abstract scala.collection.generic.Growable $plus$eq(java.lang.Object,java.lang.Object,scala.collection.Seq)
     public abstract void clear()
-scala.collection.generic.Growable$$anonfun$$plus$plus$eq$1:
-    public static final long serialVersionUID
 scala.collection.generic.Growable$class:
     43:43:public static scala.collection.generic.Growable $plus$eq(scala.collection.generic.Growable,java.lang.Object,java.lang.Object,scala.collection.Seq)
 scala.collection.generic.HasNewBuilder
@@ -22681,6 +22453,7 @@ scala.collection.immutable.AbstractMap:
     194:194:public bridge synthetic scala.collection.immutable.Iterable seq()
     194:194:public bridge synthetic scala.collection.GenMap toMap(scala.Predef$$less$colon$less)
 scala.collection.immutable.BitSet:
+    public static final long serialVersionUID
     public static scala.collection.generic.CanBuildFrom bitsetCanBuildFrom()
     public static scala.collection.immutable.BitSet fromBitMask(long[])
     public static scala.collection.generic.CanBuildFrom canBuildFrom()
@@ -22735,11 +22508,8 @@ scala.collection.immutable.BitSet$$anon$1
 scala.collection.immutable.DefaultMap:
     public abstract scala.collection.immutable.Map $plus(scala.Tuple2)
     public abstract scala.collection.immutable.Map $minus(java.lang.Object)
-scala.collection.immutable.DefaultMap$$anonfun$$minus$1:
-    public static final long serialVersionUID
-scala.collection.immutable.DefaultMap$$anonfun$$minus$2:
-    public static final long serialVersionUID
 scala.collection.immutable.HashMap:
+    public static final long serialVersionUID
     public static java.lang.String bitString$default$2()
     public static int highestOneBit(int)
     public static java.lang.String bitString(int,java.lang.String)
@@ -22798,8 +22568,6 @@ scala.collection.immutable.HashMap$$anon$2:
     149:149:public scala.collection.immutable.HashMap$Merger invert()
 scala.collection.immutable.HashMap$$anon$2$$anon$3:
     151:151:public scala.collection.immutable.HashMap$Merger invert()
-scala.collection.immutable.HashMap$$anonfun$1:
-    public static final long serialVersionUID
 scala.collection.immutable.HashMap$EmptyHashMap$:
     159:159:private java.lang.Object readResolve()
 scala.collection.immutable.HashMap$HashMap1:
@@ -22824,6 +22592,7 @@ scala.collection.immutable.HashMap$SerializationProxy
 scala.collection.immutable.HashMap$SerializationProxy$$anonfun$writeObject$1
 scala.collection.immutable.HashMap$SerializationProxy$$anonfun$writeObject$2
 scala.collection.immutable.HashSet:
+    public static final long serialVersionUID
     public static scala.collection.generic.CanBuildFrom canBuildFrom()
     public static scala.collection.generic.CanBuildFrom setCanBuildFrom()
     89:89:public scala.collection.immutable.HashSet union(scala.collection.GenSet)
@@ -22875,8 +22644,6 @@ scala.collection.immutable.HashSet$HashSetCollision1:
     473:473:private void readObject(java.io.ObjectInputStream)
 scala.collection.immutable.HashSet$HashSetCollision1$$anonfun$1
 scala.collection.immutable.HashSet$HashSetCollision1$$anonfun$2
-scala.collection.immutable.HashSet$HashSetCollision1$$anonfun$subsetOf0$1:
-    public static final long serialVersionUID
 scala.collection.immutable.HashSet$HashTrieSet:
     561:560:public scala.collection.immutable.HashSet union0(scala.collection.immutable.HashSet$LeafHashSet,int)
     584:584:public scala.collection.immutable.HashSet union0(scala.collection.immutable.HashSet,int,scala.collection.immutable.HashSet[],int)
@@ -23008,13 +22775,10 @@ scala.collection.immutable.List$$anon$1:
     460:460:public void apply$mcVJ$sp(long)
     460:460:public scala.Function1 compose(scala.Function1)
     460:460:public scala.Function1 andThen(scala.Function1)
-scala.collection.immutable.List$$anonfun$flatMap$1:
-    public static final long serialVersionUID
 scala.collection.immutable.List$$anonfun$foldRight$1
-scala.collection.immutable.List$$anonfun$toStream$1:
-    public static final long serialVersionUID
 scala.collection.immutable.List$SerializationProxy
 scala.collection.immutable.ListMap:
+    public static final long serialVersionUID
     public static scala.collection.generic.CanBuildFrom canBuildFrom()
     100:100:public scala.collection.immutable.ListMap $plus(scala.Tuple2,scala.Tuple2,scala.collection.Seq)
     108:108:public scala.collection.immutable.ListMap $plus$plus(scala.collection.GenTraversableOnce)
@@ -23049,12 +22813,11 @@ scala.collection.immutable.ListMap$$anonfun$$plus$plus$1
 scala.collection.immutable.ListMap$EmptyListMap$:
     32:32:private java.lang.Object readResolve()
 scala.collection.immutable.ListMap$Node:
+    public static final long serialVersionUID
     136:136:public bridge synthetic java.lang.Object $minus(java.lang.Object)
     136:136:public bridge synthetic scala.collection.generic.Subtractable $minus(java.lang.Object)
     136:136:public bridge synthetic scala.collection.GenMap updated(java.lang.Object,java.lang.Object)
     136:136:public bridge synthetic scala.collection.Map updated(java.lang.Object,java.lang.Object)
-scala.collection.immutable.ListMap$Node$$anonfun$remove0$1:
-    public static final long serialVersionUID
 scala.collection.immutable.ListSerializeEnd
 scala.collection.immutable.ListSerializeEnd$
 scala.collection.immutable.ListSet:
@@ -23083,8 +22846,6 @@ scala.collection.immutable.ListSet$ListSetBuilder:
     36:36:public scala.collection.mutable.Builder mapResult(scala.Function1)
     36:36:public scala.collection.generic.Growable $plus$eq(java.lang.Object,java.lang.Object,scala.collection.Seq)
     48:48:public void clear()
-scala.collection.immutable.ListSet$ListSetBuilder$$anonfun$result$1:
-    public static final long serialVersionUID
 scala.collection.immutable.ListSet$Node:
     143:143:public bridge synthetic java.lang.Object $minus(java.lang.Object)
     143:143:public bridge synthetic scala.collection.generic.Subtractable $minus(java.lang.Object)
@@ -23213,6 +22974,7 @@ scala.collection.immutable.MapProxy$$anon$2
 scala.collection.immutable.MapProxy$class
 scala.collection.immutable.Nil
 scala.collection.immutable.Nil$:
+    public static final long serialVersionUID
     419:419:private java.lang.Object readResolve()
     419:419:public bridge synthetic scala.collection.LinearSeqOptimized tail()
 scala.collection.immutable.NumericRange
@@ -23235,6 +22997,7 @@ scala.collection.immutable.Queue$
 scala.collection.immutable.Queue$$anonfun$newBuilder$1
 scala.collection.immutable.Queue$EmptyQueue$
 scala.collection.immutable.Range:
+    public static final long serialVersionUID
     111:111:public int min(scala.math.Ordering)
     117:117:public int max(scala.math.Ordering)
     129:129:public scala.collection.immutable.Range by(int)
@@ -23321,6 +23084,7 @@ scala.collection.immutable.Set$EmptySet$:
     58:58:public bridge synthetic scala.collection.generic.Subtractable $minus(java.lang.Object)
     58:58:public bridge synthetic java.lang.Object $plus(java.lang.Object)
 scala.collection.immutable.Set$Set1:
+    public static final long serialVersionUID
     92:92:public scala.Option find(scala.Function1)
     70:70:public bridge synthetic scala.collection.GenTraversable toTraversable()
     70:70:public bridge synthetic scala.collection.GenMap groupBy(scala.Function1)
@@ -23338,6 +23102,7 @@ scala.collection.immutable.Set$Set1:
     70:70:public bridge synthetic scala.collection.generic.Subtractable $minus(java.lang.Object)
     70:70:public bridge synthetic java.lang.Object $plus(java.lang.Object)
 scala.collection.immutable.Set$Set2:
+    public static final long serialVersionUID
     122:122:public scala.Option find(scala.Function1)
     99:99:public bridge synthetic scala.collection.GenTraversable toTraversable()
     99:99:public bridge synthetic scala.collection.GenMap groupBy(scala.Function1)
@@ -23355,6 +23120,7 @@ scala.collection.immutable.Set$Set2:
     99:99:public bridge synthetic scala.collection.generic.Subtractable $minus(java.lang.Object)
     99:99:public bridge synthetic java.lang.Object $plus(java.lang.Object)
 scala.collection.immutable.Set$Set3:
+    public static final long serialVersionUID
     154:154:public scala.Option find(scala.Function1)
     130:130:public bridge synthetic scala.collection.GenTraversable toTraversable()
     130:130:public bridge synthetic scala.collection.GenMap groupBy(scala.Function1)
@@ -23372,6 +23138,7 @@ scala.collection.immutable.Set$Set3:
     130:130:public bridge synthetic scala.collection.generic.Subtractable $minus(java.lang.Object)
     130:130:public bridge synthetic java.lang.Object $plus(java.lang.Object)
 scala.collection.immutable.Set$Set4:
+    public static final long serialVersionUID
     188:188:public scala.Option find(scala.Function1)
     163:163:public bridge synthetic scala.collection.GenTraversable toTraversable()
     163:163:public bridge synthetic scala.collection.GenMap groupBy(scala.Function1)
@@ -23624,79 +23391,34 @@ scala.collection.immutable.Stream$$anon$1:
     975:975:public bridge synthetic scala.collection.IterableViewLike$Transformed newAppended(scala.collection.GenTraversable)
     975:975:public bridge synthetic scala.collection.SeqViewLike$Transformed newAppended(scala.collection.GenTraversable)
     975:975:public bridge synthetic java.lang.Object underlying()
-scala.collection.immutable.Stream$$anonfun$$plus$colon$1:
-    public static final long serialVersionUID
-scala.collection.immutable.Stream$$anonfun$$plus$plus$1:
-    public static final long serialVersionUID
 scala.collection.immutable.Stream$$anonfun$1
-scala.collection.immutable.Stream$$anonfun$2:
-    public static final long serialVersionUID
-scala.collection.immutable.Stream$$anonfun$append$1:
-    public static final long serialVersionUID
 scala.collection.immutable.Stream$$anonfun$collectedTail$1
 scala.collection.immutable.Stream$$anonfun$continually$1
-scala.collection.immutable.Stream$$anonfun$fill$1:
-    public static final long serialVersionUID
-scala.collection.immutable.Stream$$anonfun$filteredTail$1:
-    public static final long serialVersionUID
-scala.collection.immutable.Stream$$anonfun$flatMap$1:
-    public static final long serialVersionUID
 scala.collection.immutable.Stream$$anonfun$flatten$1
 scala.collection.immutable.Stream$$anonfun$from$1
-scala.collection.immutable.Stream$$anonfun$init$1:
-    public static final long serialVersionUID
 scala.collection.immutable.Stream$$anonfun$iterate$1
-scala.collection.immutable.Stream$$anonfun$map$1:
-    public static final long serialVersionUID
 scala.collection.immutable.Stream$$anonfun$partition$1
 scala.collection.immutable.Stream$$anonfun$partition$2
 scala.collection.immutable.Stream$$anonfun$range$1
 scala.collection.immutable.Stream$$anonfun$scala$collection$immutable$Stream$$advance$1$1
-scala.collection.immutable.Stream$$anonfun$scala$collection$immutable$Stream$$loop$4$1:
-    public static final long serialVersionUID
-scala.collection.immutable.Stream$$anonfun$scala$collection$immutable$Stream$$loop$5$1:
-    public static final long serialVersionUID
-scala.collection.immutable.Stream$$anonfun$scala$collection$immutable$Stream$$loop$5$2:
-    public static final long serialVersionUID
 scala.collection.immutable.Stream$$anonfun$scala$collection$immutable$Stream$$loop$6$1
-scala.collection.immutable.Stream$$anonfun$scanLeft$1:
-    public static final long serialVersionUID
-scala.collection.immutable.Stream$$anonfun$take$1:
-    public static final long serialVersionUID
-scala.collection.immutable.Stream$$anonfun$take$2:
-    public static final long serialVersionUID
 scala.collection.immutable.Stream$$anonfun$takeWhile$1
-scala.collection.immutable.Stream$$anonfun$zip$1:
-    public static final long serialVersionUID
 scala.collection.immutable.Stream$$hash$colon$colon$:
     1087:1087:public scala.Option unapply(scala.collection.immutable.Stream)
 scala.collection.immutable.Stream$Cons:
+    public static final long serialVersionUID
     1107:1107:public bridge synthetic scala.collection.LinearSeqOptimized tail()
 scala.collection.immutable.Stream$ConsWrapper:
     1074:1074:public scala.collection.immutable.Stream $hash$colon$colon$colon(scala.collection.immutable.Stream)
 scala.collection.immutable.Stream$Empty$:
     1056:1056:private java.lang.Object readResolve()
     1056:1056:public bridge synthetic scala.collection.LinearSeqOptimized tail()
-scala.collection.immutable.Stream$StreamBuilder$$anonfun$result$1:
-    public static final long serialVersionUID
 scala.collection.immutable.Stream$StreamWithFilter:
     526:526:public java.lang.Object flatMap(scala.Function1,scala.collection.generic.CanBuildFrom)
     513:521:public final scala.collection.immutable.Stream scala$collection$immutable$Stream$StreamWithFilter$$tailFlatMap$1(scala.collection.immutable.Stream,scala.Function1)
-scala.collection.immutable.Stream$StreamWithFilter$$anonfun$foreach$1:
-    public static final long serialVersionUID
 scala.collection.immutable.Stream$StreamWithFilter$$anonfun$scala$collection$immutable$Stream$StreamWithFilter$$tailFlatMap$1$1
-scala.collection.immutable.Stream$StreamWithFilter$$anonfun$scala$collection$immutable$Stream$StreamWithFilter$$tailMap$1$1:
-    public static final long serialVersionUID
-scala.collection.immutable.Stream$StreamWithFilter$$anonfun$withFilter$1:
-    public static final long serialVersionUID
 scala.collection.immutable.Stream$cons$:
     1102:1102:public scala.Option unapply(scala.collection.immutable.Stream)
-scala.collection.immutable.StreamIterator$$anonfun$$lessinit$greater$1:
-    public static final long serialVersionUID
-scala.collection.immutable.StreamIterator$$anonfun$next$1:
-    public static final long serialVersionUID
-scala.collection.immutable.StreamIterator$$anonfun$toStream$1:
-    public static final long serialVersionUID
 scala.collection.immutable.StreamIterator$LazyCell:
     998:998:public synthetic scala.collection.immutable.StreamIterator scala$collection$immutable$StreamIterator$LazyCell$$$outer()
 scala.collection.immutable.StreamViewLike:
@@ -23940,8 +23662,6 @@ scala.collection.immutable.StringLike:
 scala.collection.immutable.StringLike$
 scala.collection.immutable.StringLike$$anon$1
 scala.collection.immutable.StringLike$$anonfun$1
-scala.collection.immutable.StringLike$$anonfun$format$1:
-    public static final long serialVersionUID
 scala.collection.immutable.StringLike$$anonfun$formatLocal$1
 scala.collection.immutable.StringLike$$anonfun$lines$1
 scala.collection.immutable.StringLike$$anonfun$linesIterator$1
@@ -24080,12 +23800,6 @@ scala.collection.immutable.TreeSet
 scala.collection.immutable.TreeSet$
 scala.collection.immutable.TrieIterator:
     72:72:public scala.collection.immutable.TrieIterator dupIterator()
-scala.collection.immutable.TrieIterator$$anonfun$collisionToArray$1:
-    public static final long serialVersionUID
-scala.collection.immutable.TrieIterator$$anonfun$collisionToArray$2:
-    public static final long serialVersionUID
-scala.collection.immutable.TrieIterator$$anonfun$iteratorWithSize$1:
-    public static final long serialVersionUID
 scala.collection.immutable.TrieIterator$DupIterator
 scala.collection.immutable.Vector:
     public static scala.collection.immutable.Vector empty()
@@ -24128,8 +23842,6 @@ scala.collection.immutable.Vector$:
     29:29:private final int Log2ConcatFaster()
     30:30:private final int TinyAppendFaster()
     21:21:private java.lang.Object readResolve()
-scala.collection.immutable.Vector$$anonfun$$plus$plus$1:
-    public static final long serialVersionUID
 scala.collection.immutable.VectorBuilder:
     701:701:public final void initFrom(scala.collection.immutable.VectorPointer)
     701:701:public final java.lang.Object getElem(int,int)
@@ -24217,8 +23929,6 @@ scala.collection.immutable.WrappedString:
 scala.collection.immutable.WrappedString$:
     58:58:public scala.collection.generic.CanBuildFrom canBuildFrom()
 scala.collection.immutable.WrappedString$$anon$1
-scala.collection.immutable.WrappedString$$anonfun$newBuilder$1:
-    public static final long serialVersionUID
 scala.collection.mutable.AVLIterator
 scala.collection.mutable.AVLTree
 scala.collection.mutable.AVLTree$class
@@ -24385,6 +24095,7 @@ scala.collection.mutable.AnyRefMap$$anonfun$1
 scala.collection.mutable.AnyRefMap$$anonfun$apply$1
 scala.collection.mutable.AnyRefMap$AnyRefMapBuilder
 scala.collection.mutable.ArrayBuffer:
+    public static final long serialVersionUID
     public static scala.collection.generic.CanBuildFrom canBuildFrom()
     public static scala.Some unapplySeq(scala.collection.Seq)
     public static scala.collection.GenTraversable iterate(java.lang.Object,int,scala.Function1)
@@ -25246,6 +24957,7 @@ scala.collection.mutable.ArrayOps$ofUnit:
     294:294:public bridge synthetic scala.collection.Iterable thisCollection()
     294:294:public bridge synthetic scala.collection.IndexedSeq thisCollection()
 scala.collection.mutable.ArraySeq:
+    public static final long serialVersionUID
     public static scala.collection.generic.CanBuildFrom canBuildFrom()
     public static scala.Some unapplySeq(scala.collection.Seq)
     public static scala.collection.GenTraversable iterate(java.lang.Object,int,scala.Function1)
@@ -25289,8 +25001,6 @@ scala.collection.mutable.ArraySeq:
 scala.collection.mutable.ArraySeq$:
     108:108:public scala.collection.generic.CanBuildFrom canBuildFrom()
     106:106:private java.lang.Object readResolve()
-scala.collection.mutable.ArraySeq$$anonfun$newBuilder$1:
-    public static final long serialVersionUID
 scala.collection.mutable.ArrayStack
 scala.collection.mutable.ArrayStack$
 scala.collection.mutable.ArrayStack$$anon$1
@@ -25387,10 +25097,7 @@ scala.collection.mutable.FlatHashTable$:
     382:382:public final java.lang.ThreadLocal seedGenerator()
 scala.collection.mutable.FlatHashTable$$anon$2
 scala.collection.mutable.FlatHashTable$$anonfun$checkConsistent$1:
-    public static final long serialVersionUID
     232:232:public synthetic scala.collection.mutable.FlatHashTable scala$collection$mutable$FlatHashTable$$anonfun$$$outer()
-scala.collection.mutable.FlatHashTable$$anonfun$checkConsistent$1$$anonfun$apply$mcVI$sp$1:
-    public static final long serialVersionUID
 scala.collection.mutable.FlatHashTable$$anonfun$serializeTo$1
 scala.collection.mutable.FlatHashTable$class:
     57:57:public static int randomSeed(scala.collection.mutable.FlatHashTable)
@@ -25408,6 +25115,7 @@ scala.collection.mutable.GrowingBuilder:
     26:26:public void elems_$eq(scala.collection.generic.Growable)
     28:28:public void clear()
 scala.collection.mutable.HashMap:
+    public static final long serialVersionUID
     public static scala.collection.generic.CanBuildFrom canBuildFrom()
     40:40:public void init(java.io.ObjectInputStream,scala.Function0)
     40:40:public void serializeTo(java.io.ObjectOutputStream,scala.Function1)
@@ -25456,13 +25164,10 @@ scala.collection.mutable.HashMap$$anon$2
 scala.collection.mutable.HashMap$$anon$2$$anonfun$foreach$3
 scala.collection.mutable.HashMap$$anon$3
 scala.collection.mutable.HashMap$$anon$4
-scala.collection.mutable.HashMap$$anonfun$foreach$1:
-    public static final long serialVersionUID
-scala.collection.mutable.HashMap$$anonfun$iterator$1:
-    public static final long serialVersionUID
 scala.collection.mutable.HashMap$$anonfun$readObject$1
 scala.collection.mutable.HashMap$$anonfun$writeObject$1
 scala.collection.mutable.HashSet:
+    public static final long serialVersionUID
     public static scala.collection.generic.CanBuildFrom canBuildFrom()
     public static scala.collection.generic.CanBuildFrom setCanBuildFrom()
     40:40:public int randomSeed()
@@ -25807,6 +25512,7 @@ scala.collection.mutable.LinkedListLike$$anonfun$apply$1
 scala.collection.mutable.LinkedListLike$$anonfun$update$1
 scala.collection.mutable.LinkedListLike$class
 scala.collection.mutable.ListBuffer:
+    public static final long serialVersionUID
     public static scala.collection.generic.CanBuildFrom canBuildFrom()
     public static scala.Some unapplySeq(scala.collection.Seq)
     public static scala.collection.GenTraversable iterate(java.lang.Object,int,scala.Function1)
@@ -26098,8 +25804,6 @@ scala.collection.mutable.Stack$:
     34:34:public scala.collection.generic.CanBuildFrom canBuildFrom()
     36:36:public scala.collection.mutable.Stack empty()
     26:26:private java.lang.Object readResolve()
-scala.collection.mutable.Stack$$anonfun$pushAll$1:
-    public static final long serialVersionUID
 scala.collection.mutable.Stack$StackBuilder:
     27:27:public scala.collection.mutable.Builder mapResult(scala.Function1)
     27:27:public scala.collection.generic.Growable $plus$eq(java.lang.Object,java.lang.Object,scala.collection.Seq)
@@ -26108,6 +25812,7 @@ scala.collection.mutable.StackProxy
 scala.collection.mutable.StackProxy$$anon$1
 scala.collection.mutable.StackProxy$class
 scala.collection.mutable.StringBuilder:
+    public static final long serialVersionUID
     29:29:public scala.collection.mutable.Builder mapResult(scala.Function1)
     29:29:public scala.collection.generic.Growable $plus$eq(java.lang.Object,java.lang.Object,scala.collection.Seq)
     29:29:public java.lang.String $times(int)
@@ -26227,6 +25932,7 @@ scala.collection.mutable.TreeSet$$anonfun$3
 scala.collection.mutable.TreeSet$$anonfun$iteratorFrom$1
 scala.collection.mutable.Undoable
 scala.collection.mutable.UnrolledBuffer:
+    public static final long serialVersionUID
     public static int waterlineDelim()
     public static int waterline()
     public static scala.collection.generic.CanBuildFrom canBuildFrom(scala.reflect.ClassTag)
@@ -26324,8 +26030,6 @@ scala.collection.parallel.AdaptiveWorkStealingForkJoinTasks$WrappedTask:
     142:142:public synthetic scala.collection.parallel.AdaptiveWorkStealingTasks scala$collection$parallel$AdaptiveWorkStealingTasks$WrappedTask$$$outer()
     376:376:public synthetic scala.collection.parallel.ForkJoinTasks scala$collection$parallel$ForkJoinTasks$WrappedTask$$$outer()
     94:94:public synthetic scala.collection.parallel.Tasks scala$collection$parallel$Tasks$WrappedTask$$$outer()
-scala.collection.parallel.AdaptiveWorkStealingForkJoinTasks$WrappedTask$$anonfun$split$1:
-    public static final long serialVersionUID
 scala.collection.parallel.AdaptiveWorkStealingTasks:
     public abstract scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask newWrappedTask(scala.collection.parallel.Task)
 scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask:
@@ -26333,8 +26037,6 @@ scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask:
     public abstract void compute()
     public abstract void printChain()
     public abstract synthetic scala.collection.parallel.AdaptiveWorkStealingTasks scala$collection$parallel$AdaptiveWorkStealingTasks$WrappedTask$$$outer()
-scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask$$anonfun$spawnSubtasks$1:
-    public static final long serialVersionUID
 scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask$class:
     197:201:public static void printChain(scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask)
 scala.collection.parallel.AdaptiveWorkStealingThreadPoolTasks
@@ -26504,8 +26206,6 @@ scala.collection.parallel.ForkJoinTasks:
     public abstract java.lang.Object executeAndWaitResult(scala.collection.parallel.Task)
     public abstract int parallelismLevel()
 scala.collection.parallel.ForkJoinTasks$
-scala.collection.parallel.ForkJoinTasks$$anonfun$execute$2:
-    public static final long serialVersionUID
 scala.collection.parallel.ForkJoinTasks$WrappedTask:
     public abstract void start()
     public abstract boolean tryCancel()
@@ -26514,22 +26214,6 @@ scala.collection.parallel.FutureTasks:
     465:465:public scala.collection.mutable.ArrayBuffer debugMessages()
     465:465:public scala.collection.mutable.ArrayBuffer debuglog(java.lang.String)
     465:465:public bridge synthetic java.lang.Object environment()
-scala.collection.parallel.FutureTasks$$anonfun$1:
-    public static final long serialVersionUID
-scala.collection.parallel.FutureTasks$$anonfun$2:
-    public static final long serialVersionUID
-scala.collection.parallel.FutureTasks$$anonfun$exec$1:
-    public static final long serialVersionUID
-scala.collection.parallel.FutureTasks$$anonfun$scala$collection$parallel$FutureTasks$$compute$1$1:
-    public static final long serialVersionUID
-scala.collection.parallel.FutureTasks$$anonfun$scala$collection$parallel$FutureTasks$$compute$1$2:
-    public static final long serialVersionUID
-scala.collection.parallel.FutureTasks$$anonfun$scala$collection$parallel$FutureTasks$$compute$1$2$$anonfun$apply$1:
-    public static final long serialVersionUID
-scala.collection.parallel.FutureTasks$$anonfun$scala$collection$parallel$FutureTasks$$compute$1$2$$anonfun$apply$1$$anonfun$apply$2:
-    public static final long serialVersionUID
-scala.collection.parallel.FutureTasks$$anonfun$scala$collection$parallel$FutureTasks$$compute$1$3:
-    public static final long serialVersionUID
 scala.collection.parallel.FutureThreadPoolTasks
 scala.collection.parallel.FutureThreadPoolTasks$
 scala.collection.parallel.HavingForkJoinPool
@@ -26542,8 +26226,6 @@ scala.collection.parallel.IterableSplitter:
     public abstract scala.collection.parallel.IterableSplitter$Zipped zipParSeq(scala.collection.parallel.SeqSplitter)
     public abstract scala.collection.parallel.IterableSplitter$ZippedAll zipAllParSeq(scala.collection.parallel.SeqSplitter,java.lang.Object,java.lang.Object)
 scala.collection.parallel.IterableSplitter$$anonfun$buildString$1
-scala.collection.parallel.IterableSplitter$$anonfun$splitWithSignalling$1:
-    public static final long serialVersionUID
 scala.collection.parallel.IterableSplitter$Appended
 scala.collection.parallel.IterableSplitter$Mapped:
     462:462:public java.lang.String buildString(scala.Function1)
@@ -26613,8 +26295,6 @@ scala.collection.parallel.IterableSplitter$Mapped:
     462:462:public bridge synthetic scala.collection.GenSet toSet()
     462:462:public bridge synthetic scala.collection.GenIterable toIterable()
     462:462:public bridge synthetic scala.collection.GenTraversable toTraversable()
-scala.collection.parallel.IterableSplitter$Mapped$$anonfun$split$2:
-    public static final long serialVersionUID
 scala.collection.parallel.IterableSplitter$Taken:
     434:434:public java.lang.String buildString(scala.Function1)
     434:434:public java.lang.String debugInformation()
@@ -26683,16 +26363,6 @@ scala.collection.parallel.IterableSplitter$Taken:
     434:434:public bridge synthetic scala.collection.GenSet toSet()
     434:434:public bridge synthetic scala.collection.GenIterable toIterable()
     434:434:public bridge synthetic scala.collection.GenTraversable toTraversable()
-scala.collection.parallel.IterableSplitter$Taken$$anonfun$3:
-    public static final long serialVersionUID
-scala.collection.parallel.IterableSplitter$Taken$$anonfun$4:
-    public static final long serialVersionUID
-scala.collection.parallel.IterableSplitter$Taken$$anonfun$5:
-    public static final long serialVersionUID
-scala.collection.parallel.IterableSplitter$Taken$$anonfun$split$1:
-    public static final long serialVersionUID
-scala.collection.parallel.IterableSplitter$Taken$$anonfun$takeSeq$1:
-    public static final long serialVersionUID
 scala.collection.parallel.IterableSplitter$Zipped
 scala.collection.parallel.IterableSplitter$Zipped$$anonfun$6
 scala.collection.parallel.IterableSplitter$Zipped$$anonfun$split$3
@@ -26821,36 +26491,14 @@ scala.collection.parallel.ParIterableLike$$anon$5
 scala.collection.parallel.ParIterableLike$$anon$6
 scala.collection.parallel.ParIterableLike$$anon$7
 scala.collection.parallel.ParIterableLike$$anon$9
-scala.collection.parallel.ParIterableLike$$anonfun$$plus$plus$1:
-    public static final long serialVersionUID
-scala.collection.parallel.ParIterableLike$$anonfun$$plus$plus$2:
-    public static final long serialVersionUID
-scala.collection.parallel.ParIterableLike$$anonfun$$plus$plus$3:
-    public static final long serialVersionUID
-scala.collection.parallel.ParIterableLike$$anonfun$1:
-    public static final long serialVersionUID
 scala.collection.parallel.ParIterableLike$$anonfun$10
 scala.collection.parallel.ParIterableLike$$anonfun$11
-scala.collection.parallel.ParIterableLike$$anonfun$2:
-    public static final long serialVersionUID
-scala.collection.parallel.ParIterableLike$$anonfun$3:
-    public static final long serialVersionUID
-scala.collection.parallel.ParIterableLike$$anonfun$4:
-    public static final long serialVersionUID
-scala.collection.parallel.ParIterableLike$$anonfun$5:
-    public static final long serialVersionUID
-scala.collection.parallel.ParIterableLike$$anonfun$6:
-    public static final long serialVersionUID
-scala.collection.parallel.ParIterableLike$$anonfun$6$$anonfun$apply$1:
-    public static final long serialVersionUID
 scala.collection.parallel.ParIterableLike$$anonfun$7
 scala.collection.parallel.ParIterableLike$$anonfun$8
 scala.collection.parallel.ParIterableLike$$anonfun$8$$anonfun$apply$2
 scala.collection.parallel.ParIterableLike$$anonfun$9
 scala.collection.parallel.ParIterableLike$$anonfun$collect$1
 scala.collection.parallel.ParIterableLike$$anonfun$collect$2
-scala.collection.parallel.ParIterableLike$$anonfun$drop$1:
-    public static final long serialVersionUID
 scala.collection.parallel.ParIterableLike$$anonfun$dropWhile$1
 scala.collection.parallel.ParIterableLike$$anonfun$filter$1
 scala.collection.parallel.ParIterableLike$$anonfun$filterNot$1
@@ -26876,18 +26524,10 @@ scala.collection.parallel.ParIterableLike$$anonfun$splitAt$1
 scala.collection.parallel.ParIterableLike$$anonfun$take$1
 scala.collection.parallel.ParIterableLike$$anonfun$takeWhile$1
 scala.collection.parallel.ParIterableLike$$anonfun$takeWhile$2
-scala.collection.parallel.ParIterableLike$$anonfun$to$1:
-    public static final long serialVersionUID
 scala.collection.parallel.ParIterableLike$$anonfun$toMap$1
-scala.collection.parallel.ParIterableLike$$anonfun$toParCollection$1:
-    public static final long serialVersionUID
 scala.collection.parallel.ParIterableLike$$anonfun$toParMap$1
 scala.collection.parallel.ParIterableLike$$anonfun$toSeq$1
 scala.collection.parallel.ParIterableLike$$anonfun$toSet$1
-scala.collection.parallel.ParIterableLike$$anonfun$zip$1:
-    public static final long serialVersionUID
-scala.collection.parallel.ParIterableLike$$anonfun$zip$2:
-    public static final long serialVersionUID
 scala.collection.parallel.ParIterableLike$$anonfun$zipAll$1
 scala.collection.parallel.ParIterableLike$$anonfun$zipAll$2
 scala.collection.parallel.ParIterableLike$Accessor:
@@ -26895,8 +26535,6 @@ scala.collection.parallel.ParIterableLike$Accessor:
     public abstract scala.collection.Seq split()
     public abstract void signalAbort()
     public abstract java.lang.String toString()
-scala.collection.parallel.ParIterableLike$Accessor$$anonfun$split$1:
-    public static final long serialVersionUID
 scala.collection.parallel.ParIterableLike$Aggregate
 scala.collection.parallel.ParIterableLike$BuilderOps:
     public abstract synthetic scala.collection.parallel.ParIterableLike scala$collection$parallel$ParIterableLike$BuilderOps$$$outer()
@@ -26913,14 +26551,6 @@ scala.collection.parallel.ParIterableLike$CreateScanTree
 scala.collection.parallel.ParIterableLike$CreateScanTree$$anonfun$split$25
 scala.collection.parallel.ParIterableLike$CreateScanTree$$anonfun$split$26
 scala.collection.parallel.ParIterableLike$CreateScanTree$$anonfun$split$27
-scala.collection.parallel.ParIterableLike$Drop$$anonfun$13:
-    public static final long serialVersionUID
-scala.collection.parallel.ParIterableLike$Drop$$anonfun$split$5:
-    public static final long serialVersionUID
-scala.collection.parallel.ParIterableLike$Drop$$anonfun$split$6:
-    public static final long serialVersionUID
-scala.collection.parallel.ParIterableLike$Drop$$anonfun$split$7:
-    public static final long serialVersionUID
 scala.collection.parallel.ParIterableLike$Exists
 scala.collection.parallel.ParIterableLike$Filter
 scala.collection.parallel.ParIterableLike$FilterNot
@@ -26974,10 +26604,6 @@ scala.collection.parallel.ParIterableLike$TakeWhile$$anonfun$split$15
 scala.collection.parallel.ParIterableLike$TaskOps:
     public abstract scala.collection.parallel.ParIterableLike$SeqComposite compose(scala.collection.parallel.ParIterableLike$StrictSplitterCheckTask,scala.Function2)
 scala.collection.parallel.ParIterableLike$ToParMap
-scala.collection.parallel.ParIterableLike$Zip$$anonfun$16:
-    public static final long serialVersionUID
-scala.collection.parallel.ParIterableLike$Zip$$anonfun$split$19:
-    public static final long serialVersionUID
 scala.collection.parallel.ParIterableLike$ZipAll
 scala.collection.parallel.ParIterableLike$ZipAll$$anonfun$17
 scala.collection.parallel.ParIterableLike$ZipAll$$anonfun$split$20
@@ -27140,84 +26766,22 @@ scala.collection.parallel.ParSeqLike:
     public abstract scala.collection.parallel.ParSeq toSeq()
     public abstract scala.collection.SeqView view()
     public abstract scala.collection.parallel.SeqSplitter down(scala.collection.parallel.IterableSplitter)
-scala.collection.parallel.ParSeqLike$$anonfun$2:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$$anonfun$3:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$$anonfun$corresponds$1:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$$anonfun$corresponds$2:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$$anonfun$diff$1:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$$anonfun$distinct$1:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$$anonfun$endsWith$1:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$$anonfun$endsWith$2:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$$anonfun$intersect$1:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$$anonfun$patch$1:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$$anonfun$patch$2:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$$anonfun$patch$3:
-    public static final long serialVersionUID
 scala.collection.parallel.ParSeqLike$$anonfun$reverse$1
 scala.collection.parallel.ParSeqLike$$anonfun$reverse$2
 scala.collection.parallel.ParSeqLike$$anonfun$reverseMap$1
 scala.collection.parallel.ParSeqLike$$anonfun$reverseMap$2
-scala.collection.parallel.ParSeqLike$$anonfun$sameElements$1:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$$anonfun$sameElements$2:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$$anonfun$startsWith$1:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$$anonfun$startsWith$2:
-    public static final long serialVersionUID
 scala.collection.parallel.ParSeqLike$$anonfun$updated$1
 scala.collection.parallel.ParSeqLike$$anonfun$updated$2
-scala.collection.parallel.ParSeqLike$$anonfun$zip$1:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$$anonfun$zip$2:
-    public static final long serialVersionUID
 scala.collection.parallel.ParSeqLike$Accessor:
     public abstract scala.collection.parallel.SeqSplitter pit()
-scala.collection.parallel.ParSeqLike$Corresponds$$anonfun$split$15:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$Corresponds$$anonfun$split$16:
-    public static final long serialVersionUID
 scala.collection.parallel.ParSeqLike$Elements
 scala.collection.parallel.ParSeqLike$Elements$$anon$1
 scala.collection.parallel.ParSeqLike$Elements$$anonfun$1
 scala.collection.parallel.ParSeqLike$Elements$$anonfun$psplit$1
 scala.collection.parallel.ParSeqLike$Elements$$anonfun$psplit$2
 scala.collection.parallel.ParSeqLike$Elements$$anonfun$psplit$2$$anon$2
-scala.collection.parallel.ParSeqLike$IndexWhere$$anonfun$split$4:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$IndexWhere$$anonfun$split$5:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$IndexWhere$$anonfun$split$6:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$LastIndexWhere$$anonfun$split$7:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$LastIndexWhere$$anonfun$split$8:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$LastIndexWhere$$anonfun$split$9:
-    public static final long serialVersionUID
 scala.collection.parallel.ParSeqLike$Reverse
 scala.collection.parallel.ParSeqLike$ReverseMap
-scala.collection.parallel.ParSeqLike$SameElements$$anonfun$split$10:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$SameElements$$anonfun$split$11:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$SegmentLength$$anonfun$split$1:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$SegmentLength$$anonfun$split$2:
-    public static final long serialVersionUID
-scala.collection.parallel.ParSeqLike$SegmentLength$$anonfun$split$3:
-    public static final long serialVersionUID
 scala.collection.parallel.ParSeqLike$Updated
 scala.collection.parallel.ParSeqLike$Updated$$anonfun$split$12
 scala.collection.parallel.ParSeqLike$Updated$$anonfun$split$13
@@ -27272,10 +26836,6 @@ scala.collection.parallel.SeqSplitter:
     public abstract scala.collection.parallel.SeqSplitter reverse()
     public abstract scala.collection.parallel.SeqSplitter$Patched patchParSeq(int,scala.collection.parallel.SeqSplitter,int)
 scala.collection.parallel.SeqSplitter$$anon$1
-scala.collection.parallel.SeqSplitter$$anonfun$psplitWithSignalling$1:
-    public static final long serialVersionUID
-scala.collection.parallel.SeqSplitter$$anonfun$splitWithSignalling$2:
-    public static final long serialVersionUID
 scala.collection.parallel.SeqSplitter$Appended
 scala.collection.parallel.SeqSplitter$Appended$$anonfun$1
 scala.collection.parallel.SeqSplitter$Appended$$anonfun$10
@@ -27295,8 +26855,6 @@ scala.collection.parallel.SeqSplitter$Mapped:
     578:578:public bridge synthetic scala.collection.parallel.IterableSplitter$ZippedAll zipAllParSeq(scala.collection.parallel.SeqSplitter,java.lang.Object,java.lang.Object)
     578:578:public bridge synthetic scala.collection.parallel.IterableSplitter$Zipped zipParSeq(scala.collection.parallel.SeqSplitter)
     578:578:public bridge synthetic scala.collection.parallel.IterableSplitter dup()
-scala.collection.parallel.SeqSplitter$Mapped$$anonfun$psplit$2:
-    public static final long serialVersionUID
 scala.collection.parallel.SeqSplitter$Patched
 scala.collection.parallel.SeqSplitter$Taken:
     569:569:public scala.collection.parallel.SeqSplitter$Appended appendParSeq(scala.collection.parallel.SeqSplitter)
@@ -27311,8 +26869,6 @@ scala.collection.parallel.SeqSplitter$Taken:
     569:569:public bridge synthetic scala.collection.parallel.IterableSplitter$ZippedAll zipAllParSeq(scala.collection.parallel.SeqSplitter,java.lang.Object,java.lang.Object)
     569:569:public bridge synthetic scala.collection.parallel.IterableSplitter$Zipped zipParSeq(scala.collection.parallel.SeqSplitter)
     569:569:public bridge synthetic scala.collection.parallel.IterableSplitter dup()
-scala.collection.parallel.SeqSplitter$Taken$$anonfun$psplit$1:
-    public static final long serialVersionUID
 scala.collection.parallel.SeqSplitter$Zipped
 scala.collection.parallel.SeqSplitter$Zipped$$anonfun$psplit$3
 scala.collection.parallel.SeqSplitter$ZippedAll
@@ -27326,10 +26882,6 @@ scala.collection.parallel.Splitter:
     public abstract scala.collection.Seq split()
 scala.collection.parallel.Splitter$
 scala.collection.parallel.Splitter$$anon$1
-scala.collection.parallel.Task$$anonfun$tryLeaf$1:
-    public static final long serialVersionUID
-scala.collection.parallel.Task$$anonfun$tryLeaf$2:
-    public static final long serialVersionUID
 scala.collection.parallel.Tasks:
     public abstract scala.collection.mutable.ArrayBuffer debugMessages()
     public abstract scala.collection.mutable.ArrayBuffer debuglog(java.lang.String)
@@ -27355,12 +26907,6 @@ scala.collection.parallel.TraversableOps:
 scala.collection.parallel.immutable.HashMapCombiner:
     public static scala.collection.parallel.immutable.HashMapCombiner apply()
     197:196:public scala.collection.parallel.immutable.ParHashMap groupByKey(scala.Function0)
-scala.collection.parallel.immutable.HashMapCombiner$$anonfun$1:
-    public static final long serialVersionUID
-scala.collection.parallel.immutable.HashMapCombiner$$anonfun$2:
-    public static final long serialVersionUID
-scala.collection.parallel.immutable.HashMapCombiner$$anonfun$3:
-    public static final long serialVersionUID
 scala.collection.parallel.immutable.HashMapCombiner$$anonfun$4
 scala.collection.parallel.immutable.HashMapCombiner$$anonfun$5
 scala.collection.parallel.immutable.HashMapCombiner$$anonfun$6
@@ -27368,19 +26914,12 @@ scala.collection.parallel.immutable.HashMapCombiner$CreateGroupedTrie
 scala.collection.parallel.immutable.HashMapCombiner$CreateGroupedTrie$$anonfun$7
 scala.collection.parallel.immutable.HashSetCombiner:
     public static scala.collection.parallel.immutable.HashSetCombiner apply()
-scala.collection.parallel.immutable.HashSetCombiner$$anonfun$1:
-    public static final long serialVersionUID
-scala.collection.parallel.immutable.HashSetCombiner$$anonfun$2:
-    public static final long serialVersionUID
-scala.collection.parallel.immutable.HashSetCombiner$$anonfun$3:
-    public static final long serialVersionUID
 scala.collection.parallel.immutable.LazyParVectorCombiner:
     95:95:public scala.collection.mutable.Builder mapResult(scala.Function1)
     95:95:public scala.collection.generic.Growable $plus$eq(java.lang.Object,java.lang.Object,scala.collection.Seq)
     109:111:public void clear()
-scala.collection.parallel.immutable.LazyParVectorCombiner$$anonfun$result$1:
-    public static final long serialVersionUID
 scala.collection.parallel.immutable.ParHashMap:
+    public static final long serialVersionUID
     private volatile scala.collection.parallel.ParIterableLike$ScanNode$ ScanNode$module
     private volatile scala.collection.parallel.ParIterableLike$ScanLeaf$ ScanLeaf$module
     public static void totalcombines_$eq(java.util.concurrent.atomic.AtomicInteger)
@@ -27583,9 +27122,8 @@ scala.collection.parallel.immutable.ParHashMap$ParHashMapIterator:
     76:76:public bridge synthetic scala.collection.GenSet toSet()
     76:76:public bridge synthetic scala.collection.GenIterable toIterable()
     76:76:public bridge synthetic scala.collection.GenTraversable toTraversable()
-scala.collection.parallel.immutable.ParHashMap$ParHashMapIterator$$anonfun$split$1:
-    public static final long serialVersionUID
 scala.collection.parallel.immutable.ParHashSet:
+    public static final long serialVersionUID
     private volatile scala.collection.parallel.ParIterableLike$ScanNode$ ScanNode$module
     private volatile scala.collection.parallel.ParIterableLike$ScanLeaf$ ScanLeaf$module
     public static scala.collection.parallel.immutable.ParHashSet fromTrie(scala.collection.immutable.HashSet)
@@ -27797,16 +27335,12 @@ scala.collection.parallel.immutable.ParHashSet$ParHashSetIterator:
     77:77:public bridge synthetic scala.collection.GenSet toSet()
     77:77:public bridge synthetic scala.collection.GenIterable toIterable()
     77:77:public bridge synthetic scala.collection.GenTraversable toTraversable()
-scala.collection.parallel.immutable.ParHashSet$ParHashSetIterator$$anonfun$split$1:
-    public static final long serialVersionUID
 scala.collection.parallel.immutable.ParIterable:
     public abstract scala.collection.generic.GenericCompanion companion()
     public abstract scala.collection.parallel.immutable.ParIterable toIterable()
     public abstract scala.collection.parallel.immutable.ParSeq toSeq()
 scala.collection.parallel.immutable.ParIterable$:
     45:45:public scala.collection.generic.CanCombineFrom canBuildFrom()
-scala.collection.parallel.immutable.ParIterable$$anonfun$toSeq$1:
-    public static final long serialVersionUID
 scala.collection.parallel.immutable.ParIterable$class:
     37:37:public static scala.collection.parallel.immutable.ParIterable toIterable(scala.collection.parallel.immutable.ParIterable)
 scala.collection.parallel.immutable.ParMap:
@@ -27831,6 +27365,7 @@ scala.collection.parallel.immutable.ParMap$class:
     60:60:public static scala.collection.parallel.immutable.ParMap withDefault(scala.collection.parallel.immutable.ParMap,scala.Function1)
     69:69:public static scala.collection.parallel.immutable.ParMap withDefaultValue(scala.collection.parallel.immutable.ParMap,java.lang.Object)
 scala.collection.parallel.immutable.ParRange:
+    public static final long serialVersionUID
     private volatile scala.collection.parallel.ParIterableLike$ScanNode$ ScanNode$module
     private volatile scala.collection.parallel.ParIterableLike$ScanLeaf$ ScanLeaf$module
     35:35:public scala.collection.parallel.immutable.ParIterable toIterable()
@@ -28017,8 +27552,6 @@ scala.collection.parallel.immutable.ParRange$ParRangeIterator:
     49:49:public bridge synthetic scala.collection.parallel.IterableSplitter slice(int,int)
     49:49:public bridge synthetic scala.collection.parallel.IterableSplitter dup()
     49:49:public bridge synthetic scala.collection.parallel.SeqSplitter dup()
-scala.collection.parallel.immutable.ParRange$ParRangeIterator$$anonfun$psplit$1:
-    public static final long serialVersionUID
 scala.collection.parallel.immutable.ParSeq:
     public abstract scala.collection.generic.GenericCompanion companion()
     public abstract scala.collection.parallel.immutable.ParSeq toSeq()
@@ -28204,10 +27737,6 @@ scala.collection.parallel.immutable.ParVector$ParVectorIterator:
     62:62:public bridge synthetic scala.collection.parallel.IterableSplitter$Zipped zipParSeq(scala.collection.parallel.SeqSplitter)
     62:62:public bridge synthetic scala.collection.parallel.IterableSplitter slice(int,int)
     62:62:public bridge synthetic scala.collection.parallel.IterableSplitter dup()
-scala.collection.parallel.immutable.ParVector$ParVectorIterator$$anonfun$psplit$1:
-    public static final long serialVersionUID
-scala.collection.parallel.immutable.ParVector$ParVectorIterator$$anonfun$psplit$2:
-    public static final long serialVersionUID
 scala.collection.parallel.immutable.Repetition
 scala.collection.parallel.immutable.Repetition$ParIterator
 scala.collection.parallel.immutable.Repetition$ParIterator$
@@ -28223,11 +27752,10 @@ scala.collection.parallel.mutable.LazyCombiner:
     public abstract java.lang.Object result()
     public abstract void clear()
     public abstract scala.collection.parallel.Combiner combine(scala.collection.parallel.Combiner)
-scala.collection.parallel.mutable.LazyCombiner$$anonfun$size$1:
-    public static final long serialVersionUID
 scala.collection.parallel.mutable.LazyCombiner$class:
     31:31:public static void clear(scala.collection.parallel.mutable.LazyCombiner)
 scala.collection.parallel.mutable.ParArray:
+    public static final long serialVersionUID
     private volatile scala.collection.parallel.ParIterableLike$ScanNode$ ScanNode$module
     private volatile scala.collection.parallel.ParIterableLike$ScanLeaf$ ScanLeaf$module
     public static scala.collection.parallel.mutable.ParArray fromTraversables(scala.collection.Seq)
@@ -28461,19 +27989,7 @@ scala.collection.parallel.mutable.ParArray$ParArrayIterator:
     86:86:public bridge synthetic scala.collection.parallel.IterableSplitter slice(int,int)
     86:86:public bridge synthetic scala.collection.parallel.IterableSplitter dup()
     86:86:public bridge synthetic scala.collection.parallel.SeqSplitter dup()
-scala.collection.parallel.mutable.ParArray$ParArrayIterator$$anonfun$1:
-    public static final long serialVersionUID
 scala.collection.parallel.mutable.ParArray$ParArrayIterator$$anonfun$2
-scala.collection.parallel.mutable.ParArray$ParArrayIterator$$anonfun$copy2builder$1:
-    public static final long serialVersionUID
-scala.collection.parallel.mutable.ParArray$ParArrayIterator$$anonfun$copy2builder$1$$anonfun$apply$mcV$sp$1:
-    public static final long serialVersionUID
-scala.collection.parallel.mutable.ParArray$ParArrayIterator$$anonfun$copy2builder$1$$anonfun$apply$mcV$sp$3:
-    public static final long serialVersionUID
-scala.collection.parallel.mutable.ParArray$ParArrayIterator$$anonfun$copy2builder$2:
-    public static final long serialVersionUID
-scala.collection.parallel.mutable.ParArray$ParArrayIterator$$anonfun$psplit$1:
-    public static final long serialVersionUID
 scala.collection.parallel.mutable.ParArray$ParArrayIterator$$anonfun$reverse2combiner$1
 scala.collection.parallel.mutable.ParArray$ParArrayIterator$$anonfun$reverse2combiner$1$$anonfun$apply$mcV$sp$2
 scala.collection.parallel.mutable.ParArray$ParArrayIterator$$anonfun$reverse2combiner$1$$anonfun$apply$mcV$sp$4
@@ -28551,6 +28067,7 @@ scala.collection.parallel.mutable.ParFlatHashTable$ParFlatHashTableIterator:
     27:27:public bridge synthetic scala.collection.GenTraversable toTraversable()
 scala.collection.parallel.mutable.ParFlatHashTable$ParFlatHashTableIterator$$anonfun$debugInformation$1
 scala.collection.parallel.mutable.ParHashMap:
+    public static final long serialVersionUID
     private volatile scala.collection.parallel.ParIterableLike$ScanNode$ ScanNode$module
     private volatile scala.collection.parallel.ParIterableLike$ScanLeaf$ ScanLeaf$module
     public static scala.collection.generic.CanCombineFrom canBuildFrom()
@@ -28715,10 +28232,6 @@ scala.collection.parallel.mutable.ParHashMapCombiner:
     public static scala.collection.parallel.mutable.ParHashMapCombiner apply()
 scala.collection.parallel.mutable.ParHashMapCombiner$:
     298:298:public int discriminantmask()
-scala.collection.parallel.mutable.ParHashMapCombiner$$anonfun$4:
-    public static final long serialVersionUID
-scala.collection.parallel.mutable.ParHashMapCombiner$$anonfun$result$1:
-    public static final long serialVersionUID
 scala.collection.parallel.mutable.ParHashMapCombiner$AddingHashTable:
     217:217:public void init(java.io.ObjectInputStream,scala.Function0)
     217:217:public void serializeTo(java.io.ObjectOutputStream,scala.Function1)
@@ -28749,6 +28262,7 @@ scala.collection.parallel.mutable.ParHashMapCombiner$table$2$:
     191:191:public boolean isSizeMapDefined()
     191:191:public void initWithContents(scala.collection.mutable.HashTable$Contents)
 scala.collection.parallel.mutable.ParHashSet:
+    public static final long serialVersionUID
     private volatile scala.collection.parallel.ParIterableLike$ScanNode$ ScanNode$module
     private volatile scala.collection.parallel.ParIterableLike$ScanLeaf$ ScanLeaf$module
     public static scala.collection.generic.CanCombineFrom canBuildFrom()
@@ -28931,15 +28445,8 @@ scala.collection.parallel.mutable.ParHashSetCombiner$$anon$2:
     159:159:public boolean isSizeMapDefined()
     159:159:public void clearTable()
     159:159:public void initWithContents(scala.collection.mutable.FlatHashTable$Contents)
-scala.collection.parallel.mutable.ParHashSetCombiner$$anon$2$$anonfun$1:
-    public static final long serialVersionUID
 scala.collection.parallel.mutable.ParHashSetCombiner$$anon$2$$anonfun$2:
-    public static final long serialVersionUID
     163:163:public synthetic scala.collection.parallel.mutable.ParHashSetCombiner$$anon$2 scala$collection$parallel$mutable$ParHashSetCombiner$$anon$$anonfun$$$outer()
-scala.collection.parallel.mutable.ParHashSetCombiner$$anon$2$$anonfun$2$$anonfun$apply$1:
-    public static final long serialVersionUID
-scala.collection.parallel.mutable.ParHashSetCombiner$$anonfun$parPopulate$1:
-    public static final long serialVersionUID
 scala.collection.parallel.mutable.ParHashSetCombiner$AddingFlatHashTable:
     178:178:public int randomSeed()
     178:178:public void init(java.io.ObjectInputStream,scala.Function1)
@@ -29025,8 +28532,6 @@ scala.collection.parallel.mutable.ParHashTable$EntryIterator:
     26:26:public bridge synthetic scala.collection.GenSet toSet()
     26:26:public bridge synthetic scala.collection.GenIterable toIterable()
     26:26:public bridge synthetic scala.collection.GenTraversable toTraversable()
-scala.collection.parallel.mutable.ParHashTable$EntryIterator$$anonfun$convertToArrayBuffer$1:
-    public static final long serialVersionUID
 scala.collection.parallel.mutable.ParHashTable$EntryIterator$$anonfun$debugInformation$1
 scala.collection.parallel.mutable.ParHashTable$EntryIterator$$anonfun$debugInformation$1$$anonfun$apply$1
 scala.collection.parallel.mutable.ParIterable:
@@ -29036,8 +28541,6 @@ scala.collection.parallel.mutable.ParIterable:
     public abstract scala.collection.mutable.Iterable seq()
 scala.collection.parallel.mutable.ParIterable$:
     46:46:public scala.collection.generic.CanCombineFrom canBuildFrom()
-scala.collection.parallel.mutable.ParIterable$$anonfun$toSeq$1:
-    public static final long serialVersionUID
 scala.collection.parallel.mutable.ParIterable$class:
     36:36:public static scala.collection.parallel.mutable.ParIterable toIterable(scala.collection.parallel.mutable.ParIterable)
 scala.collection.parallel.mutable.ParMap:
@@ -29167,15 +28670,11 @@ scala.concurrent.Await
 scala.concurrent.Await$:
     90:90:public scala.concurrent.Awaitable ready(scala.concurrent.Awaitable,scala.concurrent.duration.Duration)
 scala.concurrent.Await$$anonfun$ready$1
-scala.concurrent.Await$$anonfun$result$1:
-    public static final long serialVersionUID
 scala.concurrent.AwaitPermission
 scala.concurrent.Awaitable:
     public abstract scala.concurrent.Awaitable ready(scala.concurrent.duration.Duration,scala.concurrent.CanAwait)
 scala.concurrent.BatchingExecutor:
     public abstract void execute(java.lang.Runnable)
-scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1:
-    public static final long serialVersionUID
 scala.concurrent.Channel
 scala.concurrent.Channel$LinkedList
 scala.concurrent.DelayedLazyVal
@@ -29183,8 +28682,6 @@ scala.concurrent.DelayedLazyVal$$anon$1
 scala.concurrent.ExecutionContext$:
     110:110:public scala.concurrent.ExecutionContextExecutorService fromExecutorService(java.util.concurrent.ExecutorService,scala.Function1)
     114:114:public scala.concurrent.ExecutionContextExecutorService fromExecutorService(java.util.concurrent.ExecutorService)
-scala.concurrent.ExecutionContext$$anonfun$defaultReporter$1:
-    public static final long serialVersionUID
 scala.concurrent.ExecutionContextExecutorService
 scala.concurrent.Future:
     public abstract void onSuccess(scala.PartialFunction,scala.concurrent.ExecutionContext)
@@ -29214,8 +28711,6 @@ scala.concurrent.Future$:
     573:576:public scala.concurrent.Future traverse(scala.collection.TraversableOnce,scala.Function1,scala.collection.generic.CanBuildFrom,scala.concurrent.ExecutionContext)
 scala.concurrent.Future$$anonfun$1
 scala.concurrent.Future$$anonfun$2
-scala.concurrent.Future$$anonfun$andThen$1:
-    public static final long serialVersionUID
 scala.concurrent.Future$$anonfun$collect$1
 scala.concurrent.Future$$anonfun$collect$1$$anonfun$apply$4
 scala.concurrent.Future$$anonfun$failed$1
@@ -29224,17 +28719,9 @@ scala.concurrent.Future$$anonfun$fallbackTo$1$$anonfun$apply$9
 scala.concurrent.Future$$anonfun$filter$1
 scala.concurrent.Future$$anonfun$find$1
 scala.concurrent.Future$$anonfun$firstCompletedOf$1
-scala.concurrent.Future$$anonfun$flatMap$1:
-    public static final long serialVersionUID
-scala.concurrent.Future$$anonfun$flatMap$1$$anonfun$apply$3:
-    public static final long serialVersionUID
 scala.concurrent.Future$$anonfun$fold$1
 scala.concurrent.Future$$anonfun$foreach$1
-scala.concurrent.Future$$anonfun$map$1:
-    public static final long serialVersionUID
 scala.concurrent.Future$$anonfun$mapTo$1
-scala.concurrent.Future$$anonfun$onFailure$1:
-    public static final long serialVersionUID
 scala.concurrent.Future$$anonfun$onSuccess$1
 scala.concurrent.Future$$anonfun$recover$1
 scala.concurrent.Future$$anonfun$recoverWith$1
@@ -29393,14 +28880,6 @@ scala.concurrent.duration.Duration$$anon$3:
     253:253:public double toUnit(java.util.concurrent.TimeUnit)
 scala.concurrent.duration.Duration$$anonfun$1
 scala.concurrent.duration.Duration$$anonfun$2
-scala.concurrent.duration.Duration$$anonfun$3:
-    public static final long serialVersionUID
-scala.concurrent.duration.Duration$$anonfun$4:
-    public static final long serialVersionUID
-scala.concurrent.duration.Duration$$anonfun$4$$anonfun$apply$1:
-    public static final long serialVersionUID
-scala.concurrent.duration.Duration$$anonfun$scala$concurrent$duration$Duration$$expandLabels$1:
-    public static final long serialVersionUID
 scala.concurrent.duration.Duration$DurationIsOrdered$
 scala.concurrent.duration.Duration$Infinite:
     188:188:public scala.concurrent.duration.Duration $plus(scala.concurrent.duration.Duration)
@@ -29954,15 +29433,7 @@ scala.math.BigDecimal$:
     343:343:public scala.math.BigDecimal double2bigDecimal(double)
     346:346:public scala.math.BigDecimal javaBigDecimal2bigDecimal(java.math.BigDecimal)
     25:25:private java.lang.Object readResolve()
-scala.math.BigDecimal$$anonfun$equals$1:
-    public static final long serialVersionUID
-scala.math.BigDecimal$$anonfun$isValidByte$1:
-    public static final long serialVersionUID
-scala.math.BigDecimal$$anonfun$isValidInt$1:
-    public static final long serialVersionUID
 scala.math.BigDecimal$$anonfun$isValidLong$1
-scala.math.BigDecimal$$anonfun$isValidShort$1:
-    public static final long serialVersionUID
 scala.math.BigDecimal$$anonfun$to$1
 scala.math.BigDecimal$$anonfun$until$1
 scala.math.BigDecimal$RoundingMode$
@@ -30507,29 +29978,30 @@ scala.ref.WeakReference
 scala.ref.WeakReference$
 scala.ref.WeakReferenceWithWrapper
 scala.reflect.AnyValManifest:
-    67:67:public scala.reflect.Manifest arrayManifest()
-    67:67:public scala.reflect.ClassTag wrap()
-    67:67:public scala.Option unapply(java.lang.Object)
-    67:67:public scala.Option unapply(byte)
-    67:67:public scala.Option unapply(short)
-    67:67:public scala.Option unapply(char)
-    67:67:public scala.Option unapply(int)
-    67:67:public scala.Option unapply(long)
-    67:67:public scala.Option unapply(float)
-    67:67:public scala.Option unapply(double)
-    67:67:public scala.Option unapply(boolean)
-    67:67:public scala.Option unapply(scala.runtime.BoxedUnit)
-    67:67:public java.lang.Class erasure()
-    67:67:public boolean $greater$colon$greater(scala.reflect.ClassTag)
-    67:67:public java.lang.Class arrayClass(java.lang.Class)
-    67:67:public java.lang.Object[] newArray2(int)
-    67:67:public java.lang.Object[][] newArray3(int)
-    67:67:public java.lang.Object[][][] newArray4(int)
-    67:67:public java.lang.Object[][][][] newArray5(int)
-    67:67:public scala.collection.mutable.WrappedArray newWrappedArray(int)
-    67:67:public scala.collection.mutable.ArrayBuilder newArrayBuilder()
-    67:67:public java.lang.String argString()
-    67:67:public bridge synthetic scala.reflect.ClassTag arrayManifest()
+    public static final long serialVersionUID
+    68:68:public scala.reflect.Manifest arrayManifest()
+    68:68:public scala.reflect.ClassTag wrap()
+    68:68:public scala.Option unapply(java.lang.Object)
+    68:68:public scala.Option unapply(byte)
+    68:68:public scala.Option unapply(short)
+    68:68:public scala.Option unapply(char)
+    68:68:public scala.Option unapply(int)
+    68:68:public scala.Option unapply(long)
+    68:68:public scala.Option unapply(float)
+    68:68:public scala.Option unapply(double)
+    68:68:public scala.Option unapply(boolean)
+    68:68:public scala.Option unapply(scala.runtime.BoxedUnit)
+    68:68:public java.lang.Class erasure()
+    68:68:public boolean $greater$colon$greater(scala.reflect.ClassTag)
+    68:68:public java.lang.Class arrayClass(java.lang.Class)
+    68:68:public java.lang.Object[] newArray2(int)
+    68:68:public java.lang.Object[][] newArray3(int)
+    68:68:public java.lang.Object[][][] newArray4(int)
+    68:68:public java.lang.Object[][][][] newArray5(int)
+    68:68:public scala.collection.mutable.WrappedArray newWrappedArray(int)
+    68:68:public scala.collection.mutable.ArrayBuilder newArrayBuilder()
+    68:68:public java.lang.String argString()
+    68:68:public bridge synthetic scala.reflect.ClassTag arrayManifest()
 scala.reflect.ClassManifestDeprecatedApis:
     public abstract java.lang.Class erasure()
     public abstract boolean $greater$colon$greater(scala.reflect.ClassTag)
@@ -30544,8 +30016,6 @@ scala.reflect.ClassManifestDeprecatedApis:
     public abstract scala.collection.mutable.WrappedArray newWrappedArray(int)
     public abstract scala.collection.mutable.ArrayBuilder newArrayBuilder()
     public abstract java.lang.String argString()
-scala.reflect.ClassManifestDeprecatedApis$$anonfun$subargs$1:
-    public static final long serialVersionUID
 scala.reflect.ClassManifestDeprecatedApis$class:
     21:21:public static java.lang.Class erasure(scala.reflect.ClassTag)
     83:83:public static boolean $greater$colon$greater(scala.reflect.ClassTag,scala.reflect.ClassTag)
@@ -30684,87 +30154,87 @@ scala.reflect.ManifestFactory:
     public static scala.reflect.AnyValManifest Byte()
     public static scala.collection.immutable.List valueManifests()
 scala.reflect.ManifestFactory$:
-    87:87:public scala.collection.immutable.List valueManifests()
-    205:205:public scala.reflect.Manifest singleType(java.lang.Object)
-    215:215:public scala.reflect.Manifest classType(java.lang.Class)
-    220:220:public scala.reflect.Manifest classType(java.lang.Class,scala.reflect.Manifest,scala.collection.Seq)
-    226:226:public scala.reflect.Manifest classType(scala.reflect.Manifest,java.lang.Class,scala.collection.Seq)
-    246:246:public scala.reflect.Manifest arrayType(scala.reflect.Manifest)
-    252:252:public scala.reflect.Manifest abstractType(scala.reflect.Manifest,java.lang.String,java.lang.Class,scala.collection.Seq)
-    261:261:public scala.reflect.Manifest wildcardType(scala.reflect.Manifest,scala.reflect.Manifest)
-    271:271:public scala.reflect.Manifest intersectionType(scala.collection.Seq)
+    89:89:public scala.collection.immutable.List valueManifests()
+    207:207:public scala.reflect.Manifest singleType(java.lang.Object)
+    217:217:public scala.reflect.Manifest classType(java.lang.Class)
+    222:222:public scala.reflect.Manifest classType(java.lang.Class,scala.reflect.Manifest,scala.collection.Seq)
+    228:228:public scala.reflect.Manifest classType(scala.reflect.Manifest,java.lang.Class,scala.collection.Seq)
+    249:249:public scala.reflect.Manifest arrayType(scala.reflect.Manifest)
+    255:255:public scala.reflect.Manifest abstractType(scala.reflect.Manifest,java.lang.String,java.lang.Class,scala.collection.Seq)
+    264:264:public scala.reflect.Manifest wildcardType(scala.reflect.Manifest,scala.reflect.Manifest)
+    274:274:public scala.reflect.Manifest intersectionType(scala.collection.Seq)
 scala.reflect.ManifestFactory$$anon$1:
-    168:168:private java.lang.Object readResolve()
+    170:170:private java.lang.Object readResolve()
 scala.reflect.ManifestFactory$$anon$10:
-    124:124:public scala.collection.mutable.WrappedArray newWrappedArray(int)
-    125:125:public scala.collection.mutable.ArrayBuilder newArrayBuilder()
-    126:126:private java.lang.Object readResolve()
+    126:126:public scala.collection.mutable.WrappedArray newWrappedArray(int)
+    127:127:public scala.collection.mutable.ArrayBuilder newArrayBuilder()
+    128:128:private java.lang.Object readResolve()
 scala.reflect.ManifestFactory$$anon$11:
-    132:132:public scala.collection.mutable.WrappedArray newWrappedArray(int)
-    133:133:public scala.collection.mutable.ArrayBuilder newArrayBuilder()
-    134:134:private java.lang.Object readResolve()
+    134:134:public scala.collection.mutable.WrappedArray newWrappedArray(int)
+    135:135:public scala.collection.mutable.ArrayBuilder newArrayBuilder()
+    136:136:private java.lang.Object readResolve()
 scala.reflect.ManifestFactory$$anon$12:
-    140:140:public scala.collection.mutable.WrappedArray newWrappedArray(int)
-    141:141:public scala.collection.mutable.ArrayBuilder newArrayBuilder()
-    142:142:private java.lang.Object readResolve()
+    142:142:public scala.collection.mutable.WrappedArray newWrappedArray(int)
+    143:143:public scala.collection.mutable.ArrayBuilder newArrayBuilder()
+    144:144:private java.lang.Object readResolve()
 scala.reflect.ManifestFactory$$anon$13:
-    148:148:public scala.collection.mutable.WrappedArray newWrappedArray(int)
-    149:149:public scala.collection.mutable.ArrayBuilder newArrayBuilder()
-    150:150:private java.lang.Object readResolve()
+    150:150:public scala.collection.mutable.WrappedArray newWrappedArray(int)
+    151:151:public scala.collection.mutable.ArrayBuilder newArrayBuilder()
+    152:152:private java.lang.Object readResolve()
 scala.reflect.ManifestFactory$$anon$14:
-    156:156:public scala.collection.mutable.WrappedArray newWrappedArray(int)
-    157:157:public scala.collection.mutable.ArrayBuilder newArrayBuilder()
-    158:158:private java.lang.Object readResolve()
+    158:158:public scala.collection.mutable.WrappedArray newWrappedArray(int)
+    159:159:public scala.collection.mutable.ArrayBuilder newArrayBuilder()
+    160:160:private java.lang.Object readResolve()
 scala.reflect.ManifestFactory$$anon$15
 scala.reflect.ManifestFactory$$anon$16
 scala.reflect.ManifestFactory$$anon$17
 scala.reflect.ManifestFactory$$anon$2:
-    174:174:private java.lang.Object readResolve()
+    176:176:private java.lang.Object readResolve()
 scala.reflect.ManifestFactory$$anon$3:
-    182:182:private java.lang.Object readResolve()
+    184:184:private java.lang.Object readResolve()
 scala.reflect.ManifestFactory$$anon$4:
-    189:189:private java.lang.Object readResolve()
+    191:191:private java.lang.Object readResolve()
 scala.reflect.ManifestFactory$$anon$5:
-    195:195:private java.lang.Object readResolve()
+    197:197:private java.lang.Object readResolve()
 scala.reflect.ManifestFactory$$anon$6:
-    92:92:public scala.collection.mutable.WrappedArray newWrappedArray(int)
-    93:93:public scala.collection.mutable.ArrayBuilder newArrayBuilder()
-    94:94:private java.lang.Object readResolve()
+    94:94:public scala.collection.mutable.WrappedArray newWrappedArray(int)
+    95:95:public scala.collection.mutable.ArrayBuilder newArrayBuilder()
+    96:96:private java.lang.Object readResolve()
 scala.reflect.ManifestFactory$$anon$7:
-    100:100:public scala.collection.mutable.WrappedArray newWrappedArray(int)
-    101:101:public scala.collection.mutable.ArrayBuilder newArrayBuilder()
-    102:102:private java.lang.Object readResolve()
+    102:102:public scala.collection.mutable.WrappedArray newWrappedArray(int)
+    103:103:public scala.collection.mutable.ArrayBuilder newArrayBuilder()
+    104:104:private java.lang.Object readResolve()
 scala.reflect.ManifestFactory$$anon$8:
-    108:108:public scala.collection.mutable.WrappedArray newWrappedArray(int)
-    109:109:public scala.collection.mutable.ArrayBuilder newArrayBuilder()
-    110:110:private java.lang.Object readResolve()
+    110:110:public scala.collection.mutable.WrappedArray newWrappedArray(int)
+    111:111:public scala.collection.mutable.ArrayBuilder newArrayBuilder()
+    112:112:private java.lang.Object readResolve()
 scala.reflect.ManifestFactory$$anon$9:
-    116:116:public scala.collection.mutable.WrappedArray newWrappedArray(int)
-    117:117:public scala.collection.mutable.ArrayBuilder newArrayBuilder()
-    118:118:private java.lang.Object readResolve()
+    118:118:public scala.collection.mutable.WrappedArray newWrappedArray(int)
+    119:119:public scala.collection.mutable.ArrayBuilder newArrayBuilder()
+    120:120:private java.lang.Object readResolve()
 scala.reflect.ManifestFactory$ClassTypeManifest:
-    236:236:public scala.reflect.Manifest arrayManifest()
-    236:236:public scala.reflect.ClassTag wrap()
-    236:236:public scala.Option unapply(java.lang.Object)
-    236:236:public scala.Option unapply(byte)
-    236:236:public scala.Option unapply(short)
-    236:236:public scala.Option unapply(char)
-    236:236:public scala.Option unapply(int)
-    236:236:public scala.Option unapply(long)
-    236:236:public scala.Option unapply(float)
-    236:236:public scala.Option unapply(double)
-    236:236:public scala.Option unapply(boolean)
-    236:236:public scala.Option unapply(scala.runtime.BoxedUnit)
-    236:236:public java.lang.Class erasure()
-    236:236:public boolean $greater$colon$greater(scala.reflect.ClassTag)
-    236:236:public java.lang.Class arrayClass(java.lang.Class)
-    236:236:public java.lang.Object[] newArray2(int)
-    236:236:public java.lang.Object[][] newArray3(int)
-    236:236:public java.lang.Object[][][] newArray4(int)
-    236:236:public java.lang.Object[][][][] newArray5(int)
-    236:236:public scala.collection.mutable.WrappedArray newWrappedArray(int)
-    236:236:public scala.collection.mutable.ArrayBuilder newArrayBuilder()
-    236:236:public bridge synthetic scala.reflect.ClassTag arrayManifest()
+    239:239:public scala.reflect.Manifest arrayManifest()
+    239:239:public scala.reflect.ClassTag wrap()
+    239:239:public scala.Option unapply(java.lang.Object)
+    239:239:public scala.Option unapply(byte)
+    239:239:public scala.Option unapply(short)
+    239:239:public scala.Option unapply(char)
+    239:239:public scala.Option unapply(int)
+    239:239:public scala.Option unapply(long)
+    239:239:public scala.Option unapply(float)
+    239:239:public scala.Option unapply(double)
+    239:239:public scala.Option unapply(boolean)
+    239:239:public scala.Option unapply(scala.runtime.BoxedUnit)
+    239:239:public java.lang.Class erasure()
+    239:239:public boolean $greater$colon$greater(scala.reflect.ClassTag)
+    239:239:public java.lang.Class arrayClass(java.lang.Class)
+    239:239:public java.lang.Object[] newArray2(int)
+    239:239:public java.lang.Object[][] newArray3(int)
+    239:239:public java.lang.Object[][][] newArray4(int)
+    239:239:public java.lang.Object[][][][] newArray5(int)
+    239:239:public scala.collection.mutable.WrappedArray newWrappedArray(int)
+    239:239:public scala.collection.mutable.ArrayBuilder newArrayBuilder()
+    239:239:public bridge synthetic scala.reflect.ClassTag arrayManifest()
 scala.reflect.ManifestFactory$SingletonTypeManifest
 scala.reflect.NameTransformer:
     public static java.lang.String decode(java.lang.String)
@@ -30782,10 +30252,6 @@ scala.reflect.NameTransformer$:
     23:23:public java.lang.String TRAIT_SETTER_SEPARATOR_STRING()
     64:63:public java.lang.String encode(java.lang.String)
     99:97:public java.lang.String decode(java.lang.String)
-scala.reflect.NameTransformer$$anonfun$1:
-    public static final long serialVersionUID
-scala.reflect.NameTransformer$$anonfun$2:
-    public static final long serialVersionUID
 scala.reflect.NameTransformer$OpCodes:
     28:28:public char op()
     28:28:public java.lang.String code()
@@ -34597,10 +34063,6 @@ scala.sys.BooleanProp:
 scala.sys.BooleanProp$:
     75:75:public scala.sys.BooleanProp constant(java.lang.String,boolean)
     77:77:public boolean booleanPropAsBoolean(scala.sys.BooleanProp)
-scala.sys.BooleanProp$$anonfun$keyExists$1:
-    public static final long serialVersionUID
-scala.sys.BooleanProp$$anonfun$valueIsTrue$1:
-    public static final long serialVersionUID
 scala.sys.BooleanProp$BooleanPropImpl:
     37:37:public boolean setValue(java.lang.Object)
     41:41:public void enable()
@@ -34634,8 +34096,6 @@ scala.sys.PropImpl:
     34:34:public void clear()
     35:35:public scala.Option option()
     36:36:public java.lang.Object or(scala.Function0)
-scala.sys.PropImpl$$anonfun$get$1:
-    public static final long serialVersionUID
 scala.sys.ShutdownHookThread
 scala.sys.ShutdownHookThread$
 scala.sys.ShutdownHookThread$$anon$1
@@ -34661,17 +34121,7 @@ scala.sys.SystemProperties$:
     77:77:public scala.sys.BooleanProp headless()
     78:78:public scala.sys.BooleanProp preferIPv4Stack()
     79:79:public scala.sys.BooleanProp preferIPv6Addresses()
-scala.sys.SystemProperties$$anonfun$$minus$eq$1:
-    public static final long serialVersionUID
-scala.sys.SystemProperties$$anonfun$$plus$eq$1:
-    public static final long serialVersionUID
-scala.sys.SystemProperties$$anonfun$contains$1:
-    public static final long serialVersionUID
-scala.sys.SystemProperties$$anonfun$get$1:
-    public static final long serialVersionUID
 scala.sys.SystemProperties$$anonfun$help$1
-scala.sys.SystemProperties$$anonfun$iterator$1:
-    public static final long serialVersionUID
 scala.sys.package
 scala.sys.package$:
     33:33:public scala.runtime.Nothing$ exit()
@@ -34964,20 +34414,8 @@ scala.util.PropertiesTrait:
     public abstract java.lang.String scalacCmd()
     public abstract boolean isJavaAtLeast(java.lang.String)
     public abstract void main(java.lang.String[])
-scala.util.PropertiesTrait$$anonfun$1:
-    public static final long serialVersionUID
-scala.util.PropertiesTrait$$anonfun$2:
-    public static final long serialVersionUID
-scala.util.PropertiesTrait$$anonfun$3:
-    public static final long serialVersionUID
-scala.util.PropertiesTrait$$anonfun$4:
-    public static final long serialVersionUID
 scala.util.PropertiesTrait$$anonfun$envOrElse$1
 scala.util.PropertiesTrait$$anonfun$envOrSome$1
-scala.util.PropertiesTrait$$anonfun$scalaProps$1:
-    public static final long serialVersionUID
-scala.util.PropertiesTrait$$anonfun$scalaProps$2:
-    public static final long serialVersionUID
 scala.util.PropertiesTrait$class:
     50:50:public static boolean propIsSet(scala.util.PropertiesTrait,java.lang.String)
     51:51:public static boolean propIsSetTo(scala.util.PropertiesTrait,java.lang.String,java.lang.String)
@@ -35051,8 +34489,6 @@ scala.util.Success:
     224:224:public scala.util.Success copy(java.lang.Object)
     224:224:public java.lang.Object copy$default$1()
 scala.util.Success$
-scala.util.Success$$anonfun$map$1:
-    public static final long serialVersionUID
 scala.util.Try:
     public static scala.util.Try apply(scala.Function0)
     public abstract boolean isFailure()
@@ -35214,10 +34650,6 @@ scala.util.hashing.MurmurHash3$$anon$2
 scala.util.hashing.MurmurHash3$$anon$3
 scala.util.hashing.MurmurHash3$$anon$4
 scala.util.hashing.MurmurHash3$$anon$5
-scala.util.hashing.MurmurHash3$$anonfun$orderedHash$1:
-    public static final long serialVersionUID
-scala.util.hashing.MurmurHash3$$anonfun$unorderedHash$1:
-    public static final long serialVersionUID
 scala.util.hashing.MurmurHash3$ArrayHashing
 scala.util.hashing.MurmurHash3$ArrayHashing$mcB$sp
 scala.util.hashing.MurmurHash3$ArrayHashing$mcC$sp
@@ -35232,6 +34664,7 @@ scala.util.hashing.package
 scala.util.hashing.package$:
     31:33:public long byteswap64(long)
 scala.util.matching.Regex:
+    public static final long serialVersionUID
     public static java.lang.String quoteReplacement(java.lang.String)
     public static java.lang.String quote(java.lang.String)
     206:205:public scala.Option unapplySeq(java.lang.CharSequence)

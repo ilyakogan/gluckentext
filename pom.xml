@@ -19,21 +19,21 @@
             <version>4.1.1.4</version>
             <scope>provided</scope>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>org.scala-lang</groupId>-->
-            <!--<artifactId>scala-library</artifactId>-->
-            <!--<version>${scala.version}</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>${scala.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.scaloid</groupId>
             <artifactId>scaloid_2.11</artifactId>
             <version>3.4-10</version>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>org.scala-lang.modules</groupId>-->
-            <!--<artifactId>scala-xml_2.11</artifactId>-->
-            <!--<version>1.0.2</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.scala-lang.modules</groupId>
+            <artifactId>scala-xml_2.11</artifactId>
+            <version>1.0.2</version>
+        </dependency>
         <dependency>
             <groupId>org.apmem.tools</groupId>
             <artifactId>layouts</artifactId>

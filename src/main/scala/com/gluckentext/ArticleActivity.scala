@@ -31,23 +31,6 @@ class ArticleActivity extends SActivity {
     }.padding(20.dip)
   }
 
-  //
-  //    contentView = new SVerticalLayout {
-  //      style {
-  //        case b: SButton => b.textColor(Color.RED)
-  //        case t: STextView => t.textSize(15 dip)
-  //      }
-  //
-  //
-  //      val button = SButton(R.string.red)
-  //
-  //      val webView = SWebView()
-  //      webView.getSettings.setDefaultTextEncodingName("utf-8")
-  //
-  //
-  //    }.padding(20 dip)
-  //  }
-
   def loadArticle() = {
     val f = Future {
       val result = WikiPageLoader.loadWikiPageXml("en", "Tatarstan")
