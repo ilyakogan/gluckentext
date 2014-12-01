@@ -51,21 +51,4 @@ object WikiPageLoader {
     val wikiPage = WikiPageParser.parseWikiPage(xml)
     wikiPage.map(c => "<h3>%s</h3><p>%s</p>".format(c.heading, c.body)).mkString
   }
-//    val root = TagSoupXmlLoader.get().load(url)
-//    def isParent(n: Node) = (n \ "@id").text == "mw-content-text"
-//    val parentsOfText = (root \\ "div" filter isParent)
-//    return (root \\ "div" map (n => (n \ "@class").text)).mkString(", ")
-//    val parentOfText = parentsOfText.head
-//    val headingsAndParas =
-//      parentOfText.child.collect {
-//        case n if (n.label == "p") => Paragraph(n)
-//        case n if (n.label.matches("h\\d")) => Heading(n, n.child.head)
-//      }
-//    val pairs = buildPairs(headingsAndParas)
-//    val html = pairs.map {
-//      case (heading, para) =>
-//        "<p>" + heading.map(_.text).getOrElse("No heading") + "<br><br>" + para.text + "</p>"
-//    }.mkString
-//    html
-//  }
 }
