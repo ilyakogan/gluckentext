@@ -2,10 +2,11 @@ package com.gluckentext
 
 import android.content.{BroadcastReceiver, IntentFilter}
 import android.graphics.Color
-import android.os.AsyncTask
+import android.os.{Bundle, AsyncTask}
 import android.text.Html
 import android.view.{MenuItem, Menu, ActionMode}
-import android.webkit.{WebChromeClient, WebViewClient, WebSettings}
+import android.webkit.{WebView, WebChromeClient, WebViewClient, WebSettings}
+import com.gluckentext.QuizHtml._
 import org.scaloid.common._
 
 import scala.concurrent.{ExecutionContext, Future}
@@ -16,42 +17,43 @@ class ArticleActivity extends SActivity {
   implicit val tag = LoggerTag("Gluckentext")
   implicit val exec = ExecutionContext.fromExecutor(AsyncTask.THREAD_POOL_EXECUTOR)
 
-  val words = List("of", "in", "at", "on")
-  var webView: Option[SWebView] = None
+  val quizSubject = List("of", "in", "at", "on")
+  var webViewOption: Option[SWebView] = None
 
   onCreate {
     contentView = new SRelativeLayout {
       val loadButton = SButton(R.string.load).<<.wrap.alignParentRight.alignParentLeft.alignParentTop.>>.onClick(loadArticle())
-      webView = Some(SWebView().<<.wrap.alignParentRight.alignParentLeft.alignParentBottom.below(loadButton).>>)
+      val webView: SWebView = SWebView().<<.wrap.alignParentRight.alignParentLeft.alignParentBottom.below(loadButton).>>
+      prepareWebView(webView)
+      webViewOption = Some(webView)
     }
   }
 
   def loadArticle() = {
-    def populateWebView(quizText: String) = {
-      webView.get.setWebChromeClient(new WebChromeClient)
-      webView.get.settings.setJavaScriptEnabled(true)
-      webView.get.webViewClient = new WebViewClient {
-        override def shouldOverrideUrlLoading(view: android.webkit.WebView, url: String) = {
-          quizWordClicked(url)
-          true
-        }
-      }
-
-      val start = "<html><head><meta http-equiv='Content-Type' content='text/html' charset='UTF-8' /></head>" +
-        "<body style='line-height: 200%'>"
-      val end = "</body></html>"
-      webView.get.loadData(start + quizText + end, "text/html; charset=UTF-8", null)
+    def populateWebView(quizHtml: String) = {
+      webViewOption.get.loadData(quizHtml, "text/html; charset=UTF-8", null)
     }
 
     val f = Future {
-      val article = WikiPageLoader.loadWikiPageXml("en", "Tatarstan")
-      val quiz: List[QuizPart] = createQuiz about words from article
-      val quizText = GenerateQuizHtml(quiz)
+      val article = WikiPageLoader.loadWikiPageXml("en", "Language")
+      val quiz: List[QuizPart] = createQuiz about quizSubject from article
+      val quizText = generateQuizHtml(quiz)
       runOnUiThread {
         populateWebView(quizText)
       }
     }
     f.onFailure { case x => x.printStackTrace()}
+  }
+
+  def prepareWebView(webView: SWebView) {
+    webView.setWebChromeClient(new WebChromeClient)
+    webView.settings.setJavaScriptEnabled(true)
+    webView.webViewClient = new WebViewClient {
+      override def shouldOverrideUrlLoading(view: WebView, url: String) = {
+        quizWordClicked(url)
+        true
+      }
+    }
   }
 
   def quizWordClicked(url: String) = {
@@ -60,7 +62,7 @@ class ArticleActivity extends SActivity {
       case makeGuessUrl(quizWord) =>
         startActionMode(new ActionMode.Callback {
           override def onCreateActionMode(actionMode: ActionMode, menu: Menu): Boolean = {
-            words.foreach(guess => menu.add(guess).setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS)) //.onClick(guessClicked(quizWord, guess)))
+            quizSubject.foreach(guess => menu.add(guess).setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS))
             true
           }
 
@@ -79,8 +81,34 @@ class ArticleActivity extends SActivity {
 
   def guessClicked(word: QuizWord, guess: String) = {
     if (word.rightAnswer == guess)
-      webView.get.loadUrl("javascript:document.getElementById('" + word.order + "').innerHTML = '" + guess + "'")
+      webViewOption.get.loadUrl(
+        "javascript:document.getElementById('" + getTagId(word) + "').innerHTML = '" + guess + "'")
     else toast("This is not the right answer. Want to try again?")
+  }
+
+  override def onSaveInstanceState(outState: Bundle): Unit = {
+    super.onSaveInstanceState(outState)
+
+    webViewOption match {
+      case Some(webView) =>
+        webView.addJavascriptInterface(new {
+          def showHtml(html: String) = {
+            toast(html)
+            outState.putString("webViewContent", html)
+          }
+        }, "HtmlViewer")
+        webView.loadUrl("javascript:window.HtmlViewer.showHtml" +
+          "('<html>'+document.getElementsByTagName('html')[0].innerHTML+'</html>');")
+    }
+  }
+
+  override def onRestoreInstanceState(state: Bundle): Unit = {
+    val html = state.getString("webViewContent")
+    if (html != null) {
+      webViewOption match {
+        case Some(webView) => webView.loadData(html, "text/html; charset=UTF-8", null)
+      }
+    }
   }
 }
 
