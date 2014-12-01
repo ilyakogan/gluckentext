@@ -35,7 +35,7 @@ class ArticleActivity extends SActivity {
     }
 
     val f = Future {
-      val article = WikiPageLoader.loadWikiPageXml("en", "Language")
+      val article = WikiPageLoader.loadWikiPageXml("en", "Standard_Chinese")
       val quiz: List[QuizPart] = createQuiz about quizSubject from article
       val quizText = generateQuizHtml(quiz)
       runOnUiThread {
@@ -80,9 +80,10 @@ class ArticleActivity extends SActivity {
   }
 
   def guessClicked(word: QuizWord, guess: String) = {
-    if (word.rightAnswer == guess)
-      webViewOption.get.loadUrl(
-        "javascript:document.getElementById('" + getTagId(word) + "').innerHTML = '" + guess + "'")
+    if (word.rightAnswer == guess) {
+      val jsUrl = "javascript:document.getElementById('" + getTagId(word) + "').innerHTML = '" + guess + "';"
+      webViewOption.get.loadUrl(jsUrl)
+    }
     else toast("This is not the right answer. Want to try again?")
   }
 
