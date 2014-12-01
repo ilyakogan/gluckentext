@@ -4,14 +4,14 @@ import java.util.regex.Pattern
 
 object QuizHtml {
 
-  def getTagId(quizWord : QuizWord) = quizWord.order
+  def getTagId(quizWord : QuizWord) = quizWord.id
 
   object makeGuessUrl {
     implicit class Regex(sc: StringContext) {
       def r = new util.matching.Regex(sc.parts.mkString, sc.parts.tail.map(_ => "x"): _*)
     }
 
-    def apply(word: QuizWord) = "com.gluckentext://" + word.order + "/" + word.rightAnswer
+    def apply(word: QuizWord) = "com.gluckentext://" + word.id + "/" + word.rightAnswer
 
     def unapply(url: String): Option[QuizWord] =
       url match {

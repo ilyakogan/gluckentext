@@ -1,32 +1,47 @@
 package com.gluckentext
 
-
 trait QuizPart
 
 case class PlainText(text: CharSequence) extends QuizPart
 
-case class QuizWord(order: Int, rightAnswer: CharSequence) extends QuizPart
+case class QuizWord(id: Int, rightAnswer: CharSequence) extends QuizPart
 
 class QuizParameters(val words: Iterable[CharSequence]) {
 }
 
 class QuizCreator(params: QuizParameters) {
-  def from(article: String) = {
+
+  trait Substring {
+    def start: Int
+
+    def end: Int
+  }
+
+  case class TextSubstring(start: Int, end: Int) extends Substring
+
+  case class QuizWordSubstring(start: Int, end: Int) extends Substring
+
+  def from(article: String): List[QuizPart] = {
     val caseInsensitive = "(?i)"
     val quizWordRegex = (caseInsensitive + "\\b(" + params.words.mkString("|") + ")\\b").r
+    val quizWordMatches = quizWordRegex.findAllMatchIn(article)
+    val quizWords = (quizWordMatches map (m => QuizWordSubstring(m.start, m.end))).toStream
 
-    def splitAcc(remainingArticle: CharSequence, acc: List[QuizPart], quizWordCount: Int): List[QuizPart] =
-      if (remainingArticle == "") acc
-      else quizWordRegex.findFirstMatchIn(remainingArticle) match {
-        case None =>
-          acc :+ PlainText(remainingArticle)
-        case Some(m) if m.start == 0 =>
-          splitAcc(m.after, acc :+ QuizWord(quizWordCount, m.matched), quizWordCount + 1)
-        case Some(m) =>
-          splitAcc(m.after, acc :+ PlainText(m.before) :+ QuizWord(quizWordCount, m.matched), quizWordCount + 1)
-      }
+    val quizPartsExceptLast = quizWords.foldLeft(List[Substring]())(
+      (acc, nextWord: QuizWordSubstring) =>
+        if (nextWord.start > 0)
+          acc :+ TextSubstring(acc.lastOption.map(_.end).getOrElse(0), nextWord.start) :+ nextWord
+        else acc :+ nextWord)
 
-    splitAcc(article, List(), 0)
+    val lastPos = quizPartsExceptLast.last.end
+    val quizParts =
+      if (lastPos == article.length) quizPartsExceptLast
+      else quizPartsExceptLast :+ TextSubstring(lastPos, article.length)
+
+    quizParts.map {
+      case t: TextSubstring => PlainText(article.substring(t.start, t.end))
+      case w: QuizWordSubstring => QuizWord(w.start, article.substring(w.start, w.end))
+    }
   }
 }
 
