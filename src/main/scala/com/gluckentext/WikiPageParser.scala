@@ -4,6 +4,8 @@ import scala.xml.{Utility, Elem}
 
 object WikiPageParser {
 
+  val maxTextLength: Int = 30000
+
   def clean(text: String): String = {
     implicit class WikiString(text: String) {
       def remove(regex: String): String = {
@@ -80,9 +82,12 @@ object WikiPageParser {
     pairs.map(p => new Chapter(p.head, p.last))
   }
 
+  def shorten(text: String): String = text.take(maxTextLength)
+
   def parseWikiPage(root: Elem) = {
     val title = (root \\ "title").text
     var text = (root \\ "text").text
+    text = shorten(text)
     text = clean(text)
     val chapters = chapterize(title + "== " + text)
 

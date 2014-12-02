@@ -24,13 +24,13 @@ class ArticleActivity extends SActivity {
     contentView = new SRelativeLayout {
       val loadButton = SButton(R.string.load).<<.wrap.alignParentRight.alignParentLeft.alignParentTop.>>.onClick(loadArticle())
       val webView: SWebView = SWebView().<<.wrap.alignParentRight.alignParentLeft.alignParentBottom.below(loadButton).>>
-      prepareWebView(webView)
       webViewOption = Some(webView)
     }
   }
 
   def loadArticle() = {
     def populateWebView(quizHtml: String) = {
+      prepareWebView(webViewOption.get)
       webViewOption.get.loadData(quizHtml, "text/html; charset=UTF-8", null)
     }
 
@@ -46,11 +46,11 @@ class ArticleActivity extends SActivity {
   }
 
   def prepareWebView(webView: SWebView) {
-    webView.setWebChromeClient(new WebChromeClient)
     webView.settings.setJavaScriptEnabled(true)
+    webView.setWebChromeClient(new WebChromeClient)
     webView.webViewClient = new WebViewClient {
       override def shouldOverrideUrlLoading(view: WebView, url: String) = {
-        quizWordClicked(url)
+        quizWordClicked(url.replaceAll("\\?",""))
         true
       }
     }
@@ -81,35 +81,38 @@ class ArticleActivity extends SActivity {
 
   def guessClicked(word: QuizWord, guess: String) = {
     if (word.rightAnswer == guess) {
-      val jsUrl = "javascript:document.getElementById('" + getTagId(word) + "').innerHTML = '" + guess + "';"
+      //val jsUrl = "javascript:document.getElementById('" + getTagId(word) + "').className=\"solved\";"
+      val jsUrl = "javascript:markSolved(" + getTagId(word) + ")"
+      //val jsUrl = "javascript:document.getElementById('" + getTagId(word) + "').innerHTML = '" + guess + "'"
+      //val jsUrl = "javascript:alert(document.getElementById('" + getTagId(word) + "').innerHTML)"
       webViewOption.get.loadUrl(jsUrl)
     }
     else toast("This is not the right answer. Want to try again?")
   }
 
-  override def onSaveInstanceState(outState: Bundle): Unit = {
-    super.onSaveInstanceState(outState)
-
-    webViewOption match {
-      case Some(webView) =>
-        webView.addJavascriptInterface(new {
-          def showHtml(html: String) = {
-            toast(html)
-            outState.putString("webViewContent", html)
-          }
-        }, "HtmlViewer")
-        webView.loadUrl("javascript:window.HtmlViewer.showHtml" +
-          "('<html>'+document.getElementsByTagName('html')[0].innerHTML+'</html>');")
-    }
-  }
-
-  override def onRestoreInstanceState(state: Bundle): Unit = {
-    val html = state.getString("webViewContent")
-    if (html != null) {
-      webViewOption match {
-        case Some(webView) => webView.loadData(html, "text/html; charset=UTF-8", null)
-      }
-    }
-  }
+//  override def onSaveInstanceState(outState: Bundle): Unit = {
+//    super.onSaveInstanceState(outState)
+//
+//    webViewOption match {
+//      case Some(webView) =>
+//        webView.addJavascriptInterface(new {
+//          def showHtml(html: String) = {
+//            toast(html)
+//            outState.putString("webViewContent", html)
+//          }
+//        }, "HtmlViewer")
+//        webView.loadUrl("javascript:window.HtmlViewer.showHtml" +
+//          "('<html>'+document.getElementsByTagName('html')[0].innerHTML+'</html>');")
+//    }
+//  }
+//
+//  override def onRestoreInstanceState(state: Bundle): Unit = {
+//    val html = state.getString("webViewContent")
+//    if (html != null) {
+//      webViewOption match {
+//        case Some(webView) => webView.loadData(html, "text/html; charset=UTF-8", null)
+//      }
+//    }
+//  }
 }
 

@@ -40,15 +40,13 @@ object WikiPageLoader {
       }
     }
 
-
   def buildPairs(elements: Seq[Element]): List[(Option[Heading], Paragraph)] =
     buildPairsAcc(elements, List(), None)
-
 
   def loadWikiPageXml(language: String, term: String): String = {
     val url = "https://%s.wikipedia.org/wiki/Special:Export/%s".format(language, term)
     val xml = XML.load(url)
     val wikiPage = WikiPageParser.parseWikiPage(xml)
-    wikiPage.map(c => "<h3>%s</h3><p>%s</p>".format(c.heading, c.body)).mkString
+    wikiPage.map(c => "<h3>%s</h3>%s".format(c.heading, c.body)).mkString
   }
 }
