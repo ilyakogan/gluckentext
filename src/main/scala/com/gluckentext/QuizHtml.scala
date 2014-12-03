@@ -16,7 +16,7 @@ object QuizHtml {
 
     def unapply(url: String): Option[QuizWord] =
       url match {
-        case r"com.gluckentext://(.+)${order}/(.+)${word}" => Some(QuizWord(order.toInt, word))
+        case r"com.gluckentext://(.+)${order}/(.+)${word}" => Some(QuizWord(order.toInt, word, isSolved = false))
       }
   }
 
@@ -40,14 +40,20 @@ object QuizHtml {
       "<body style='line-height: 200%'>"
     val footer = "</body></html>"
 
-    def apply(quiz: List[QuizPart]) = {
+    def getClass(w: QuizWord): String = {
+      if (w.isSolved) "solved" else "unsolved"
+    }
+
+    def quizWordHtml(w: QuizWord): String =
+      "<form style='display: inline' class='" + getClass(w) + "' id='" + getTagId(w) + "' action='" + makeGuessUrl(w) + "'>" +
+        "<input type=\"submit\" id='" + getTagId(w) + "' value=''/>" +
+        "<span>" + w.rightAnswer + "</span>" +
+        "</form>"
+
+    def apply(quiz: Iterable[QuizPart]) = {
       val body = quiz.map {
         case PlainText(text) => text
-        case w@QuizWord(_, _) =>
-          "<form style='display: inline' class='unsolved' id='" + getTagId(w) + "' action='" + makeGuessUrl(w) + "'>" +
-            "<input type=\"submit\" id='" + getTagId(w) + "' value=''/>" +
-            "<span>" + w.rightAnswer + "</span>" +
-            "</form>"
+        case w@QuizWord(_, _, isSolved) => quizWordHtml(w)
       }.mkString
       header + body + footer
     }

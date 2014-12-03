@@ -4,7 +4,9 @@ trait QuizPart
 
 case class PlainText(text: CharSequence) extends QuizPart
 
-case class QuizWord(id: Int, rightAnswer: CharSequence) extends QuizPart
+case class QuizWord(id: Int, rightAnswer: CharSequence, isSolved: Boolean) extends QuizPart {
+  def solved = QuizWord(id, rightAnswer, isSolved = true)
+}
 
 class QuizParameters(val words: Iterable[CharSequence]) {
 }
@@ -40,7 +42,7 @@ class QuizCreator(params: QuizParameters) {
 
     quizParts.map {
       case t: TextSubstring => PlainText(article.substring(t.start, t.end))
-      case w: QuizWordSubstring => QuizWord(w.start, article.substring(w.start, w.end))
+      case w: QuizWordSubstring => QuizWord(w.start, article.substring(w.start, w.end), false)
     }
   }
 }

@@ -8,6 +8,7 @@ import android.view.{MenuItem, Menu, ActionMode}
 import android.webkit.{WebView, WebChromeClient, WebViewClient, WebSettings}
 import com.gluckentext.QuizHtml._
 import org.scaloid.common._
+import Serializer._
 
 import scala.concurrent.{ExecutionContext, Future}
 import scala.util.{Success, Failure}
@@ -19,6 +20,7 @@ class ArticleActivity extends SActivity {
 
   val quizSubject = List("of", "in", "at", "on")
   var webViewOption: Option[SWebView] = None
+  var persistentQuiz: Option[List[QuizPart]] = None
 
   onCreate {
     contentView = new SRelativeLayout {
@@ -28,21 +30,44 @@ class ArticleActivity extends SActivity {
     }
   }
 
-  def loadArticle() = {
-    def populateWebView(quizHtml: String) = {
-      prepareWebView(webViewOption.get)
-      webViewOption.get.loadData(quizHtml, "text/html; charset=UTF-8", null)
+  onResume {
+    val quizSerialized = Preferences().quiz("")
+    quizSerialized match
+    {
+      case "" => loadArticle()
+      case quizSerialized => {
+        val quiz = deserializeToQuiz(quizSerialized)
+        val f = Future {
+          val quizText = generateQuizHtml(quiz)
+          runOnUiThread {
+            populateWebView(quizText)
+          }
+        }
+        f.onFailure { case x => x.printStackTrace()}
+      }
     }
+  }
+
+  def populateWebView(quizHtml: String) = {
+    prepareWebView(webViewOption.get)
+    webViewOption.get.loadData(quizHtml, "text/html; charset=UTF-8", null)
+  }
+
+  def loadArticle() = {
+    val quizSerialized = Preferences().quiz("")
+
 
     val f = Future {
       val article = WikiPageLoader.loadWikiPageXml("en", "Standard_Chinese")
-      val quiz: List[QuizPart] = createQuiz about quizSubject from article
-      val quizText = generateQuizHtml(quiz)
+      val newQuiz = createQuiz about quizSubject from article
+      val quizText = generateQuizHtml(newQuiz)
       runOnUiThread {
         populateWebView(quizText)
       }
+      newQuiz
     }
     f.onFailure { case x => x.printStackTrace()}
+    f.onSuccess { case newQuiz => persistentQuiz = Some(newQuiz)}
   }
 
   def prepareWebView(webView: SWebView) {
@@ -50,7 +75,7 @@ class ArticleActivity extends SActivity {
     webView.setWebChromeClient(new WebChromeClient)
     webView.webViewClient = new WebViewClient {
       override def shouldOverrideUrlLoading(view: WebView, url: String) = {
-        quizWordClicked(url.replaceAll("\\?",""))
+        quizWordClicked(url.replaceAll("\\?", ""))
         true
       }
     }
@@ -80,39 +105,24 @@ class ArticleActivity extends SActivity {
   }
 
   def guessClicked(word: QuizWord, guess: String) = {
-    if (word.rightAnswer == guess) {
-      //val jsUrl = "javascript:document.getElementById('" + getTagId(word) + "').className=\"solved\";"
-      val jsUrl = "javascript:markSolved(" + getTagId(word) + ")"
-      //val jsUrl = "javascript:document.getElementById('" + getTagId(word) + "').innerHTML = '" + guess + "'"
-      //val jsUrl = "javascript:alert(document.getElementById('" + getTagId(word) + "').innerHTML)"
-      webViewOption.get.loadUrl(jsUrl)
-    }
+    if (word.rightAnswer == guess) markRightAnswer(word)
     else toast("This is not the right answer. Want to try again?")
   }
 
-//  override def onSaveInstanceState(outState: Bundle): Unit = {
-//    super.onSaveInstanceState(outState)
-//
-//    webViewOption match {
-//      case Some(webView) =>
-//        webView.addJavascriptInterface(new {
-//          def showHtml(html: String) = {
-//            toast(html)
-//            outState.putString("webViewContent", html)
-//          }
-//        }, "HtmlViewer")
-//        webView.loadUrl("javascript:window.HtmlViewer.showHtml" +
-//          "('<html>'+document.getElementsByTagName('html')[0].innerHTML+'</html>');")
-//    }
-//  }
-//
-//  override def onRestoreInstanceState(state: Bundle): Unit = {
-//    val html = state.getString("webViewContent")
-//    if (html != null) {
-//      webViewOption match {
-//        case Some(webView) => webView.loadData(html, "text/html; charset=UTF-8", null)
-//      }
-//    }
-//  }
+  def markRightAnswer(answeredWord: QuizWord) {
+    val jsUrl = "javascript:markSolved(" + getTagId(answeredWord) + ")"
+    webViewOption.get.loadUrl(jsUrl)
+    val quiz = persistentQuiz.get
+    val quizWithSolvedWord = quiz.map {
+      case w@QuizWord(answeredWord.id, _, _) => w.solved
+      case x => x
+    }
+    persistQuiz(quizWithSolvedWord)
+  }
+
+  def persistQuiz(quiz: List[QuizPart]) = {
+    val quizSerialized: String = serializeQuiz(quiz)
+    Preferences().quiz = quizSerialized
+  }
 }
 
