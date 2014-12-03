@@ -20,7 +20,7 @@ class ArticleActivity extends SActivity {
 
   val quizSubject = List("of", "in", "at", "on")
   var webViewOption: Option[SWebView] = None
-  var persistentQuiz: Option[List[QuizPart]] = None
+  var cachedQuiz: Option[Iterable[QuizPart]] = None
 
   onCreate {
     contentView = new SRelativeLayout {
@@ -32,11 +32,11 @@ class ArticleActivity extends SActivity {
 
   onResume {
     val quizSerialized = Preferences().quiz("")
-    quizSerialized match
-    {
+    quizSerialized match {
       case "" => loadArticle()
-      case quizSerialized => {
+      case _ =>
         val quiz = deserializeToQuiz(quizSerialized)
+        cachedQuiz = Some(quiz)
         val f = Future {
           val quizText = generateQuizHtml(quiz)
           runOnUiThread {
@@ -44,13 +44,16 @@ class ArticleActivity extends SActivity {
           }
         }
         f.onFailure { case x => x.printStackTrace()}
-      }
     }
   }
 
   def populateWebView(quizHtml: String) = {
-    prepareWebView(webViewOption.get)
-    webViewOption.get.loadData(quizHtml, "text/html; charset=UTF-8", null)
+    webViewOption match {
+      case Some(webView) =>
+        prepareWebView(webView)
+        webView.loadData(quizHtml, "text/html; charset=UTF-8", null)
+      case None => toast("Looks like the webview is missing")
+    }
   }
 
   def loadArticle() = {
@@ -67,7 +70,7 @@ class ArticleActivity extends SActivity {
       newQuiz
     }
     f.onFailure { case x => x.printStackTrace()}
-    f.onSuccess { case newQuiz => persistentQuiz = Some(newQuiz)}
+    f.onSuccess { case newQuiz => cachedQuiz = Some(newQuiz)}
   }
 
   def prepareWebView(webView: SWebView) {
@@ -111,16 +114,21 @@ class ArticleActivity extends SActivity {
 
   def markRightAnswer(answeredWord: QuizWord) {
     val jsUrl = "javascript:markSolved(" + getTagId(answeredWord) + ")"
-    webViewOption.get.loadUrl(jsUrl)
-    val quiz = persistentQuiz.get
-    val quizWithSolvedWord = quiz.map {
-      case w@QuizWord(answeredWord.id, _, _) => w.solved
-      case x => x
+    webViewOption match {
+      case Some(webView) => webView.loadUrl(jsUrl)
     }
-    persistQuiz(quizWithSolvedWord)
+    cachedQuiz match {
+      case Some(quiz) =>
+        val quizWithSolvedWord = quiz.map {
+          case w@QuizWord(answeredWord.id, _, _) => w.solved
+          case x => x
+        }
+        persistQuiz(quizWithSolvedWord)
+      case None => toast("Looks like the quiz object is missing")
+    }
   }
 
-  def persistQuiz(quiz: List[QuizPart]) = {
+  def persistQuiz(quiz: Iterable[QuizPart]) = {
     val quizSerialized: String = serializeQuiz(quiz)
     Preferences().quiz = quizSerialized
   }

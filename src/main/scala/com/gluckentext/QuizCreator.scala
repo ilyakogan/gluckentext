@@ -8,6 +8,10 @@ case class QuizWord(id: Int, rightAnswer: CharSequence, isSolved: Boolean) exten
   def solved = QuizWord(id, rightAnswer, isSolved = true)
 }
 
+object QuizWord {
+  def apply(id: Int, rightAnswer: CharSequence) = new QuizWord(id, rightAnswer, isSolved = false)
+}
+
 class QuizParameters(val words: Iterable[CharSequence]) {
 }
 
@@ -42,7 +46,7 @@ class QuizCreator(params: QuizParameters) {
 
     quizParts.map {
       case t: TextSubstring => PlainText(article.substring(t.start, t.end))
-      case w: QuizWordSubstring => QuizWord(w.start, article.substring(w.start, w.end), false)
+      case w: QuizWordSubstring => QuizWord(w.start, article.substring(w.start, w.end))
     }
   }
 }
