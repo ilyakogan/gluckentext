@@ -20,7 +20,6 @@ class ArticleActivity extends SActivity {
 
   val quizSubject = List("of", "in", "at", "on")
   var webViewOption: Option[SWebView] = None
-  var cachedQuiz: Option[Iterable[QuizPart]] = None
 
   onCreate {
     contentView = new SRelativeLayout {
@@ -31,19 +30,12 @@ class ArticleActivity extends SActivity {
   }
 
   onResume {
-    val quizSerialized = Preferences().quiz("")
-    quizSerialized match {
-      case "" => loadArticle()
-      case _ =>
-        val quiz = deserializeToQuiz(quizSerialized)
-        cachedQuiz = Some(quiz)
-        val f = Future {
-          val quizText = generateQuizHtml(quiz)
-          runOnUiThread {
-            populateWebView(quizText)
-          }
-        }
-        f.onFailure { case x => x.printStackTrace()}
+    val quiz = getPersistedQuiz
+    quiz match {
+      case None => loadArticle()
+      case Some(quiz) =>
+        val quizText = generateQuizHtml(quiz)
+        populateWebView(quizText)
     }
   }
 
@@ -57,20 +49,16 @@ class ArticleActivity extends SActivity {
   }
 
   def loadArticle() = {
-    val quizSerialized = Preferences().quiz("")
-
-
     val f = Future {
       val article = WikiPageLoader.loadWikiPageXml("en", "Standard_Chinese")
-      val newQuiz = createQuiz about quizSubject from article
-      val quizText = generateQuizHtml(newQuiz)
+      val quiz = createQuiz about quizSubject from article
+      val quizText = generateQuizHtml(quiz)
       runOnUiThread {
+        persistQuiz(quiz)
         populateWebView(quizText)
       }
-      newQuiz
     }
     f.onFailure { case x => x.printStackTrace()}
-    f.onSuccess { case newQuiz => cachedQuiz = Some(newQuiz)}
   }
 
   def prepareWebView(webView: SWebView) {
@@ -117,14 +105,21 @@ class ArticleActivity extends SActivity {
     webViewOption match {
       case Some(webView) => webView.loadUrl(jsUrl)
     }
-    cachedQuiz match {
+    getPersistedQuiz match {
       case Some(quiz) =>
         val quizWithSolvedWord = quiz.map {
           case w@QuizWord(answeredWord.id, _, _) => w.solved
           case x => x
         }
         persistQuiz(quizWithSolvedWord)
-      case None => toast("Looks like the quiz object is missing")
+      case None => toast("Looks like the quiz object is missing from the app prefs")
+    }
+  }
+
+  def getPersistedQuiz: Option[Iterable[QuizPart]] = {
+    Preferences().quiz("") match {
+      case "" => None
+      case q => Some(deserializeToQuiz(q))
     }
   }
 
