@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="load">Load article</string>
 	<string name="app_name">Glückentext</string>
+	<string name="english">English</string>
+	<string name="german">German</string>
+	<string name="french">French</string>
+	<string name="spanish">Spanish</string>
+	<string name="selectLanguage">I\'m learning…</string>
+	<string name="selectButton">Select</string>
 </resources>

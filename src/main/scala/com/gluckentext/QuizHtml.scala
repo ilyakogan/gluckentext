@@ -24,7 +24,7 @@ object QuizHtml {
     private val styleTag =
       "<style> " +
         ".unsolved > span { display: none} " +
-        ".unsolved > input { background-color: white; border-color: green; width: 70px; } " +
+        ".unsolved > input { background-color: white; border-color: blue; width: 55px; } " +
         ".solved > span { color: green; font-weight: bold } " +
         ".solved > input { display: none } " +
         " </style>"

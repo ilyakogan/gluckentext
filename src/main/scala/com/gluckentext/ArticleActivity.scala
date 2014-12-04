@@ -1,30 +1,24 @@
 package com.gluckentext
 
-import android.content.{BroadcastReceiver, IntentFilter}
-import android.graphics.Color
-import android.os.{Bundle, AsyncTask}
-import android.text.Html
-import android.view.{MenuItem, Menu, ActionMode}
-import android.webkit.{WebView, WebChromeClient, WebViewClient, WebSettings}
+import android.os.AsyncTask
+import android.view.{ActionMode, Menu, MenuItem}
+import android.webkit.{WebChromeClient, WebView, WebViewClient}
 import com.gluckentext.QuizHtml._
+import com.gluckentext.Serializer._
 import org.scaloid.common._
-import Serializer._
 
 import scala.concurrent.{ExecutionContext, Future}
-import scala.util.{Success, Failure}
 
 class ArticleActivity extends SActivity {
 
   implicit val tag = LoggerTag("Gluckentext")
   implicit val exec = ExecutionContext.fromExecutor(AsyncTask.THREAD_POOL_EXECUTOR)
 
-  val quizSubject = List("of", "in", "at", "on")
   var webViewOption: Option[SWebView] = None
 
   onCreate {
     contentView = new SRelativeLayout {
-      val loadButton = SButton(R.string.load).<<.wrap.alignParentRight.alignParentLeft.alignParentTop.>>.onClick(loadArticle())
-      val webView: SWebView = SWebView().<<.wrap.alignParentRight.alignParentLeft.alignParentBottom.below(loadButton).>>
+      val webView: SWebView = SWebView().<<.wrap.alignParentRight.alignParentLeft.alignParentBottom.alignParentTop.>>
       webViewOption = Some(webView)
     }
   }
@@ -33,8 +27,8 @@ class ArticleActivity extends SActivity {
     val quiz = getPersistedQuiz
     quiz match {
       case None => loadArticle()
-      case Some(quiz) =>
-        val quizText = generateQuizHtml(quiz)
+      case Some(q) =>
+        val quizText = generateQuizHtml(q)
         populateWebView(quizText)
     }
   }
@@ -50,8 +44,8 @@ class ArticleActivity extends SActivity {
 
   def loadArticle() = {
     val f = Future {
-      val article = WikiPageLoader.loadWikiPageXml("en", "Standard_Chinese")
-      val quiz = createQuiz about quizSubject from article
+      val article = WikiPageLoader.loadWikiPageXml(Preferences().language("en"), Preferences().lastArticleName("Spam"))
+      val quiz = createQuiz about getPracticeWords from article
       val quizText = generateQuizHtml(quiz)
       runOnUiThread {
         persistQuiz(quiz)
@@ -59,6 +53,10 @@ class ArticleActivity extends SActivity {
       }
     }
     f.onFailure { case x => x.printStackTrace()}
+  }
+
+  def getPracticeWords: Array[String] = {
+    Preferences().practiceWords("in").split(",")
   }
 
   def prepareWebView(webView: SWebView) {
@@ -78,7 +76,7 @@ class ArticleActivity extends SActivity {
       case makeGuessUrl(quizWord) =>
         startActionMode(new ActionMode.Callback {
           override def onCreateActionMode(actionMode: ActionMode, menu: Menu): Boolean = {
-            quizSubject.foreach(guess => menu.add(guess).setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS))
+            getPracticeWords.foreach(guess => menu.add(guess).setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS))
             true
           }
 
@@ -96,7 +94,7 @@ class ArticleActivity extends SActivity {
   }
 
   def guessClicked(word: QuizWord, guess: String) = {
-    if (word.rightAnswer == guess) markRightAnswer(word)
+    if (word.rightAnswer.toString.toLowerCase == guess.toLowerCase) markRightAnswer(word)
     else toast("This is not the right answer. Want to try again?")
   }
 
