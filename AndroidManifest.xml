@@ -8,10 +8,12 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
-    <application android:label="@string/app_name" android:icon="@drawable/hp_notepad_pencil">
+    <application android:label="@string/app_name" android:icon="@drawable/logo1">
         <activity android:name="com.gluckentext.ArticleActivity">
         </activity>
-        <activity android:name="com.gluckentext.SelectionActivity">
+        <activity android:name="com.gluckentext.PracticeSelectionActivity">
+        </activity>
+        <activity android:name="com.gluckentext.LanguageSelectionActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">Glückentext</string>
-	<string name="selectLanguage">I\'m learning…</string>
 	<string name="selectButton">Select</string>
+	<string name="selectLanguageTitle">Select language</string>
+	<string name="imLearning">I\'m learning</string>
+	<string name="selectPractice">Select practice</string>
+	<string name="iWantToPractice">I want to practice</string>
+	<string name="next">Next</string>
 </resources>
