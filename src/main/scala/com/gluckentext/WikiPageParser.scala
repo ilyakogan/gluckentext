@@ -4,6 +4,18 @@ import scala.xml.{Utility, Elem}
 
 object WikiPageParser {
 
+  def getTitle(root: Elem) = (root \\ "title").text
+
+  def parseWikiPage(root: Elem) = {
+    val title = (root \\ "title").text
+    var text = (root \\ "text").text
+    text = shorten(text)
+    text = clean(text)
+    val chapters = chapterize(title + "== " + text)
+
+    chapters.filter(c => !c.hasLists && !c.hasTables && !c.hasLeftovers && c.isLongEnough)
+  }
+
   val maxTextLength: Int = 30000
 
   def clean(text: String): String = {
@@ -84,15 +96,7 @@ object WikiPageParser {
 
   def shorten(text: String): String = text.take(maxTextLength)
 
-  def parseWikiPage(root: Elem) = {
-    val title = (root \\ "title").text
-    var text = (root \\ "text").text
-    text = shorten(text)
-    text = clean(text)
-    val chapters = chapterize(title + "== " + text)
 
-    chapters.filter(c => !c.hasLists && !c.hasTables && !c.hasLeftovers && c.isLongEnough)
-  }
 }
 
 case class Chapter(heading: String, body: String) {

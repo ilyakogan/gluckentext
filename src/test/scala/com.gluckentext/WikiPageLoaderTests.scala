@@ -11,17 +11,17 @@ class WikiPageLoaderTests extends FlatSpec with Matchers {
     val article = WikiPageLoader.loadWikiPageXml("en", title)
 
     it should "contain keyword Russia" in {
-      assert(article.contains("Russia"))
+      assert(article.body.contains("Russia"))
     }
 
     "|{}[]()".foreach(char => {
       it should "not contain " + char in {
-        assert(!article.contains(char))
+        assert(!article.body.contains(char))
       }
     })
 
     it should "be long" in {
-      assert(article.length > 100)
+      assert(article.body.length > 100)
     }
 
   })

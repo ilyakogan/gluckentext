@@ -1,4 +1,4 @@
-<LinearLayout
+<RadioGroup
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
@@ -11,7 +11,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Medium Text"
-                android:id="@+id/textView" android:layout_gravity="center_horizontal"/>
+                android:id="@+id/textView"/>
         <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -32,4 +32,4 @@
                 android:layout_height="wrap_content"
                 android:text="New Button"
                 android:id="@+id/button" android:layout_gravity="center_horizontal"/>
-</LinearLayout>
+</RadioGroup>

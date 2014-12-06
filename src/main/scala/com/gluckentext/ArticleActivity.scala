@@ -1,7 +1,7 @@
 package com.gluckentext
 
 import android.os.AsyncTask
-import android.view.{ActionMode, Menu, MenuItem}
+import android.view.{Gravity, ActionMode, Menu, MenuItem}
 import android.webkit.{WebChromeClient, WebView, WebViewClient}
 import com.gluckentext.QuizHtml._
 import com.gluckentext.Serializer._
@@ -15,11 +15,13 @@ class ArticleActivity extends SActivity {
   implicit val exec = ExecutionContext.fromExecutor(AsyncTask.THREAD_POOL_EXECUTOR)
 
   var webViewOption: Option[SWebView] = None
+  var titleTextOption: Option[STextView] = None
+
 
   onCreate {
-    contentView = new SRelativeLayout {
-      val webView: SWebView = SWebView().<<.wrap.alignParentRight.alignParentLeft.alignParentBottom.alignParentTop.>>
-      webViewOption = Some(webView)
+    contentView = new SVerticalLayout {
+      titleTextOption = Some(STextView().textSize(20.dip).gravity(Gravity.CENTER_HORIZONTAL).margin(5.dip).>>)
+      webViewOption = Some(SWebView())
     }
   }
 
@@ -45,11 +47,12 @@ class ArticleActivity extends SActivity {
   def loadArticle() = {
     val f = Future {
       val article = WikiPageLoader.loadWikiPageXml(Preferences().language("en"), Preferences().lastArticleName("Spam"))
-      val quiz = createQuiz about getPracticeWords from article
+      val quiz = createQuiz about getPracticeWords from article.body
       val quizText = generateQuizHtml(quiz)
       runOnUiThread {
         persistQuiz(quiz)
         populateWebView(quizText)
+        titleTextOption.get.text = article.title
       }
     }
     f.onFailure { case x => x.printStackTrace()}
