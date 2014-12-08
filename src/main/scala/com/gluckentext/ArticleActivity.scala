@@ -14,14 +14,13 @@ class ArticleActivity extends SActivity {
   implicit val tag = LoggerTag("Gluckentext")
   implicit val exec = ExecutionContext.fromExecutor(AsyncTask.THREAD_POOL_EXECUTOR)
 
-  var webViewOption: Option[SWebView] = None
-  var titleTextOption: Option[STextView] = None
-
+  lazy val titleText = new STextView()
+  lazy val webView = new SWebView()
 
   onCreate {
     contentView = new SVerticalLayout {
-      titleTextOption = Some(STextView().textSize(20.dip).gravity(Gravity.CENTER_HORIZONTAL).margin(5.dip).>>)
-      webViewOption = Some(SWebView())
+      this += titleText.textSize(20.dip).gravity(Gravity.CENTER_HORIZONTAL).margin(5.dip).>>
+      this += webView
     }
   }
 
@@ -36,12 +35,8 @@ class ArticleActivity extends SActivity {
   }
 
   def populateWebView(quizHtml: String) = {
-    webViewOption match {
-      case Some(webView) =>
-        prepareWebView(webView)
-        webView.loadData(quizHtml, "text/html; charset=UTF-8", null)
-      case None => toast("Looks like the webview is missing")
-    }
+    prepareWebView(webView)
+    webView.loadData(quizHtml, "text/html; charset=UTF-8", null)
   }
 
   def loadArticle() = {
@@ -52,7 +47,7 @@ class ArticleActivity extends SActivity {
       runOnUiThread {
         persistQuiz(quiz)
         populateWebView(quizText)
-        titleTextOption.get.text = article.title
+        titleText.text = article.title
       }
     }
     f.onFailure { case x => x.printStackTrace()}
@@ -103,9 +98,7 @@ class ArticleActivity extends SActivity {
 
   def markRightAnswer(answeredWord: QuizWord) {
     val jsUrl = "javascript:markSolved(" + getTagId(answeredWord) + ")"
-    webViewOption match {
-      case Some(webView) => webView.loadUrl(jsUrl)
-    }
+    webView.loadUrl(jsUrl)
     getPersistedQuiz match {
       case Some(quiz) =>
         val quizWithSolvedWord = quiz.map {
