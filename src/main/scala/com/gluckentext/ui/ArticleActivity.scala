@@ -3,6 +3,8 @@ package com.gluckentext.ui
 import android.os.AsyncTask
 import android.view.{ActionMode, Gravity, Menu, MenuItem}
 import android.webkit.{WebChromeClient, WebView, WebViewClient}
+import android.widget.PopupMenu
+import android.widget.PopupMenu.OnMenuItemClickListener
 import com.gluckentext.datahandling.Persistence
 import com.gluckentext.quiz.{QuizWord, WikiPageLoader, createQuiz}
 import com.gluckentext.ui.QuizHtml._
@@ -71,22 +73,17 @@ class ArticleActivity extends SActivity {
     info("Quiz word clicked: " + url)
     url match {
       case makeGuessUrl(quizWord) =>
-        startActionMode(new ActionMode.Callback {
-          override def onCreateActionMode(actionMode: ActionMode, menu: Menu): Boolean = {
-            quizDefinition.practiceWords.foreach(guess => menu.add(guess).setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS))
-            true
-          }
-
-          override def onActionItemClicked(actionMode: ActionMode, menuItem: MenuItem): Boolean = {
+        val popupMenu: PopupMenu = new PopupMenu(this, titleText, Gravity.CENTER)
+        val menu = popupMenu.getMenu
+        menu.clear()
+        quizDefinition.practiceWords.foreach(guess => menu.add(guess))
+        popupMenu.setOnMenuItemClickListener(new OnMenuItemClickListener {
+          override def onMenuItemClick(menuItem: MenuItem): Boolean = {
             guessClicked(quizWord, menuItem.getTitle.toString)
-            actionMode.finish()
             true
           }
-
-          override def onDestroyActionMode(actionMode: ActionMode): Unit = {}
-
-          override def onPrepareActionMode(actionMode: ActionMode, menu: Menu): Boolean = true
         })
+        popupMenu.show()
     }
   }
 
