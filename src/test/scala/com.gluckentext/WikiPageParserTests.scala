@@ -1,5 +1,6 @@
 package com.gluckentext
 
+import com.gluckentext.quiz.{Chapter, WikiPageParser}
 import WikiPageParser._
 
 import org.scalatest.{Matchers, FlatSpec}
@@ -78,14 +79,13 @@ class WikiPageParserTests extends FlatSpec with Matchers {
     val chapters = chapterize(text).toList
     assert(chapters.size === 3)
     chapters match {
-      case Chapter(h1, b1) :: Chapter(h2, b2) :: Chapter(h3, b3) :: Nil => {
+      case Chapter(h1, b1) :: Chapter(h2, b2) :: Chapter(h3, b3) :: Nil =>
         assert(h1 === "title 1")
         assert(b1 === "body 1")
         assert(h2 === "title 2")
         assert(b2 === "body 2")
         assert(h3 === "title 3")
         assert(b3 === "body 3")
-      }
     }
   }
 }

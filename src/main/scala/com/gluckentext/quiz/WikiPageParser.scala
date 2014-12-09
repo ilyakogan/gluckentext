@@ -1,6 +1,6 @@
-package com.gluckentext
+package com.gluckentext.quiz
 
-import scala.xml.{Utility, Elem}
+import scala.xml.Elem
 
 object WikiPageParser {
 

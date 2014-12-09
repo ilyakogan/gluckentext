@@ -1,6 +1,6 @@
-package com.gluckentext
+package com.gluckentext.ui
 
-import java.util.regex.Pattern
+import com.gluckentext.quiz.{PlainText, QuizPart, QuizWord}
 
 object QuizHtml {
 

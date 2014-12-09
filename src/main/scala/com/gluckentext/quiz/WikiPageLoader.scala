@@ -1,7 +1,7 @@
-package com.gluckentext
+package com.gluckentext.quiz
 
 import scala.util.matching.Regex
-import scala.xml.{XML, NodeSeq, Node}
+import scala.xml.{Node, XML}
 
 object WikiPageLoader {
 
@@ -30,25 +30,28 @@ object WikiPageLoader {
       case Nil => acc
       case first :: rest => first match {
         case heading@Heading(_, _) => buildPairsAcc(rest, acc, Some(heading))
-        case para@Paragraph(_) => {
+        case para@Paragraph(_) =>
           val newPair = pendingHeading match {
             case pendingHeading@Some(heading) => (pendingHeading, para)
             case None => (None, para)
           }
           buildPairsAcc(rest, acc ++ Some(newPair), None)
-        }
       }
     }
 
   def buildPairs(elements: Seq[Element]): List[(Option[Heading], Paragraph)] =
     buildPairsAcc(elements, List(), None)
 
-  def loadWikiPageXml(language: String, term: String): Article = {
+  def loadArticleByTerm(language: String, term: String): WikiArticle = {
     val url = "https://%s.wikipedia.org/wiki/Special:Export/%s".format(language, term)
+    loadArticleByUri(url)
+  }
+
+  def loadArticleByUri(url: String): WikiArticle = {
     val xml = XML.load(url)
     val title = WikiPageParser.getTitle(xml)
     val wikiPage = WikiPageParser.parseWikiPage(xml)
     val body = wikiPage.map(c => "<h3>%s</h3>%s".format(c.heading, c.body)).mkString
-    new Article(title, body)
+    new WikiArticle(title, body)
   }
 }

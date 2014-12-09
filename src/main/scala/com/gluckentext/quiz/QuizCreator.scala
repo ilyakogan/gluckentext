@@ -1,4 +1,4 @@
-package com.gluckentext
+package com.gluckentext.quiz
 
 trait QuizPart
 
@@ -12,10 +12,7 @@ object QuizWord {
   def apply(id: Int, rightAnswer: CharSequence) = new QuizWord(id, rightAnswer, isSolved = false)
 }
 
-class QuizParameters(val words: Iterable[CharSequence]) {
-}
-
-class QuizCreator(params: QuizParameters) {
+class QuizCreator(practiceWords: Iterable[CharSequence]) {
 
   trait Substring {
     def start: Int
@@ -29,7 +26,7 @@ class QuizCreator(params: QuizParameters) {
 
   def from(article: String): List[QuizPart] = {
     val caseInsensitive = "(?i)"
-    val quizWordRegex = (caseInsensitive + "\\b(" + params.words.mkString("|") + ")\\b").r
+    val quizWordRegex = (caseInsensitive + "\\b(" + practiceWords.mkString("|") + ")\\b").r
     val quizWordMatches = quizWordRegex.findAllMatchIn(article)
     val quizWords = (quizWordMatches map (m => QuizWordSubstring(m.start, m.end))).toStream
 
@@ -52,5 +49,5 @@ class QuizCreator(params: QuizParameters) {
 }
 
 object createQuiz {
-  def about(words: Iterable[CharSequence]) = new QuizCreator(new QuizParameters(words))
+  def about(words: Iterable[CharSequence]) = new QuizCreator(words)
 }

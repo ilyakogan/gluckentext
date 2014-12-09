@@ -1,5 +1,6 @@
 package com.gluckentext
 
+import com.gluckentext.quiz.{createQuiz, QuizWord, PlainText}
 import org.scalatest.{Matchers, FlatSpec}
 
 class QuizCreatorTests extends FlatSpec with Matchers {

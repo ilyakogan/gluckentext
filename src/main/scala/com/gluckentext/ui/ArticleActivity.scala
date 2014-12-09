@@ -1,10 +1,11 @@
-package com.gluckentext
+package com.gluckentext.ui
 
 import android.os.AsyncTask
-import android.view.{Gravity, ActionMode, Menu, MenuItem}
+import android.view.{ActionMode, Gravity, Menu, MenuItem}
 import android.webkit.{WebChromeClient, WebView, WebViewClient}
-import com.gluckentext.QuizHtml._
-import com.gluckentext.Serializer._
+import com.gluckentext.datahandling.Persistence
+import com.gluckentext.quiz.{QuizWord, WikiPageLoader, createQuiz}
+import com.gluckentext.ui.QuizHtml._
 import org.scaloid.common._
 
 import scala.concurrent.{ExecutionContext, Future}
@@ -16,6 +17,9 @@ class ArticleActivity extends SActivity {
 
   lazy val titleText = new STextView()
   lazy val webView = new SWebView()
+  lazy val persistence = new Persistence()
+  lazy val language = persistence.loadActiveLanguage
+  lazy val quizDefinition = persistence.loadQuizDefinition(language)
 
   onCreate {
     contentView = new SVerticalLayout {
@@ -25,12 +29,12 @@ class ArticleActivity extends SActivity {
   }
 
   onResume {
-    val quiz = getPersistedQuiz
-    quiz match {
-      case None => loadArticle()
-      case Some(q) =>
-        val quizText = generateQuizHtml(q)
+    titleText.text = quizDefinition.articleName
+    persistence.loadQuizStatus(quizDefinition) match {
+      case Some(quizStatus) =>
+        val quizText = generateQuizHtml(quizStatus)
         populateWebView(quizText)
+      case None => loadArticle()
     }
   }
 
@@ -41,20 +45,15 @@ class ArticleActivity extends SActivity {
 
   def loadArticle() = {
     val f = Future {
-      val article = WikiPageLoader.loadWikiPageXml(Preferences().language("en"), Preferences().lastArticleName("Spam"))
-      val quiz = createQuiz about getPracticeWords from article.body
+      val article = WikiPageLoader.loadArticleByUri(quizDefinition.articleUri)
+      val quiz = createQuiz about quizDefinition.practiceWords from article.body
       val quizText = generateQuizHtml(quiz)
       runOnUiThread {
-        persistQuiz(quiz)
+        persistence.saveQuizStatus(quizDefinition, quiz)
         populateWebView(quizText)
-        titleText.text = article.title
       }
     }
     f.onFailure { case x => x.printStackTrace()}
-  }
-
-  def getPracticeWords: Array[String] = {
-    Preferences().practiceWords("in").split(",")
   }
 
   def prepareWebView(webView: SWebView) {
@@ -74,7 +73,7 @@ class ArticleActivity extends SActivity {
       case makeGuessUrl(quizWord) =>
         startActionMode(new ActionMode.Callback {
           override def onCreateActionMode(actionMode: ActionMode, menu: Menu): Boolean = {
-            getPracticeWords.foreach(guess => menu.add(guess).setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS))
+            quizDefinition.practiceWords.foreach(guess => menu.add(guess).setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS))
             true
           }
 
@@ -99,27 +98,15 @@ class ArticleActivity extends SActivity {
   def markRightAnswer(answeredWord: QuizWord) {
     val jsUrl = "javascript:markSolved(" + getTagId(answeredWord) + ")"
     webView.loadUrl(jsUrl)
-    getPersistedQuiz match {
-      case Some(quiz) =>
-        val quizWithSolvedWord = quiz.map {
+    persistence.loadQuizStatus(quizDefinition) match {
+      case Some(quizStatus) =>
+        val quizWithSolvedWord = quizStatus.map {
           case w@QuizWord(answeredWord.id, _, _) => w.solved
           case x => x
         }
-        persistQuiz(quizWithSolvedWord)
+        persistence.saveQuizStatus(quizDefinition, quizWithSolvedWord)
       case None => toast("Looks like the quiz object is missing from the app prefs")
     }
-  }
-
-  def getPersistedQuiz: Option[Iterable[QuizPart]] = {
-    Preferences().quiz("") match {
-      case "" => None
-      case q => Some(deserializeToQuiz(q))
-    }
-  }
-
-  def persistQuiz(quiz: Iterable[QuizPart]) = {
-    val quizSerialized: String = serializeQuiz(quiz)
-    Preferences().quiz = quizSerialized
   }
 }
 

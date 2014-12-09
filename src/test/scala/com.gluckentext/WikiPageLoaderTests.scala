@@ -1,5 +1,6 @@
 package com.gluckentext
 
+import com.gluckentext.quiz.WikiPageLoader
 import org.scalatest._
 
 
@@ -8,7 +9,7 @@ class WikiPageLoaderTests extends FlatSpec with Matchers {
   List("Tatarstan", "Russian_Empire", "Russian_language", "Russia", "Moscow").foreach(title => {
 
     behavior of "Article " + title + " after parsing"
-    val article = WikiPageLoader.loadWikiPageXml("en", title)
+    val article = WikiPageLoader.loadArticleByTerm("en", title)
 
     it should "contain keyword Russia" in {
       assert(article.body.contains("Russia"))

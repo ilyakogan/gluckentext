@@ -1,5 +1,5 @@
-import com.gluckentext.WikiPageParser._
-import com.gluckentext.{WikiPageParser, WikiPageLoader}
+import com.gluckentext.quiz.{WikiPageLoader, WikiPageParser}
+import WikiPageParser._
 
 import scala.xml.XML
 
@@ -28,7 +28,7 @@ implicit class WikiString(s: String) {
         if (nestingLevel == 0) removeBlocksAcc(tail, acc + head, nestingLevel)
         else removeBlocksAcc(tail, acc, nestingLevel)
       }
-    removeBlocksAcc(text, "", 0)
+    //removeBlocksAcc(text, "", 0)
   }
 
   def strip(regex: String): String = s.replaceAll(regex, "$1")
@@ -43,9 +43,9 @@ implicit class WikiString(s: String) {
 //val text = (xml \\ "text").text
 
 
-val cleanText = WikiPageParser.clean(text)
-text.split("==+").size
+//val cleanText = WikiPageParser.clean(text)
+//text.split("==+").size
 
 
-WikiPageLoader.loadWikiPageXml("en", "Tatarstan")
+WikiPageLoader.loadArticleByTerm("en", "Tatarstan")
 
