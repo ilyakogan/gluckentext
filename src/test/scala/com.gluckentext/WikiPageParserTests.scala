@@ -1,7 +1,6 @@
 package com.gluckentext
 
-import com.gluckentext.quiz.Chapter
-import com.gluckentext.wikipediaaccess.WikiPageParser
+import com.gluckentext.wikipediaaccess.{Chapter, WikiPageParser}
 import WikiPageParser._
 
 import org.scalatest.{Matchers, FlatSpec}
