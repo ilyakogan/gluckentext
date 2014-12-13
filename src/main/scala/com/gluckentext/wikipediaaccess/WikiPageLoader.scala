@@ -1,6 +1,6 @@
 package com.gluckentext.wikipediaaccess
 
-import com.gluckentext.quiz.{WikiArticle, WikiPageParser}
+import com.gluckentext.entities.WikiArticle
 
 import scala.util.matching.Regex
 import scala.xml.{Node, XML}

@@ -1,4 +1,4 @@
-package com.gluckentext.quiz
+package com.gluckentext.wikipediaaccess
 
 import scala.xml.Elem
 
