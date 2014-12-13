@@ -1,6 +1,6 @@
 package com.gluckentext
 
-import com.gluckentext.quiz.WikiPageLoader
+import com.gluckentext.wikipediaaccess.WikiPageLoader
 import org.scalatest._
 
 

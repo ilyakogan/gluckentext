@@ -1,7 +1,5 @@
 package com.gluckentext.ui
 
-import java.lang.Exception
-
 import android.os.AsyncTask
 import android.view._
 import android.view.View._
@@ -9,8 +7,9 @@ import android.webkit.{WebChromeClient, WebView, WebViewClient}
 import android.widget.PopupMenu
 import android.widget.PopupMenu.OnMenuItemClickListener
 import com.gluckentext.datahandling.Persistence
-import com.gluckentext.quiz.{QuizWord, WikiPageLoader, createQuiz}
+import com.gluckentext.quiz.{QuizWord, createQuiz}
 import com.gluckentext.ui.QuizHtml._
+import com.gluckentext.wikipediaaccess.WikiPageLoader
 import org.scaloid.common._
 
 import scala.concurrent.{ExecutionContext, Future}
