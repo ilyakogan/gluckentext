@@ -16,7 +16,7 @@ object LanguagePredefs {
 
   lazy val predefArticles =
     Map("en" ->("The Ugly Duckling", "https://en.wikipedia.org/wiki/Special:Export/The_Ugly_Duckling"),
-      "de" ->("Das Hässliche Entlein", "https://de.wikipedia.org/wiki/Special:Export/Das_Hässliche_Entlein_(Märchen)"),
+      "de" ->("Das Hässliche Entlein", "https://de.wikipedia.org/wiki/Special:Export/Das_hässliche_Entlein_(Märchen)"),
       "es" ->("El patito feo", "https://es.wikipedia.org/wiki/Special:Export/El_patito_feo"))
 
 }

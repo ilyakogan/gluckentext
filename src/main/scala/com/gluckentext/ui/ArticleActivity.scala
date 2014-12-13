@@ -1,5 +1,7 @@
 package com.gluckentext.ui
 
+import java.lang.Exception
+
 import android.os.AsyncTask
 import android.view._
 import android.view.View._
@@ -18,7 +20,8 @@ class ArticleActivity extends SActivity {
   implicit val tag = LoggerTag("Gluckentext")
   implicit val exec = ExecutionContext.fromExecutor(AsyncTask.THREAD_POOL_EXECUTOR)
 
-  lazy val titleText = new STextView()
+  //lazy val titleText = new STextView()
+  lazy val menuAnchor = new STextView()
   lazy val webView = new SWebView()
   lazy val progressBar = new SProgressBar()
   lazy val persistence = new Persistence()
@@ -27,14 +30,16 @@ class ArticleActivity extends SActivity {
 
   onCreate {
     contentView = new SVerticalLayout {
-      this += titleText.textSize(20.dip).gravity(Gravity.CENTER_HORIZONTAL).margin(5.dip).>>
+      this += menuAnchor.textSize(1.dip)
+      //this += titleText.textSize(20.dip).gravity(Gravity.CENTER_HORIZONTAL).margin(5.dip).>>
       this += webView
       this += progressBar
     }
   }
 
   onResume {
-    titleText.text = quizDefinition.articleName
+    //titleText.text = quizDefinition.articleName
+    getActionBar.setTitle(quizDefinition.articleName)
     progressBar.visibility = GONE
     persistence.loadQuizStatus(quizDefinition) match {
       case Some(quizStatus) =>
@@ -53,6 +58,7 @@ class ArticleActivity extends SActivity {
     progressBar.visibility = VISIBLE
     val f = Future {
       val article = WikiPageLoader.loadArticleByUri(quizDefinition.articleUri)
+      if (article.body.isEmpty) toast("No relevant text in article")
       val quiz = createQuiz about quizDefinition.practiceWords from article.body
       val quizText = generateQuizHtml(quiz)
       runOnUiThread {
@@ -60,6 +66,8 @@ class ArticleActivity extends SActivity {
         populateWebView(quizText)
         progressBar.visibility = GONE
       }
+    }.recover {
+      case e => e.printStackTrace(); toast("Error loading article: " + e)
     }
     f.onFailure { case x => x.printStackTrace()}
   }
@@ -79,7 +87,7 @@ class ArticleActivity extends SActivity {
     info("Quiz word clicked: " + url)
     url match {
       case makeGuessUrl(quizWord) =>
-        val popupMenu: PopupMenu = new PopupMenu(this, titleText, Gravity.CENTER)
+        val popupMenu: PopupMenu = new PopupMenu(this, menuAnchor, Gravity.CENTER)
         val menu = popupMenu.getMenu
         menu.clear()
         quizDefinition.practiceWords.foreach(guess => menu.add(guess))

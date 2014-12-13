@@ -17,10 +17,14 @@ class LanguageSelectionActivity extends SActivity {
 
   onCreate {
     contentView = new SVerticalLayout {
-      STextView(R.string.selectLanguageTitle).textSize(25.dip).gravity(Gravity.CENTER_HORIZONTAL).margin(15.dip)
+      //STextView(R.string.selectLanguageTitle).textSize(25.dip).gravity(Gravity.CENTER_HORIZONTAL).margin(15.dip)
       this += listView.onItemClick(onItemClick)
       listView.setAdapter(new ArrayAdapter(context, android.R.layout.simple_list_item_1, languages.map(_.name)))
     }
+  }
+
+  onResume {
+    getActionBar.setTitle(R.string.selectLanguageTitle)
   }
 
   private val onItemClick = (_: AdapterView[_], _: View, position: Int, _: Long) =>

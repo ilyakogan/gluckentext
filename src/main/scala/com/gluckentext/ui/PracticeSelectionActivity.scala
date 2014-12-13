@@ -21,7 +21,7 @@ class PracticeSelectionActivity extends SActivity {
 
   onCreate {
     contentView = new SVerticalLayout {
-      STextView(R.string.selectPractice).textSize(25.dip).gravity(Gravity.CENTER_HORIZONTAL).margin(15.dip)
+      //STextView(R.string.selectPractice).textSize(25.dip).gravity(Gravity.CENTER_HORIZONTAL).margin(15.dip)
       this += listView.onItemClick(onItemClick)
 
       val data = wordSets.map(set => mapAsJavaMap(Map("name" -> set.name, "words" -> set.words.mkString(",")))).toList
@@ -30,6 +30,10 @@ class PracticeSelectionActivity extends SActivity {
         Array("name", "words"),
         Array(android.R.id.text1, android.R.id.text2)))
     }
+  }
+
+  onResume {
+    getActionBar.setTitle(R.string.selectPractice)
   }
 
   private val onItemClick = (_: AdapterView[_], _: View, position: Int, _: Long) =>
