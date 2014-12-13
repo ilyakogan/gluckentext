@@ -50,6 +50,10 @@ class Persistence(implicit val ctx: Context) {
 
   def loadActiveLanguage = Preferences().activeLanguage("en")
 
+  def saveHasLanguageEverBeenSelected() = Preferences().hasLanguageEverBeenSelected = true
+
+  def loadHasLanguageEverBeenSelected = Preferences().hasLanguageEverBeenSelected(false)
+
   def saveActiveWordSet(languageCode: String, practiceWords: Iterable[String]) =
     Preferences().updateDynamic(languageCode + "_activeWords")(practiceWords.mkString(","))
 
