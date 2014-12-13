@@ -1,7 +1,8 @@
 package com.gluckentext.ui
 
 import android.os.AsyncTask
-import android.view.{ActionMode, Gravity, Menu, MenuItem}
+import android.view._
+import android.view.View._
 import android.webkit.{WebChromeClient, WebView, WebViewClient}
 import android.widget.PopupMenu
 import android.widget.PopupMenu.OnMenuItemClickListener
@@ -19,6 +20,7 @@ class ArticleActivity extends SActivity {
 
   lazy val titleText = new STextView()
   lazy val webView = new SWebView()
+  lazy val progressBar = new SProgressBar()
   lazy val persistence = new Persistence()
   lazy val language = persistence.loadActiveLanguage
   lazy val quizDefinition = persistence.loadQuizDefinition(language)
@@ -27,11 +29,13 @@ class ArticleActivity extends SActivity {
     contentView = new SVerticalLayout {
       this += titleText.textSize(20.dip).gravity(Gravity.CENTER_HORIZONTAL).margin(5.dip).>>
       this += webView
+      this += progressBar
     }
   }
 
   onResume {
     titleText.text = quizDefinition.articleName
+    progressBar.visibility = GONE
     persistence.loadQuizStatus(quizDefinition) match {
       case Some(quizStatus) =>
         val quizText = generateQuizHtml(quizStatus)
@@ -46,6 +50,7 @@ class ArticleActivity extends SActivity {
   }
 
   def loadArticle() = {
+    progressBar.visibility = VISIBLE
     val f = Future {
       val article = WikiPageLoader.loadArticleByUri(quizDefinition.articleUri)
       val quiz = createQuiz about quizDefinition.practiceWords from article.body
@@ -53,6 +58,7 @@ class ArticleActivity extends SActivity {
       runOnUiThread {
         persistence.saveQuizStatus(quizDefinition, quiz)
         populateWebView(quizText)
+        progressBar.visibility = GONE
       }
     }
     f.onFailure { case x => x.printStackTrace()}

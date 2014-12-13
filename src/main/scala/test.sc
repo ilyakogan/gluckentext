@@ -1,51 +1,49 @@
-import com.gluckentext.quiz.{WikiPageLoader, WikiPageParser}
-import WikiPageParser._
+import java.text.SimpleDateFormat
+import java.util.{Calendar, Date}
 
-import scala.xml.XML
-
-
-implicit class WikiString(s: String) {
-  def remove(regex: String): String = {
-    val res = s.replaceAll(regex, "")
-    if (res != s) res.remove(regex) else res
-  }
-
-  def removeBlocks(startMarker: String, endMarker: String) = {
-    def removeBlocksAcc(s: String, acc: String, nestingLevel: Int): String =
-      if (s == "") acc
-      else if (s.startsWith(startMarker)) {
-        val tail = s.drop(startMarker.size)
-        removeBlocksAcc(tail, acc, nestingLevel + 1)
-      }
-      else if (s.startsWith(endMarker)) {
-        val tail = s.drop(endMarker.size)
-        removeBlocksAcc(tail, acc, math.max(nestingLevel - 1, 0))
-      }
-      else {
-        val head = s.head
-        val tail = s.drop(1)
-
-        if (nestingLevel == 0) removeBlocksAcc(tail, acc + head, nestingLevel)
-        else removeBlocksAcc(tail, acc, nestingLevel)
-      }
-    //removeBlocksAcc(text, "", 0)
-  }
-
-  def strip(regex: String): String = s.replaceAll(regex, "$1")
+case class Offset(days: Long, number: Long, mnemonic: String) {
+  override def toString = number + " " + mnemonic
 }
 
-//
-//val language = "en"
-//val term = "Tatarstan"
-//val url = "https://%s.wikipedia.org/wiki/Special:Export/%s".format(language, term)
-//val xml = XML.load(url)
-//val title = (xml \\ "title").text
-//val text = (xml \\ "text").text
+object test {
+  implicit def convertIterable(source: Iterable[Int]): Iterable[Long] = source.map(_.toLong)
 
+  val yearInDays = 365.242
 
-//val cleanText = WikiPageParser.clean(text)
-//text.split("==+").size
+  def every(x: Long) = Stream.from(1).map(_ * x)
 
+  def makeStream(unitStream: Iterable[Long], mnemonic: String, daysPerPeriod: Double): Iterable[Offset] =
+    unitStream.map(x => Offset(math.round(x * daysPerPeriod), x, mnemonic))
 
-WikiPageLoader.loadArticleByTerm("en", "Tatarstan")
+  val planetYears = Map(
+    "Mercury" -> 87.96,
+    "Venus" -> 224.68,
+    "Earth" -> 365.26,
+    "Mars" -> 686.98,
+    "Jupiter" -> 11.862 * yearInDays,
+    "Saturn" -> 29.456 * yearInDays,
+    "Uranus" -> 84.07 * yearInDays,
+    "Neptune" -> 164.81 * yearInDays)
 
+  val streams: List[Iterable[Offset]] = List(
+    makeStream(every(1000), "days", 1),
+    makeStream(every(100), "weeks", 7),
+    makeStream(every(100), "months", yearInDays / 12),
+    makeStream(every(1), "years", yearInDays),
+    makeStream(1111 to 9999 by 1111, "days", 1),
+    makeStream(11111 to 99999 by 11111, "days", 1)) ++
+    planetYears.map { case (name, days) => makeStream(every(1), name + " years", days)}
+
+  val birthday: Calendar = Calendar.getInstance()
+  birthday.set(1985, Calendar.DECEMBER, 7)
+  val now: Calendar = Calendar.getInstance()
+  val daysOld = (now.getTimeInMillis - birthday.getTimeInMillis).toDouble /
+    1000 / 3600 / 24
+
+  val upcomingOffsets = streams.flatMap(s => s.find(item => item.days > daysOld)).sortBy(_.days)
+  val upcomingDates = upcomingOffsets.map(offset => {
+    val cal = Calendar.getInstance()
+    cal.setTimeInMillis(birthday.getTimeInMillis + offset.days * 24 * 3600 * 1000)
+    "%s on %s".format(offset, new SimpleDateFormat("yyyy-MM-dd").format(cal.getTime))
+  })
+}

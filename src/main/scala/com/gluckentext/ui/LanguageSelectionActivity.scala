@@ -28,6 +28,7 @@ class LanguageSelectionActivity extends SActivity {
 
   def onLanguageSelected(language: Language) = {
     new Persistence().saveActiveLanguage(language.code)
+    new Persistence().saveHasLanguageEverBeenSelected()
     startActivity[PracticeSelectionActivity]
   }
 }
