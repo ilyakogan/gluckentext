@@ -6,7 +6,9 @@ import net.liftweb.json.JsonAST._
 import net.liftweb.json.`package`.parse
 import scala.io.Source
 
-class WikiArticleLocation(val title: String, val url: String)
+case class WikiArticleLocation(title: String, url: String) {
+  override def toString = title
+}
 
 object RandomWikiPageRetriever {
 

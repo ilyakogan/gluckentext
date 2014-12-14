@@ -23,7 +23,7 @@ class PracticeSelectionActivity extends SActivity {
     contentView = new SVerticalLayout {
       this += listView.onItemClick(onItemClick)
 
-      val data = wordSets.map(set => mapAsJavaMap(Map("name" -> set.name, "words" -> set.words.mkString(",")))).toList
+      val data = wordSets.map(set => mapAsJavaMap(Map("name" -> set.name, "words" -> set.words.mkString(", ")))).toList
       listView.setAdapter(new SimpleAdapter(
         context, data, android.R.layout.simple_list_item_2,
         Array("name", "words"),

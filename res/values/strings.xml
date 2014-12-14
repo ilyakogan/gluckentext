@@ -6,4 +6,6 @@
 	<string name="selectPractice">I\'d like to practice…</string>
 	<string name="selectArticle">Select a Wikipedia article</string>
 	<string name="next">Next</string>
+	<string name="loadingArticle">Loading article…</string>
+	<string name="notEnoughTextInArticle">Sorry, this article doesn\'t have enough text to work with, please select a different article.</string>
 </resources>

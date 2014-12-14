@@ -9,7 +9,7 @@ object LanguagePredefs {
       new WordSet("articles", List("a", "the")),
       new WordSet("that/which/who", List("that", "which", "who"))),
       "de" -> List(
-        new WordSet("prepositions", List("mit", "in", "von", "an")),
+        new WordSet("prepositions", List("mit", "in", "im", "von", "an", "bei")),
         new WordSet("definite articles", List("der", "das", "die", "den", "dem"))),
       "es" -> List(
         new WordSet("prepositions", List("en", "a", "sobre"))))

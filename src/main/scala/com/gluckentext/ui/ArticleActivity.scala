@@ -1,18 +1,17 @@
 package com.gluckentext.ui
 
 import android.os.AsyncTask
-import android.view._
 import android.view.View._
+import android.view._
 import android.webkit.{WebChromeClient, WebView, WebViewClient}
 import android.widget.PopupMenu
 import android.widget.PopupMenu.OnMenuItemClickListener
 import com.gluckentext.datahandling.Persistence
-import com.gluckentext.quiz.{QuizWord, createQuiz}
+import com.gluckentext.quiz.QuizWord
 import com.gluckentext.ui.QuizHtml._
-import com.gluckentext.wikipediaaccess.WikiPageLoader
 import org.scaloid.common._
 
-import scala.concurrent.{ExecutionContext, Future}
+import scala.concurrent.ExecutionContext
 
 class ArticleActivity extends SActivity {
 
@@ -44,31 +43,13 @@ class ArticleActivity extends SActivity {
       case Some(quizStatus) =>
         val quizText = generateQuizHtml(quizStatus)
         populateWebView(quizText)
-      case None => loadArticle()
+      case None => startActivity[ArticleSelectionActivity]
     }
   }
 
   def populateWebView(quizHtml: String) = {
     prepareWebView(webView)
     webView.loadData(quizHtml, "text/html; charset=UTF-8", null)
-  }
-
-  def loadArticle() = {
-    progressBar.visibility = VISIBLE
-    val f = Future {
-      val article = WikiPageLoader.loadArticleByUri(quizDefinition.articleUri)
-      if (article.body.isEmpty) toast("No relevant text in article")
-      val quiz = createQuiz about quizDefinition.practiceWords from article.body
-      val quizText = generateQuizHtml(quiz)
-      runOnUiThread {
-        persistence.saveQuizStatus(quizDefinition, quiz)
-        populateWebView(quizText)
-        progressBar.visibility = GONE
-      }
-    }.recover {
-      case e => e.printStackTrace(); toast("Error loading article: " + e)
-    }
-    f.onFailure { case x => x.printStackTrace()}
   }
 
   def prepareWebView(webView: SWebView) {
