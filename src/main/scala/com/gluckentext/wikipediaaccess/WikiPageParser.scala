@@ -63,15 +63,10 @@ object WikiPageParser {
 
     def multiline = "(?s)"
     def brackets(s: String) = "\\[" + s + "\\]"
-    def anyNumOfBraces(s: String) = "\\{+" + s + "\\}+"
 
-    val templates = multiline + anyNumOfBraces(".+?")
-    val references = multiline + "<ref>.*?</ref>"
     val internalLinks = multiline + brackets(brackets("(?:[^]]*?\\|)?(.+?)"))
-    val externalLinks = multiline + brackets(".+?")
-    val files = multiline + brackets(brackets("File:.*?"))
-    var italicMarkup = "''(.+?)''"
-    var boldMarkup = "'''(.+?)'''"
+    val italicMarkup = "''(.+?)''"
+    val boldMarkup = "'''(.+?)'''"
 
     val italicTags = "<i>$1</i>"
     val boldTags = "<b>$1</b>"

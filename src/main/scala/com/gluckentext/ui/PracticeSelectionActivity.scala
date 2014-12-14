@@ -21,7 +21,6 @@ class PracticeSelectionActivity extends SActivity {
 
   onCreate {
     contentView = new SVerticalLayout {
-      //STextView(R.string.selectPractice).textSize(25.dip).gravity(Gravity.CENTER_HORIZONTAL).margin(15.dip)
       this += listView.onItemClick(onItemClick)
 
       val data = wordSets.map(set => mapAsJavaMap(Map("name" -> set.name, "words" -> set.words.mkString(",")))).toList

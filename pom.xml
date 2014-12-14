@@ -40,6 +40,11 @@
             <version>2.2.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>net.liftweb</groupId>
+            <artifactId>lift-webkit_2.10</artifactId>
+            <version>3.0-M1</version>
+        </dependency>
 
     </dependencies>
 
