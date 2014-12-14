@@ -21,6 +21,8 @@
         </activity>
         <activity android:name=".ui.LanguageSelectionActivity">
         </activity>
+        <activity android:name=".ui.ArticleSelectionActivity">
+        </activity>
     </application>
 
 </manifest>

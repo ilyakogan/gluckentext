@@ -40,6 +40,6 @@ class PracticeSelectionActivity extends SActivity {
 
   def onPracticeSelected(wordSet: WordSet) = {
     persistence.saveActiveWordSet(language, wordSet.words)
-    startActivity[ArticleActivity]
+    startActivity[ArticleSelectionActivity]
   }
 }

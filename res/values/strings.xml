@@ -4,5 +4,6 @@
 	<string name="selectButton">Select</string>
 	<string name="selectLanguageTitle">I\'m learning…</string>
 	<string name="selectPractice">I\'d like to practice…</string>
+	<string name="selectArticle">Select a Wikipedia article</string>
 	<string name="next">Next</string>
 </resources>
