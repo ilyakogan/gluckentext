@@ -1,7 +1,7 @@
 Glückentext
 ===========
 
-A language-learning cloze app written in scala on Android with scaloid. Glückentext can be [downloaded from Google Play](https://play.google.com/store/apps/details?id=com.gluckentext).
+A language-learning cloze app written in scala on Android with [scaloid](https://github.com/pocorall/scaloid/). Glückentext can be [downloaded from Google Play](https://play.google.com/store/apps/details?id=com.gluckentext).
 
 This app finds random articles in Wikipedia, replaces pre-specified words with blanks, and lets the user fill in the blanks.
 
