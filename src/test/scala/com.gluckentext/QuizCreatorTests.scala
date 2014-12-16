@@ -1,6 +1,6 @@
 package com.gluckentext
 
-import com.gluckentext.quiz.{createQuiz, QuizWord, PlainText}
+import com.gluckentext.quiz.{NotEnoughTextInArticleException, createQuiz, QuizWord, PlainText}
 import org.scalatest.{Matchers, FlatSpec}
 
 class QuizCreatorTests extends FlatSpec with Matchers {
@@ -34,5 +34,17 @@ class QuizCreatorTests extends FlatSpec with Matchers {
   it should "identify quiz word if there's punctuation after it" in {
     val quiz = createQuiz about List("morning", "noon", "evening", "night") from "Morning, noon. Evening? Night!"
     assert(quiz === List(QuizWord(0, "Morning"), PlainText(", "), QuizWord(9, "noon"), PlainText(". "), QuizWord(15, "Evening"), PlainText("? "), QuizWord(24, "Night"), PlainText("!")))
+  }
+
+  it should "throw a NotEnoughTextInArticleException if quiz word is not found" in {
+    intercept[NotEnoughTextInArticleException] {
+      createQuiz about List("word") from "article"
+    }
+  }
+
+  it should "throw a NotEnoughTextInArticleException if article is empty" in {
+    intercept[NotEnoughTextInArticleException] {
+      createQuiz about List("word") from ""
+    }
   }
 }

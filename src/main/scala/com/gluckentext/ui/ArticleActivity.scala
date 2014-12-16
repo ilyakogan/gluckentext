@@ -67,7 +67,7 @@ class ArticleActivity extends SActivity {
     info("Quiz word clicked: " + url)
     url match {
       case makeGuessUrl(quizWord) =>
-        val popupMenu: PopupMenu = new PopupMenu(this, menuAnchor, Gravity.CENTER)
+        val popupMenu: PopupMenu = new PopupMenu(this, menuAnchor)
         val menu = popupMenu.getMenu
         menu.clear()
         quizDefinition.practiceWords.foreach(guess => menu.add(guess))

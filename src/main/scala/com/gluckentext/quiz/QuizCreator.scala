@@ -36,7 +36,10 @@ class QuizCreator(practiceWords: Iterable[CharSequence]) {
           acc :+ TextSubstring(acc.lastOption.map(_.end).getOrElse(0), nextWord.start) :+ nextWord
         else acc :+ nextWord)
 
+    if (quizPartsExceptLast.isEmpty) throw new NotEnoughTextInArticleException
+
     val lastPos = quizPartsExceptLast.last.end
+
     val quizParts =
       if (lastPos == article.length) quizPartsExceptLast
       else quizPartsExceptLast :+ TextSubstring(lastPos, article.length)

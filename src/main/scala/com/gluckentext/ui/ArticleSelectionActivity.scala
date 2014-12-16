@@ -7,7 +7,7 @@ import android.widget.{AbsListView, AdapterView, ArrayAdapter}
 import com.gluckentext.R
 import com.gluckentext.datahandling.Persistence
 import com.gluckentext.entities.QuizDefinition
-import com.gluckentext.quiz.createQuiz
+import com.gluckentext.quiz.{NotEnoughTextInArticleException, createQuiz}
 import com.gluckentext.wikipediaaccess.{RandomWikiPageRetriever, WikiArticleLocation, WikiPageLoader}
 import org.scaloid.common._
 
@@ -94,7 +94,6 @@ class ArticleSelectionActivity extends SActivity {
     val progressDialog = ProgressDialog.show(this, quizDefinition.articleName, getString(R.string.loadingArticle), true)
     val f = Future {
       val article = WikiPageLoader.loadArticleByUri(quizDefinition.articleUri)
-      if (article.body.isEmpty) throw new NotEnoughTextInArticleException
       val quiz = createQuiz about quizDefinition.practiceWords from article.body
       persistence.saveQuizStatus(quizDefinition, quiz)
     }
@@ -126,7 +125,5 @@ class ArticleSelectionActivity extends SActivity {
     articleArrayAdapter.clear()
     articleArrayAdapter.addAll(asJavaCollection(articles))
   }
-
-  class NotEnoughTextInArticleException extends Exception
 
 }
