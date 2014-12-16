@@ -7,6 +7,7 @@ object LanguagePredefs {
     Map("en" -> List(
       new WordSet("prepositions", List("in", "on", "at")),
       new WordSet("articles", List("a", "the")),
+      new WordSet("than/then", List("than", "then")),
       new WordSet("that/which/who", List("that", "which", "who"))),
       "de" -> List(
         new WordSet("prepositions", List("mit", "in", "im", "von", "an", "bei")),
