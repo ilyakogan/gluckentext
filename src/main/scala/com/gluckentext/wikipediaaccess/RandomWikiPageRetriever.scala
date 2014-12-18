@@ -28,8 +28,7 @@ object RandomWikiPageRetriever {
   def getArticleTitles(languageCode: String): List[String] = {
     val uri = getUri(languageCode)
     val content = Source.fromURL(uri)
-    val str = content.mkString
-    val json = parse(str)
+    val json = parse(content.mkString)
     val articleTitles: List[String] = json filter {
       case JField("title", JString(_)) => true
       case _ => false
