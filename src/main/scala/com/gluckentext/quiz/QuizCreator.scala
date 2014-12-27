@@ -12,45 +12,33 @@ object QuizWord {
   def apply(id: Int, rightAnswer: CharSequence) = new QuizWord(id, rightAnswer, isSolved = false)
 }
 
-class QuizCreator(practiceWords: Iterable[CharSequence]) {
+class QuizCreator(practiceWords: Iterable[CharSequence], minCharsBetweenQuizWords: Option[Int]) {
 
-  trait Substring {
-    def start: Int
-
-    def end: Int
+  class Diluter(minCharsBetween: Int) {
+    def diluteQuizWords(substrings: List[Substring]): List[Substring] = {
+      substrings match {
+        case TextSubstring(start1, end1) :: QuizWordSubstring(_, _) :: TextSubstring(_, end2) :: tail
+          if end1 - start1 < minCharsBetween =>
+          diluteQuizWords(TextSubstring(start1, end2) :: tail)
+        case head :: tail => head :: diluteQuizWords(tail)
+        case Nil => Nil
+      }
+    }
   }
 
-  case class TextSubstring(start: Int, end: Int) extends Substring
+  def createQuizFrom(article: String): List[QuizPart] = {
+    val quizParts = splitArticleByPracticeWords(article, practiceWords)
 
-  case class QuizWordSubstring(start: Int, end: Int) extends Substring
+    val dilutedQuizParts =
+      minCharsBetweenQuizWords match {
+        case None => quizParts
+        case Some(minDistance) => new Diluter(minDistance).diluteQuizWords(quizParts)
+      }
 
-  def from(article: String): List[QuizPart] = {
-    val caseInsensitive = "(?i)"
-    val quizWordRegex = (caseInsensitive + "\\b(" + practiceWords.mkString("|") + ")\\b").r
-    val quizWordMatches = quizWordRegex.findAllMatchIn(article)
-    val quizWords = (quizWordMatches map (m => QuizWordSubstring(m.start, m.end))).toStream
 
-    val quizPartsExceptLast = quizWords.foldLeft(List[Substring]())(
-      (acc, nextWord: QuizWordSubstring) =>
-        if (nextWord.start > 0)
-          acc :+ TextSubstring(acc.lastOption.map(_.end).getOrElse(0), nextWord.start) :+ nextWord
-        else acc :+ nextWord)
-
-    if (quizPartsExceptLast.isEmpty) throw new NotEnoughTextInArticleException
-
-    val lastPos = quizPartsExceptLast.last.end
-
-    val quizParts =
-      if (lastPos == article.length) quizPartsExceptLast
-      else quizPartsExceptLast :+ TextSubstring(lastPos, article.length)
-
-    quizParts.map {
+    dilutedQuizParts.map {
       case t: TextSubstring => PlainText(article.substring(t.start, t.end))
       case w: QuizWordSubstring => QuizWord(w.start, article.substring(w.start, w.end))
     }
   }
-}
-
-object createQuiz {
-  def about(words: Iterable[CharSequence]) = new QuizCreator(words)
 }

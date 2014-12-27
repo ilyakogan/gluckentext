@@ -10,8 +10,8 @@ object LanguagePredefs {
       new WordSet("than/then", List("than", "then")),
       new WordSet("that/which/who", List("that", "which", "who"))),
       "de" -> List(
-        new WordSet("prepositions", List("mit", "in", "im", "von", "an", "bei")),
-        new WordSet("definite articles", List("der", "das", "die", "den", "dem"))),
+        new WordSet("prepositions in the top 200 words", List("zu", "in", "mit", "auf", "von", "für", "an", "aus", "um", "im", "nach", "bei", "vor", "zum", "über", "am", "ab")),
+        new WordSet("definitive articles", List("der", "das", "die", "den", "dem", "des"))),
       "es" -> List(
         new WordSet("prepositions", List("en", "a", "sobre"))))
 

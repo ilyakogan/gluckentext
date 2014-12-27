@@ -11,7 +11,7 @@ import com.gluckentext.quiz.QuizWord
 import com.gluckentext.ui.QuizHtml._
 import org.scaloid.common._
 
-import scala.concurrent.ExecutionContext
+import scala.concurrent.{Future, ExecutionContext}
 
 class ArticleActivity extends SActivity with NavigationMenuTrait {
 
@@ -62,20 +62,33 @@ class ArticleActivity extends SActivity with NavigationMenuTrait {
 
   def quizWordClicked(url: String) = {
     info("Quiz word clicked: " + url)
-    url match {
-      case makeGuessUrl(quizWord) =>
-        val popupMenu: PopupMenu = new PopupMenu(this, menuAnchor)
-        val menu = popupMenu.getMenu
-        menu.clear()
-        quizDefinition.practiceWords.foreach(guess => menu.add(guess))
-        popupMenu.setOnMenuItemClickListener(new OnMenuItemClickListener {
-          override def onMenuItemClick(menuItem: MenuItem): Boolean = {
-            guessClicked(quizWord, menuItem.getTitle.toString)
-            true
-          }
-        })
-        popupMenu.show()
+    val f = Future {
+      persistence.loadQuizStatus(quizDefinition) match {
+        case Some(quizStatus) => (url, quizStatus) match {
+          case makeGuessUrl(quizWord) => Some(quizWord)
+          case _ => toast("Error getting word"); None
+        }
+        case None => toast("Looks like the quiz object is missing from the app prefs"); None
+      }
     }
+
+    f.onSuccess { case Some(quizWord) =>
+      runOnUiThread(showGuessesPopupMenu(quizWord))
+    }
+  }
+
+  def showGuessesPopupMenu(quizWord: QuizWord) {
+    val popupMenu: PopupMenu = new PopupMenu(this, menuAnchor)
+    val menu = popupMenu.getMenu
+    menu.clear()
+    quizDefinition.practiceWords.foreach(guess => menu.add(guess))
+    popupMenu.setOnMenuItemClickListener(new OnMenuItemClickListener {
+      override def onMenuItemClick(menuItem: MenuItem): Boolean = {
+        guessClicked(quizWord, menuItem.getTitle.toString)
+        true
+      }
+    })
+    popupMenu.show()
   }
 
   def guessClicked(word: QuizWord, guess: String) = {
