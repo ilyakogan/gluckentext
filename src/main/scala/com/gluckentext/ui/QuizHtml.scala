@@ -12,11 +12,21 @@ object QuizHtml {
       def r = new util.matching.Regex(sc.parts.mkString, sc.parts.tail.map(_ => "x"): _*)
     }
 
-    def apply(word: QuizWord) = "com.gluckentext://" + word.id + "/" + word.rightAnswer
+    def apply(word: QuizWord) = "com.gluckentext://" + word.id //+ "/" + word.rightAnswer
 
-    def unapply(url: String): Option[QuizWord] =
-      url match {
-        case r"com.gluckentext://(.+)${order}/(.+)${word}" => Some(QuizWord(order.toInt, word, isSolved = false))
+    def unapply(args: (String, Iterable[QuizPart])): Option[QuizWord] =
+      args match {
+        case (url, quiz) =>
+          url match {
+            case r"com.gluckentext://(.+)${selectedId}" =>
+              val selectedQuizPart = quiz.collect { case w: QuizWord if w.id.toString == selectedId => w }
+              selectedQuizPart.toList match {
+                case w :: tail => Some(w)
+                case Nil => None
+              }
+            case _ => None
+          }
+        case _ => None
       }
   }
 
