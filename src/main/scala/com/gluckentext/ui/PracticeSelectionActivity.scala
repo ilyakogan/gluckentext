@@ -9,7 +9,7 @@ import org.scaloid.common._
 
 import scala.collection.JavaConversions._
 
-class PracticeSelectionActivity extends SActivity {
+class PracticeSelectionActivity extends SActivity with NavigationMenuTrait {
 
   implicit val tag = LoggerTag("Gluckentext")
 

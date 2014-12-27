@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">Glückentext</string>
+	<string name="app_name">Glückentext cloze creator</string>
 	<string name="selectButton">Select</string>
 	<string name="selectLanguageTitle">I\'m learning…</string>
 	<string name="selectPractice">I\'d like to practice…</string>
@@ -8,4 +8,6 @@
 	<string name="next">Next</string>
 	<string name="loadingArticle">Loading article…</string>
 	<string name="notEnoughTextInArticle">Sorry, this article doesn\'t have enough text to work with, please select a different article.</string>
+	<string name="action_new_quiz">New quiz</string>
+	<string name="action_change_language">Change language</string>
 </resources>

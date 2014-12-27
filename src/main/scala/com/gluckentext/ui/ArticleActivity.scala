@@ -13,12 +13,11 @@ import org.scaloid.common._
 
 import scala.concurrent.ExecutionContext
 
-class ArticleActivity extends SActivity {
+class ArticleActivity extends SActivity with NavigationMenuTrait {
 
   implicit val tag = LoggerTag("Gluckentext")
   implicit val exec = ExecutionContext.fromExecutor(AsyncTask.THREAD_POOL_EXECUTOR)
 
-  //lazy val titleText = new STextView()
   lazy val menuAnchor = new STextView()
   lazy val webView = new SWebView()
   lazy val progressBar = new SProgressBar()
@@ -28,15 +27,13 @@ class ArticleActivity extends SActivity {
 
   onCreate {
     contentView = new SVerticalLayout {
-      this += menuAnchor.textSize(1.dip)
-      //this += titleText.textSize(20.dip).gravity(Gravity.CENTER_HORIZONTAL).margin(5.dip).>>
       this += webView
+      this += menuAnchor.textSize(1.dip)
       this += progressBar
     }
   }
 
   onResume {
-    //titleText.text = quizDefinition.articleName
     getActionBar.setTitle(quizDefinition.articleName)
     progressBar.visibility = GONE
     persistence.loadQuizStatus(quizDefinition) match {
